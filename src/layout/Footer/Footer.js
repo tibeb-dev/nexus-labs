@@ -90,23 +90,6 @@ const Footer = ({ footerLight, style, footerGradient }) => {
                       </ul>
                     </div>
                   </div>
-                  <div className="col-md-4 col-lg-4 mt-4 mt-md-0 mt-lg-0">
-                    <div className="footer-single-col">
-                      <h3>Pages</h3>
-                      <ul className="list-unstyled footer-nav-list mb-lg-0">
-                        {footerPages.map((page, i) => (
-                          <li key={i + 1}>
-                            <Link legacyBehavior href={page.href}>
-                              <a className="text-decoration-none">
-                                {" "}
-                                {page.title}
-                              </a>
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -123,7 +106,7 @@ const Footer = ({ footerLight, style, footerGradient }) => {
               <div className="col-md-7 col-lg-7">
                 <div className="copyright-text">
                   <p className="mb-lg-0 mb-md-0">
-                    &copy; 2024 Nexus Rights Reserved. Designed By{" "}
+                    &copy; 2024 Nexus, All Rights Reserved. Designed By{" "}
                     <a
                       href="https://themetags.com/"
                       className="text-decoration-none"

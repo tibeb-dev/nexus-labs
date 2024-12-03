@@ -1,13 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
-
-import Link from "next/link";
+import Link from "next/link"
 import HeroTitle from "../common/HeroTitle";
-import React, { useState } from "react";
-import { IoPlayCircleOutline } from "react-icons/io5";
-import ModalVideo from "react-modal-video";
+import React from "react";
 
 const HeroSectionSeven = () => {
-  const [isOpen, setOpen] = useState(false);
   return (
     <>
       <section
@@ -16,47 +12,20 @@ const HeroSectionSeven = () => {
           background: "url('/hero-dot-bg.png')no-repeat center right",
         }}
       >
-        <ModalVideo
-          channel="youtube"
-          isOpen={isOpen}
-          videoId="hAP2QF--2Dg"
-          onClose={() => setOpen(false)}
-        />
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-10">
               <div className="hero-content-wrap mt-5">
                 <HeroTitle
-                  title="Creativity in Our DNA, Client Joy in Our Code."
-                  desc="We deliver best problem solving solution for our client and provide finest finishing product in present and upcoming future."
+                  title="Your Trusted Partner in IT Excellence"
+                  desc="Providing reliable, cutting-edge IT and AI-driven services designed to solve challenges, optimize performance, and help your business thrive in the digital age."
                 />
                 <div className="action-btns mt-5 align-items-center d-block d-sm-flex d-lg-flex d-md-flex">
+                  <Link href="/portfolio" className="py-3 fw-bold text-center fs-xl text-white bg-orange padding-x-20 rounded-3">
+                    Our Works
+                  </Link>
                 </div>
                 <div className="row justify-content-lg-start mt-60">
-                  <h6 className="text-white-70 mb-2">
-                    Trusted By 5000+ Worldwide Customers:
-                  </h6>
-                  <div className="col-4 col-sm-3 my-2 ps-lg-0">
-                    <img
-                      src="/clients/client-1.svg"
-                      alt="client"
-                      className="img-fluid"
-                    />
-                  </div>
-                  <div className="col-4 col-sm-3 my-2">
-                    <img
-                      src="/clients/client-2.svg"
-                      alt="client"
-                      className="img-fluid"
-                    />
-                  </div>
-                  <div className="col-4 col-sm-3 my-2">
-                    <img
-                      src="/clients/client-3.svg"
-                      alt="client"
-                      className="img-fluid"
-                    />
-                  </div>
                 </div>
               </div>
             </div>

@@ -1,11 +1,8 @@
 import React from "react";
 
-import dynamic from "next/dynamic";
 
-import Image from "next/image";
-import Link from "next/link";
 import { SwiperSlide, Swiper } from "swiper/react";
-import { Pagination } from "swiper";
+import { Pagination, Autoplay } from "swiper";
 
 const TestimonialSix = () => {
   return (
@@ -25,18 +22,14 @@ const TestimonialSix = () => {
                 If you use this site regularly and would like to help keep the
                 site pay for the hosting and bandwidth bill
               </p>
-              <div className="action-btn mt-5">
-                <Link legacyBehavior href="/request-demo">
-                  <a className="btn btn-primary me-3">More Testimonial</a>
-                </Link>
-              </div>
             </div>
           </div>
           <div className="col-lg-6">
             <div className="cyber-testimonial-slider">
               <Swiper
-                modules={[Pagination]}
+                modules={[Pagination, Autoplay]}
                 pagination={{ clickable: true }}
+                autoplay={{ delay: 4000 }}
                 breakpoints={{
                   640: { slidesPerView: 1 },
                   768: { slidesPerView: 1 },

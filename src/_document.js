@@ -1,5 +1,4 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
-import Link from "next/link";
 
 const APP_NAME =
   "Quiety - Next Js Creative SAAS Technology & IT Solutions React Template";
@@ -16,6 +15,7 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <link rel="icon" href="/favicon.png" />
+          <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" /> 
           <meta property="og:title" content={APP_NAME} />
 
           <meta property="og:description" content={APP_DESCRIPTION} />

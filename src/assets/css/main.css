@@ -1782,6 +1782,16 @@ progress {
   color: var(--bs-secondary-color);
 }
 
+.container-small {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .container,
 .container-fluid,
 .container-xxl,
@@ -1794,8 +1804,8 @@ progress {
   width: 100%;
   padding-right: calc(var(--bs-gutter-x) * 0.5);
   padding-left: calc(var(--bs-gutter-x) * 0.5);
-  margin-right: auto;
   margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-width: 576px) {

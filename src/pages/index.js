@@ -7,7 +7,6 @@ import HeroSectionSeven from "@components/hero-section/HeroSectionSeven";
 import TestimonialSix from "@components/testimonial/TestimonialSix";
 import ServiceIt from "@components/services/ServiceIT";
 
-//this is for data analysis demo
 const DataAnalysisHome = () => {
   return (
     <Layout>
@@ -15,13 +14,8 @@ const DataAnalysisHome = () => {
       <HeroSectionSeven />
       <FeatureFour />
       <ServiceIt />
-      { /*<FeatureWithBg />*/}
-      { /* <TestimonialTwo swiperBgClass="bg-white" /> */ }
       <TestimonialSix swiperBgClass="bg-white" />
-      { /*<TestimonialFour swiperBgClass="bg-white" /> */}
-      { /*<TestimonialOne swiperBgClass="bg-white" /> */}
-      { /*<TestimonialFour swiperBgClass="bg-white" />*/}
-      <Footer footerDark />
+      <Footer footerGradient />
     </Layout>
   );
 };

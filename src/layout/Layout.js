@@ -1,6 +1,5 @@
 import React from "react";
 import Head from "next/head";
-import Image from "next/image";
 
 const Layout = ({ children, title, desc, hasClass, classOpt }) => {
   return (

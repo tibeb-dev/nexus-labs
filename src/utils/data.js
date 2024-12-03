@@ -1782,23 +1782,25 @@ const ItServiceData = [
     serviceImg: "/service/coding.png",
     serviceTitle: "Web Development",
     serviceDesc:
-      "There are many variations of the passages of Lorem Ipsum is an available the done.",
+      "Expert UI/UX design, CRM integration, DevOps, and full-stack backend and frontend development for responsive, scalable websites.",
     className: "border-bottom border-end",
   },
   {
     serviceImg: "/service/app-development.png",
-    serviceTitle: "App Development",
+    serviceTitle: "AI SaaS Development",
     serviceDesc:
-      "There are many variations of the passages of Lorem Ipsum is an available the done.",
+      "Custom AI-powered SaaS solutions to optimize your business processes with machine learning and data analytics.",
     className: "border-bottom border-end",
   },
+  
   {
     serviceImg: "/service/shield.png",
-    serviceTitle: "Data Security",
+    serviceTitle: "LLM & Machine Learning",
     serviceDesc:
-      "There are many variations of the passages of Lorem Ipsum is an available the done.",
+      "Building and optimizing LLMs and machine learning models to enhance automation and drive data-driven insights.",
     className: "border-bottom",
   },
+  /*
   {
     serviceImg: "/service/curve.png",
     serviceTitle: "UI/UX Development",
@@ -1819,7 +1821,7 @@ const ItServiceData = [
     serviceDesc:
       "There are many variations of the passages of Lorem Ipsum is an available the done.",
     className: "",
-  },
+  },*/
 ];
 const testimonialFourData = [
   {

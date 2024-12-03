@@ -8,11 +8,11 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import "swiper/css/autoplay"
 import Script from "next/script";
 
 //Modal Video
 import "react-modal-video/scss/modal-video.scss";
-import Head from "next/head";
 
 import { Fragment } from "react";
 
