@@ -1,3 +1,10 @@
 .container {
   max-width: 1640px
 }
+.main-menu li a.nav-link {
+  padding: 0.85rem 1rem;
+  font-size: 1.075rem;
+  font-weight: 500;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+}

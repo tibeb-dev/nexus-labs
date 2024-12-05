@@ -16,7 +16,6 @@ const TestimonialSix = () => {
         <div className="row">
           <div className="col-lg-6 col-md-10">
             <div className="cyber-testimonial pe-5 mb-30 mb-lg-0">
-              <h5 className="h6 text-primary">Testimonial</h5>
               <h2 className="">What they Say about Our Services.</h2>
               <p>
                 If you use this site regularly and would like to help keep the

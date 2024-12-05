@@ -11,7 +11,7 @@ const AboutUs = () => {
       <Navbar classOption="navbar-light" />
       <HeroSectionTwo />
       <OurStory />
-      <Footer footerDark />
+      <Footer footerGradient />
     </Layout>
   );
 };

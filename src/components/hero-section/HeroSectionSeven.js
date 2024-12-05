@@ -20,12 +20,10 @@ const HeroSectionSeven = () => {
                   title="Your Trusted Partner in IT Excellence"
                   desc="Providing reliable, cutting-edge IT and AI-driven services designed to solve challenges, optimize performance, and help your business thrive in the digital age."
                 />
-                <div className="action-btns mt-5 align-items-center d-block d-sm-flex d-lg-flex d-md-flex">
-                  <Link href="/portfolio" className="py-3 fw-bold text-center fs-xl text-white bg-orange padding-x-20 rounded-3">
-                    Our Works
+                <div className="mt-5 align-items-end width-full d-flex">
+                  <Link href="/contact-us" className="py-3 fw-bold text-center fs-xl text-white padding-x-20 rounded-3" style={{ backgroundColor: "#433bff" }}>
+                    Contact Us
                   </Link>
-                </div>
-                <div className="row justify-content-lg-start mt-60">
                 </div>
               </div>
             </div>

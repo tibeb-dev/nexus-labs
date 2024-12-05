@@ -23,7 +23,7 @@ const data = [
   {
     title: 'Wpprovider.nl',
     link: 'https://wpprovider.nl',
-    source: '/nexus/jjp.png',
+    source: '/nexus/wppnl.png',
     description: "Our web design project showcases our expertise in crafting captivating online experiences.Through meticulous attention to detail and innovative design concepts, we transform visions into reality.Each website we create is a unique reflection of our client's brand identity, tailored to resonate with their target audience.",
     usedSoftware: [
       {
@@ -68,7 +68,7 @@ const data = [
   {
     title: 'Gift XD',
     link: 'https://giftxd.com',
-    source: '/nexus/jjp.png',
+    source: '/nexus/giftxd.png',
     description: 
 "We developed a robust and secure Gift Card Payment System to enable seamless transactions for users. The system allows customers to easily purchase, redeem, and manage gift cards, integrating with various payment gateways for a smooth and reliable payment experience. We focused on ensuring security, scalability, and user-friendliness to support both customers and merchants efficiently.",
     usedSoftware: [
@@ -107,7 +107,7 @@ const data = [
   {
     title: 'Redesign Group',
     link: 'https://redesign-group.com',
-    source: '/nexus/mereb.png',
+    source: '/nexus/redesign.png',
     description: 
   "We developed a robust and secure Gift Card Payment System to enable seamless transactions for users. The system allows customers to easily purchase, redeem, and manage gift cards, integrating with various payment gateways for a smooth and reliable payment experience. We focused on ensuring security, scalability, and user-friendliness to support both customers and merchants efficiently.",
 
@@ -140,7 +140,7 @@ const data = [
   {
     title: 'BlueOceanSP.ai',
     link: 'https://blueoceansp.ai',
-    source: '/nexus/social-media.png',
+    source: '/nexus/blue.png',
     description: 
 "We are proud to partner with BlueOceanSP.ai, a leading AI-driven platform focused on providing innovative solutions for businesses. Together, we are leveraging cutting-edge AI technologies to help companies streamline operations, optimize decision-making, and drive growth. Our collaboration combines our IT expertise with BlueOceanSP.ai's advanced AI capabilities to deliver transformative results.",
     usedSoftware: [
@@ -170,7 +170,7 @@ const data = [
   {
     title: 'uncle.ke',
     link: 'https://uncle.ke',
-    source: '/nexus/savvy-web.png',
+    source: '/nexus/unclek.png',
     description: 
     "We developed uncle.ke, a dynamic eCommerce platform designed to provide an intuitive shopping experience for customers. The website features easy navigation, secure payment processing, and seamless product management. Our team implemented a robust backend with a smooth, responsive frontend, ensuring fast performance and scalability to support a growing online business.",
     usedSoftware: [
@@ -203,7 +203,7 @@ const RenderPortfolioItem = ({ title, link, source, description, children }) => 
   const [openAccordion, setOpenAccordion] = useState(false);
 
   return (
-    <div className="col-md-6 col-xl-5">
+    <div className="col-sm-6 col-xl-4">
       <div className="qty-portfolio">
 
         <div className="qty-portfolio__img">
@@ -274,6 +274,7 @@ const AiCompanyPortfolio = () => {
             <div className="row justify-content-center">
               <div className="col-lg-4 col-md-6">
                 <div className="tab-button mb-5">
+                  {/*
                   <ul
                     className="nav nav-pills d-flex justify-content-center"
                     id="pills-tab"
@@ -340,6 +341,7 @@ const AiCompanyPortfolio = () => {
                       </button>
                     </li>
                   </ul>
+                  */}
                 </div>
               </div>
             </div>
@@ -347,7 +349,7 @@ const AiCompanyPortfolio = () => {
         </div>
         <div className="qty-portfolio-section mt-30">
           <div className="container">
-            <div className="row g-4 justify-content-xl-between">
+            <div className="row g-4 justify-content-xl-start">
 
               
               {filterData.map(( item ) => {

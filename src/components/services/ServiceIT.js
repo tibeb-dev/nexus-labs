@@ -1,5 +1,4 @@
 import { ItServiceData } from "@utils/data";
-import Image from "next/image";
 import React from "react";
 
 const ServiceIt = () => {
@@ -19,7 +18,7 @@ const ServiceIt = () => {
         </div>
         <div className="row justify-content-center">
           {ItServiceData.map((service, i) => (
-            <div className="col-lg-4 col-md-6 p-0" key={i + 1}>
+            <div className="col-lg-4 col-md-6" key={i + 1} style={{ height: '324px' }}>
               <div
                 className={`single-service p-lg-5 p-4 text-center  ${service.className}`}
               >

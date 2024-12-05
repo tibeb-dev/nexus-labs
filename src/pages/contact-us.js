@@ -16,7 +16,7 @@ const ContactUs = () => {
       />
       <ContactCard />
       <ContactForm />
-      <Footer />
+      <Footer footerGradient />
     </Layout>
   );
 };

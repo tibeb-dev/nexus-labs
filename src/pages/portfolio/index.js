@@ -10,11 +10,11 @@ const index = () => {
       <Navbar />
       <PageHeader
         title="Our Portfolio"
-        desc= " "
+        desc=""
       />
       <div className="pay-body-color">
         <AiCompanyPortfolio />
-        <Footer footerDark />
+        <Footer footerGradient />
       </div>
     </Layout>
   );

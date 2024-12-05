@@ -1685,6 +1685,7 @@ progress {
   font-size: calc(1.425rem + 2.1vw);
   font-weight: 600;
   line-height: 1.2;
+  align-text: center;
 }
 @media (min-width: 1200px) {
   .display-5 {
@@ -16520,7 +16521,7 @@ h4 {
 }
 .main-menu li a.nav-link {
   padding: 0.85rem 1rem;
-  font-size: 0.9375rem;
+  font-size: 2rem;
   font-weight: 500;
   position: relative;
   font-family: "Poppins", sans-serif;

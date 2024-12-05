@@ -4,14 +4,6 @@ import Link from "next/link";
 import { HiMenu, HiOutlineX } from "react-icons/hi";
 
 import OffCanvasMenu from "./OffCanvasMenu";
-import {
-  navHomeOne,
-  navHomeTwo,
-  navCompanyLinks,
-  navCompanyPage,
-  navHomeThree,
-  navHomeFour,
-} from "../../utils/data";
 import dynamic from "next/dynamic";
 
 const Navbar = ({
@@ -62,16 +54,16 @@ const Navbar = ({
               <a>
                 {scroll > headerTop || !navDark || itCompany ? (
                   <img
-                    width={113}
-                    height={36}
+                    width={174}
+                    height={56}
                     src="/logo-nexuss.png"
                     alt="logo"
                     className="img-fluid logo-color"
                   />
                 ) : (
                   <img
-                    width={113}
-                    height={36}
+                    width={174}
+                    height={54}
                     src="/logo-nexuss.png"
                     alt="logo"
                     className="img-fluid logo-white"

@@ -4,7 +4,7 @@ import Link from "next/link";
 const HeroSectionTwo = () => {
   return (
     <section
-      className="about-header-section ptb-120 position-relative overflow-hidden bg-dark"
+      className="about-header-section ptb-120 position-relative overflow-hidden bg-gradient"
       style={{
         background: "url('/page-header-bg.svg')no-repeat center right",
       }}
