@@ -14,22 +14,12 @@ const OurStory = () => {
         <div className="row justify-content-between">
           <div className="col-lg-5 col-md-12 order-lg-1">
             <div className="section-heading sticky-sidebar">
-              <h4 className="h5 text-primary">Our Story</h4>
               <h2> Your trusted partner for business </h2>
               <p>
                 This is the primary element that distinguishes us from our competitors and empowers us to provide specialized technology services.
                 Our team leverages its extensive experience to assess and implement cutting-edge technological solutions.
                 Over the years, we have discovered that, in the realm of technology, each channel holds unique insights and challenges.
               </p>
-              <div className="mt-4">
-                <h6 className="mb-3">We Are Awarded By-</h6>
-                <img
-                  src="/awards-01.svg"
-                  alt="awards"
-                  className="me-4 img-fluid"
-                />
-                <img src="/awards-02.svg" alt="awards" className="img-fluid" />
-              </div>
             </div>
           </div>
           <div className="col-lg-6 col-md-12 order-lg-0">
