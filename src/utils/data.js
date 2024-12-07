@@ -192,74 +192,38 @@ const footerPrimaryPages = [
     href: "/about-us",
   },
   {
-    title: "Services",
-    href: "/services",
+    title: "Contact Us",
+    href: "/about-us",
   },
   {
-    title: "Career",
-    href: "/career",
-  },
-  {
-    title: "Integrations",
-    href: "/integrations",
-  },
-  {
-    title: "Integrations Single",
-    href: "/integration-single",
+    title: "Our Works",
+    href: "/portfolio",
   },
 ];
 
-const footerPages = [
+const footerAddress = [
   {
-    title: "Pricing",
-    href: "/pricing",
+    title: "Arat Kilo Arada",
+    href: "",
   },
   {
-    title: "Blog",
-    href: "/blogs",
-  },
-  {
-    title: "Blog Details",
-    href: "/blog-single",
-  },
-  {
-    title: "Contact",
-    href: "/contact-us",
-  },
-  {
-    title: "Career Single",
-    href: "/career-single",
-  },
-  {
-    title: "Services Single",
-    href: "/single-service",
-  },
+    title: "Addis Ababa, Ethiopia",
+    href: "",
+  }
 ];
-const footerTemplate = [
+const footerContact = [
   {
-    title: "Contact",
-    href: "/contact-us",
+    title: "Tel",
+    href: "tel:+251916830759",
   },
   {
-    title: "Support",
-    href: "/help-center",
+    title: "Email",
+    href: "mailto:sintayehuhailemichael@gmail.com",
   },
   {
-    title: "Support Single",
-    href: "/help-center-single",
-  },
-  {
-    title: "Request for Demo",
-    href: "/request-demo",
-  },
-  {
-    title: "Coming Soon",
-    href: "/coming-soon",
-  },
-  {
-    title: "Career Single",
-    href: "/career-single",
-  },
+    title: "Whatsapp",
+    href: "https://wa.me/+251916830759",
+  }
 ];
 
 //navbar data
@@ -1974,8 +1938,8 @@ export {
   navCompanyLinks,
   navCompanyPage,
   footerPrimaryPages,
-  footerPages,
-  footerTemplate,
+  footerAddress,
+  footerContact,
   testimonialOne,
   testimonialAuthor,
   pricingData,

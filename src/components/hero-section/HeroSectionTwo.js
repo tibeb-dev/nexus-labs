@@ -25,19 +25,19 @@ const HeroSectionTwo = () => {
                   </p>
                 </div>
                 <img
-                  src="/about-img-1.jpg"
+                  src="/nexus/about-3.jpg"
                   alt="about"
                   className="img-fluid about-img-first mt-5 rounded-custom shadow"
                 />
               </div>
               <div className="about-content-right">
                 <img
-                  src="/about-img-2.jpg"
+                  src="/nexus/about-1.jpg"
                   alt="about"
                   className="img-fluid mb-5 rounded-custom shadow"
                 />
                 <img
-                  src="/about-img-3.jpg"
+                  src="/nexus/about-2.jpg"
                   alt="about"
                   className="rounded-custom about-img-last shadow"
                 />

@@ -46,24 +46,34 @@ const TestimonialSix = () => {
                       />
                     </div>
                     <p className="mb-30">
-                      If you use this site regularly and would like to help keep
-                      the site on the hosting and bandwidth bill. If you use
-                      this site regularly and would like to help keep the site
-                      on the Internet, please consider donating a small sum to
-                      help pay for the hosting and bandwidth bill.
+                      Nexus Team delivered good work on this project, and I enjoyed working with them.
+                      Their communication was top-notch, they met all deadlines, and their skills were reasonably strong.
+                      At one point, I asked for an additional milestone, and they were very forthcoming that the additional work was outside their area of expertise.
+                      I enjoyed working with Nexus Team and will likely have additional jobs for them in the future.
                     </p>
                     <div className="cyber-auth-info d-flex">
                       <div className="pe-3 cyber-testimonial-author-img">
-                        <img
-                          src="/testimonial/app-testimonial-3.png"
-                          alt="auth "
-                          width={50}
-                          height={50}
-                        />
+                        <span
+                          style={{ 
+                            display: 'flex',
+                            alignSelf: 'center',
+                            borderRadius: '100%',
+                            width: '50px', 
+                            height: '50px', 
+                            color: 'white', 
+                            fontWeight: 'bold', 
+                            fontSize: '18px',
+                            backgroundColor: 'blue',
+                            alignItems: 'center',
+                            justifyContent: 'center'
+                          }}
+                        >
+                        JP
+                        </span>
                       </div>
                       <div className="cyber-testimonial-author">
-                        <h5 className="mb-0 h6">Neaj Morshed</h5>
-                        <span>FrontEnd Developer.</span>
+                        <h5 className="mb-0 h6">Jason Peitruzsca</h5>
+                        <span>CEO at JJP Construction.</span>
                       </div>
                     </div>
                   </div>
@@ -79,22 +89,35 @@ const TestimonialSix = () => {
                       />
                     </div>
                     <p className="mb-30">
-                      If you use this site regularly and would like to help keep
-                      the site on the hosting and bandwidth bill. If you use
-                      this site regularly and would like to help keep the site
-                      on the Internet, please consider donating a small sum to
-                      help pay for the hosting and bandwidth bill.
+                      During their tenure, Nexus's team consistently demonstrated commendable work ethic, effectively combining hard work and problem-solving skills.
+                      They are particularly adept at collaborative efforts, contributing valuable insights and support.
+                      Notably, while they readily seek assistance when needed,
+                      they approach challenges with a humble and proactive attitude, often finding innovative solutions independently.
+                      This combination of qualities makes the team a highly valuable asset to any project or organization.
                     </p>
                     <div className="cyber-auth-info d-flex">
                       <div className="pe-3 cyber-testimonial-author-img">
-                        <img
-                          src="/testimonial/app-testimonial-1.png"
-                          alt="auth "
-                        />
+                        <span
+                          style={{ 
+                            display: 'flex',
+                            alignSelf: 'center',
+                            borderRadius: '100%',
+                            width: '50px', 
+                            height: '50px', 
+                            color: 'white', 
+                            fontWeight: 'bold', 
+                            fontSize: '18px',
+                            backgroundColor: 'blue',
+                            alignItems: 'center',
+                            justifyContent: 'center'
+                          }}
+                        >
+                          TH
+                        </span>
                       </div>
                       <div className="cyber-testimonial-author">
-                        <h5 className="mb-0 h6">The Good</h5>
-                        <span>CEO, Founder.</span>
+                        <h5 className="mb-0 h6">Thomas H.</h5>
+                        <span>CEO, GiftXD.</span>
                       </div>
                     </div>
                   </div>
@@ -110,24 +133,37 @@ const TestimonialSix = () => {
                       />
                     </div>
                     <p className="mb-30">
-                      If you use this site regularly and would like to help keep
-                      the site on the hosting and bandwidth bill. If you use
-                      this site regularly and would like to help keep the site
-                      on the Internet, please consider donating a small sum to
-                      help pay for the hosting and bandwidth bill.
+                      I had a great experience working with Nexus Team on my Upwork project.
+                      They delivered exceptional work ahead of schedule, demonstrating excellent communication and customer service throughout the process.
+                      Proficient in Python, Django, and REST API integration,
+                      Nexus Team developed a continuous web service for generating and saving user posts with an intuitive graphical interface for content review.
+                      They also implemented a secure database for user content.
+                      I highly recommend Nexus Team for any web development project and look forward to future collaborations.
+                      Thank you for the exceptional work!
                     </p>
                     <div className="cyber-auth-info d-flex">
                       <div className="pe-3 cyber-testimonial-author-img">
-                        <img
-                          src="/testimonial/app-testimonial-2.png"
-                          alt="auth "
-                          width={50}
-                          height={50}
-                        />
+                        <span
+                          style={{ 
+                            display: 'flex',
+                            alignSelf: 'center',
+                            borderRadius: '100%',
+                            width: '50px', 
+                            height: '50px', 
+                            color: 'white', 
+                            fontWeight: 'bold', 
+                            fontSize: '18px',
+                            backgroundColor: 'blue',
+                            alignItems: 'center',
+                            justifyContent: 'center'
+                          }}
+                        >
+                          RS
+                        </span>
                       </div>
                       <div className="cyber-testimonial-author">
-                        <h5 className="mb-0 h6">Kate Winslate</h5>
-                        <span>CEO, Founder.</span>
+                        <h5 className="mb-0 h6">Roman Sandler</h5>
+                        <span>CEO, ICARDIO.AI</span>
                       </div>
                     </div>
                   </div>

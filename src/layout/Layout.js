@@ -10,9 +10,7 @@ const Layout = ({ children, title, desc, hasClass, classOpt }) => {
     >
       <Head>
         <title>
-          {title
-            ? `Quiety | ${title}`
-            : "Quiety - Next Js Software & IT Solutions React Template"}
+          Nexus SaaS
         </title>
         {desc && <meta name="description" content={desc} />}
         {/* */}

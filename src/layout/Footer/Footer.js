@@ -6,17 +6,16 @@ import { FaFacebook, FaGithub, FaDribbble, FaTwitter } from "react-icons/fa";
 
 import {
   footerPrimaryPages,
-  footerPages,
-  footerTemplate,
+  footerAddress,
+  footerContact
 } from "../../utils/data";
-import Rating from "../../components/common/Rating";
 
 const Footer = ({ footerLight, style, footerGradient }) => {
   return (
     <>
       <footer className="footer-section">
         <div
-          className={`footer-top ptb-120 ${
+          className={`footer-top ptb-80 ${
             footerLight ? "footer-light" : "bg-dark"
           } ${footerGradient ? "bg-gradient" : ""}  text-white`}
           style={style}
@@ -44,31 +43,18 @@ const Footer = ({ footerLight, style, footerGradient }) => {
                       />
                     )}
                   </div>
+
+                  <img 
+                    src="/logo-nexuss.png" 
+                    alt="" 
+                    width={200}
+                    height={82}
+                  />
                   <p>
-                    Welcome to Nexus, We deliver best problem solving solution for our client 
-                    and provide finest finishing product in present and upcoming future.
+                    Welcome to Nexus, We deliver the best problem solving solutions for our clients 
+                    and provide the finest software products.
                   </p>
 
-                  {/*<form className="newsletter-form position-relative d-block d-lg-flex d-md-flex">
-                    <input
-                      type="text"
-                      className="input-newsletter form-control me-2"
-                      placeholder="Enter your email"
-                      name="email"
-                      required
-                      autoComplete="off"
-                    />
-                    <input
-                      type="submit"
-                      value="Subscribe"
-                      data-wait="Please wait..."
-                      className="btn btn-primary mt-3 mt-lg-0 mt-md-0"
-                    />
-                  </form>*/}
-                  <div className="ratting-wrap mt-4">
-                    <h6 className="mb-0">10/10 Overall rating</h6>
-                    <Rating />
-                  </div>
                 </div>
               </div>
               <div className="col-md-12 col-lg-7 mt-4 mt-md-0 mt-lg-0">
@@ -78,6 +64,40 @@ const Footer = ({ footerLight, style, footerGradient }) => {
                       <h3>Services</h3>
                       <ul className="list-unstyled footer-nav-list mb-lg-0">
                         {footerPrimaryPages.map((primaryPage, i) => (
+                          <li key={i + 1}>
+                            <Link legacyBehavior href={primaryPage.href}>
+                              <a className="text-decoration-none">
+                                {" "}
+                                {primaryPage.title}
+                              </a>
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="col-md-4 col-lg-4 mt-4 mt-md-0 mt-lg-0">
+                    <div className="footer-single-col">
+                      <h3>Get in Touch</h3>
+                      <ul className="list-unstyled footer-nav-list mb-lg-0">
+                        {footerContact.map((primaryPage, i) => (
+                          <li key={i + 1}>
+                            <Link legacyBehavior href={primaryPage.href}>
+                              <a className="text-decoration-none">
+                                {" "}
+                                {primaryPage.title}
+                              </a>
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="col-md-4 col-lg-4 mt-4 mt-md-0 mt-lg-0">
+                    <div className="footer-single-col">
+                      <h3>Address</h3>
+                      <ul className="list-unstyled footer-nav-list mb-lg-0">
+                        {footerAddress.map((primaryPage, i) => (
                           <li key={i + 1}>
                             <Link legacyBehavior href={primaryPage.href}>
                               <a className="text-decoration-none">

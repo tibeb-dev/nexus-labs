@@ -24,7 +24,8 @@ const data = [
     title: 'Wpprovider.nl',
     link: 'https://wpprovider.nl',
     source: '/nexus/wppnl.png',
-    description: "Our web design project showcases our expertise in crafting captivating online experiences.Through meticulous attention to detail and innovative design concepts, we transform visions into reality.Each website we create is a unique reflection of our client's brand identity, tailored to resonate with their target audience.",
+description: "We developed wpprovider.nl, a WordPress service platform designed to offer seamless web hosting, development, and optimization solutions. The platform provides tailored services to help businesses manage their websites efficiently, ensuring speed, security, and performance at scale. Our team focused on creating a reliable, user-friendly experience that caters to the unique needs of WordPress users.",
+
     usedSoftware: [
       {
         name: 'Figma',
@@ -109,8 +110,7 @@ const data = [
     link: 'https://redesign-group.com',
     source: '/nexus/redesign.png',
     description: 
-  "We developed a robust and secure Gift Card Payment System to enable seamless transactions for users. The system allows customers to easily purchase, redeem, and manage gift cards, integrating with various payment gateways for a smooth and reliable payment experience. We focused on ensuring security, scalability, and user-friendliness to support both customers and merchants efficiently.",
-
+"We collaborated with Redesign Group to revamp their digital presence, delivering a modern and responsive website design. Our team focused on enhancing user experience (UX) and optimizing performance while ensuring the site’s scalability and ease of use. The project aimed at improving engagement, streamlining navigation, and showcasing their services in a visually appealing and intuitive manner.",
     usedSoftware: [
       {
         name: 'NextJs',

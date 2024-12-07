@@ -1,7 +1,26 @@
 import React from 'react';
 import Image from 'next/image';
+import emailjs from '@emailjs/browser';
+import { useRef } from 'react'
 
 const ContactForm = () => {
+  const form = useRef(); 
+  const submitForm = (e) => {
+    e.preventDefault()
+
+    emailjs
+      .sendForm('service_igtjksb', 'template_fy8owwq', form.current, {
+        publicKey: 'e11hzOuWBY8iZNHVP',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error);
+        },
+      );
+  }
   return (
     <section
       className="contact-us-form pt-60 pb-120"
@@ -19,7 +38,7 @@ const ContactForm = () => {
                 customer directed alignments via standardized infrastructures.
               </p>
             </div>
-            <form action="#" className="register-form">
+            <form ref={form} onSubmit={submitForm} className="register-form">
               <div className="row">
                 <div className="col-sm-6">
                   <label htmlFor="firstName" className="mb-1">
@@ -30,6 +49,7 @@ const ContactForm = () => {
                       type="text"
                       className="form-control"
                       id="firstName"
+                      name="firstName"
                       required
                       placeholder="First name"
                       aria-label="First name"
@@ -45,6 +65,7 @@ const ContactForm = () => {
                       type="text"
                       className="form-control"
                       id="lastName"
+                      name="lastName"
                       placeholder="Last name"
                       aria-label="Last name"
                     />
@@ -59,6 +80,7 @@ const ContactForm = () => {
                       type="text"
                       className="form-control"
                       id="phone"
+                      name="phone"
                       required
                       placeholder="Phone"
                       aria-label="Phone"
@@ -74,6 +96,7 @@ const ContactForm = () => {
                       type="email"
                       className="form-control"
                       id="email"
+                      name="user_email"
                       required
                       placeholder="Email"
                       aria-label="Email"
@@ -87,7 +110,8 @@ const ContactForm = () => {
                   <div className="input-group mb-3">
                     <textarea
                       className="form-control"
-                      id="yourMessage"
+                      id="message"
+                      name="message"
                       required
                       placeholder="How can we help you?"
                       style={{ height: '120px' }}
