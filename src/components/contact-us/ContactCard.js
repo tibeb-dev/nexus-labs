@@ -24,8 +24,9 @@ const ContactCard = () => {
                 </p>
               </div>
               <a
-                href="mailto:hellothemetags@gmail.com"
+                href="https://wa.me/+251916830759"
                 className="btn btn-link mt-auto"
+                target="_blank"
               >
                 Chat with us
               </a>

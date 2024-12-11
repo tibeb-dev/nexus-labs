@@ -32,10 +32,9 @@ const ContactForm = () => {
         <div className="row justify-content-lg-between align-items-center">
           <div className="col-lg-6 col-md-8">
             <div className="section-heading">
-              <h2>Talk to Our Sales & Marketing Department Team</h2>
+              <h2> Drop your message and email right here, and we'll get back to you! </h2>
               <p>
-                Collaboratively promote client-focused convergence vis-a-vis
-                customer directed alignments via standardized infrastructures.
+                Fill out the form below and let us know what we can do for you.
               </p>
             </div>
             <form ref={form} onSubmit={submitForm} className="register-form">

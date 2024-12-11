@@ -223,6 +223,7 @@ const footerContact = [
   {
     title: "Whatsapp",
     href: "https://wa.me/+251916830759",
+    target: "_blank"
   }
 ];
 

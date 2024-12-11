@@ -83,7 +83,7 @@ const Footer = ({ footerLight, style, footerGradient }) => {
                         {footerContact.map((primaryPage, i) => (
                           <li key={i + 1}>
                             <Link legacyBehavior href={primaryPage.href}>
-                              <a className="text-decoration-none">
+                              <a target={primaryPage.target} className="text-decoration-none">
                                 {" "}
                                 {primaryPage.title}
                               </a>

@@ -25,9 +25,9 @@ const HeroSectionTwo = () => {
                   </p>
                 </div>
                 <img
-                  src="/nexus/about-3.jpg"
+                  src="/nexus/about-4.jpg"
                   alt="about"
-                  className="img-fluid about-img-first mt-5 rounded-custom shadow"
+                  className="img-fluid mt-5 about-img-last rounded-custom shadow"
                 />
               </div>
               <div className="about-content-right">
@@ -39,7 +39,7 @@ const HeroSectionTwo = () => {
                 <img
                   src="/nexus/about-2.jpg"
                   alt="about"
-                  className="rounded-custom about-img-last shadow"
+                  className="rounded-custom about-img-first shadow"
                 />
               </div>
             </div>

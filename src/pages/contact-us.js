@@ -12,7 +12,7 @@ const ContactUs = () => {
       <Navbar classOption="navbar-light" />
       <PageHeader
         title="Contact Us"
-        desc="Seamlessly actualize client-based users after out-of-the-box value data through frictionless expertise. Proactively coordinate quality quality vectors vis-a-vis supply chains. Quickly engage client-centric web services."
+        desc="Get in touch!"
       />
       <ContactCard />
       <ContactForm />
