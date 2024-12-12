@@ -27,19 +27,20 @@ const HeroSectionTwo = () => {
                 <img
                   src="/nexus/about-4.jpg"
                   alt="about"
-                  className="img-fluid mt-5 about-img-last rounded-custom shadow"
+                  className="img-fluid mt-5 about-img-first rounded-custom shadow"
                 />
               </div>
               <div className="about-content-right">
                 <img
-                  src="/nexus/about-1.jpg"
+                  src="/nexus/about-2.jpg"
                   alt="about"
                   className="img-fluid mb-5 rounded-custom shadow"
                 />
                 <img
-                  src="/nexus/about-2.jpg"
+                  src="/nexus/about-us6.png"
                   alt="about"
-                  className="rounded-custom about-img-first shadow"
+                  className="img-fluid rounded-custom about-img-last shadow"
+                  style={{ width: '126%' }}
                 />
               </div>
             </div>

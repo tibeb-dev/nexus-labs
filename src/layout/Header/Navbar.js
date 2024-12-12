@@ -50,7 +50,7 @@ const Navbar = ({
           }`}
         >
           <div className="container d-flex align-items-center justify-content-lg-between position-relative">
-            <Link legacyBehavior href="/data-analysis">
+            <Link legacyBehavior href="/">
               <a>
                 {scroll > headerTop || !navDark || itCompany ? (
                   <img
@@ -122,7 +122,7 @@ const Navbar = ({
                     <img
                       width={121}
                       height={36}
-                      src="/logo-color.png"
+                      src="/logo-nexuss.png"
                       alt="logo"
                       className="img-fluid ps-2"
                     />

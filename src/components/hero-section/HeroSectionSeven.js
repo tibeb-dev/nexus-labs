@@ -21,7 +21,7 @@ const HeroSectionSeven = () => {
                   desc="Providing reliable, cutting-edge IT and AI-driven services designed to solve challenges, optimize performance, and help your business thrive in the digital age."
                 />
                 <div className="mt-5 align-items-end width-full d-flex">
-                  <Link href="/contact-us" className="py-3 fw-bold text-center fs-xl text-white padding-x-20 rounded-3" style={{ backgroundColor: "#433bff" }}>
+                  <Link href="/contact-us" className="py-3 fw-bold text-center fs-lg text-white padding-x-20 rounded-3" style={{ backgroundColor: "#433bff" }}>
                     Contact Us
                   </Link>
                 </div>
