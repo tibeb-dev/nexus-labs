@@ -126,13 +126,7 @@ const Footer = ({ footerLight, style, footerGradient }) => {
               <div className="col-md-7 col-lg-7">
                 <div className="copyright-text">
                   <p className="mb-lg-0 mb-md-0">
-                    &copy; 2024 Nexus, All Rights Reserved. Designed By{" "}
-                    <a
-                      href="https://themetags.com/"
-                      className="text-decoration-none"
-                    >
-                      ThemeTags
-                    </a>
+                    &copy; 2024 Nexus, All Rights Reserved.
                   </p>
                 </div>
               </div>

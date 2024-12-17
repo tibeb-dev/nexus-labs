@@ -19,12 +19,11 @@ const ContactCard = () => {
                 <h5>Chat with us</h5>
                 <p>
                   We have got live Social Experts waiting to help you{' '}
-                  <strong>monday to friday</strong> from
-                  <strong>9am to 5pm EST.</strong>
+                  <strong>Monday to Saturday</strong>
                 </p>
               </div>
               <a
-                href="https://wa.me/+251916830759"
+                href="https://wa.me/+251909740768"
                 className="btn btn-link mt-auto"
                 target="_blank"
               >
@@ -41,12 +40,12 @@ const ContactCard = () => {
                 <h5>Email Us</h5>
                 <p>
                   Simply drop us an email at{' '}
-                  <strong> sintayehuhailemichael@gmail.com </strong>
+                  <strong> kidussintayehu60@gmail.com </strong>
                   and you will receive a reply within 24 hours
                 </p>
               </div>
               <a
-                href="mailto:sintayehuhailemichael@gmail.com"
+                href="mailto:kidussintayehu60@gmail.com"
                 className="btn btn-primary mt-auto"
               >
                 Email Us
@@ -62,12 +61,11 @@ const ContactCard = () => {
                 <h5>Give us a call</h5>
                 <p>
                   Give us a ring.Our Experts are standing by{' '}
-                  <strong>monday to friday</strong> from
-                  <strong>9am to 5pm EST.</strong>
+                  <strong>Monday to Friday</strong>
                 </p>
               </div>
-              <a href="tel:00-976-561-008" className="btn btn-link mt-auto">
-                +251 916 83 07 59
+              <a href="https://wa.me/+251909740768" className="btn btn-link mt-auto">
+                +251 909 74 07 68
               </a>
             </div>
           </div>
