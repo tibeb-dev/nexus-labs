@@ -2,9 +2,9 @@ import Document, { Html, Head, Main, NextScript } from "next/document";
 import Link from "next/link";
 
 const APP_NAME =
-  "Nexus - Software As a Service";
+  "Nexus Technology";
 const APP_DESCRIPTION =
-  "Nexus - SaaS company.";
+  "Nexus Technology";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -15,7 +15,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <link rel="icon" href="/logo-nexuss.png" />
+          <link rel="icon" href="/logo.png" />
           <meta property="og:title" content={APP_NAME} />
 
           <meta property="og:description" content={APP_DESCRIPTION} />
