@@ -10,7 +10,7 @@ const Layout = ({ children, title, desc, hasClass, classOpt }) => {
     >
       <Head>
         <title>
-          Nexus SaaS
+          Nexus Technology
         </title>
         {desc && <meta name="description" content={desc} />}
         {/* */}
