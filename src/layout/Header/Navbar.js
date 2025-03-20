@@ -51,23 +51,29 @@ const Navbar = ({
         >
           <div className="container d-flex align-items-center justify-content-lg-between position-relative">
             <Link legacyBehavior href="/">
-              <a>
+              <a className="d-flex align-items-center">
                 {scroll > headerTop || !navDark || itCompany ? (
-                  <img
-                    width={174}
-                    height={56}
-                    src="/logo-nexuss.png"
-                    alt="logo"
-                    className="img-fluid logo-color"
-                  />
+                  <>
+                    <img
+                      width={60}
+                      height={60}
+                      src="/logo-nexus.jpg"
+                      alt="logo"
+                      className="img-fluid logo-color rounded-3"
+                    />
+                    <span className="ms-3 h4 mb-0 text-dark fw-bold">Nexus Tech</span>
+                  </>
                 ) : (
-                  <img
-                    width={174}
-                    height={54}
-                    src="/logo-nexuss.png"
-                    alt="logo"
-                    className="img-fluid logo-white"
-                  />
+                  <>
+                    <img
+                      width={60}
+                      height={60}
+                      src="/logo-nexus.jpg"
+                      alt="logo"
+                      className="img-fluid logo-white rounded-3"
+                    />
+                    <span className="ms-3 h4 mb-0 text-white fw-bold">Nexus Tech</span>
+                  </>
                 )}
               </a>
             </Link>
@@ -120,11 +126,11 @@ const Navbar = ({
                 <Link legacyBehavior href="/">
                   <a className="d-flex align-items-center mb-md-0 text-decoration-none">
                     <img
-                      width={121}
+                      width={85}
                       height={36}
-                      src="/logo-nexuss.png"
+                      src="/logo-nexus.jpg"
                       alt="logo"
-                      className="img-fluid ps-2"
+                      className="img-fluid ps-2 rounded-circle"
                     />
                   </a>
                 </Link>
