@@ -51,11 +51,11 @@ const Navbar = ({
         >
           <div className="container d-flex align-items-center justify-content-lg-between position-relative">
             <Link legacyBehavior href="/">
-              <a className="d-flex align-items-center">
+              <a>
                 {scroll > headerTop || !navDark || itCompany ? (
                   <>
                     <img
-                      width={123}
+                      width={150}
                       height={56}
                       src="/logo/l1.png"
                       alt="logo"
@@ -64,16 +64,13 @@ const Navbar = ({
                     {/* <span className="ms-3 h4 mb-0 text-dark fw-bold">Nexus Tech</span> */}
                   </>
                 ) : (
-                  <>
                     <img
-                      width={60}
-                      height={60}
+                      width={150}
+                      height={56}
                       src="/logo/l1 (1).png"
                       alt="logo"
                       className="img-fluid logo-white rounded-3"
                     />
-                    {/* <span className="ms-3 h4 mb-0 text-white fw-bold">Nexus Tech</span> */}
-                  </>
                 )}
               </a>
             </Link>

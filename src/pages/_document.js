@@ -15,7 +15,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <link rel="icon" href="/logo.png" />
+          <link rel="icon" href="/logo/2.jpg" />
           <meta property="og:title" content={APP_NAME} />
 
           <meta property="og:description" content={APP_DESCRIPTION} />

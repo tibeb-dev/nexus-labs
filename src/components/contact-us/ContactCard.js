@@ -64,7 +64,7 @@ const ContactCard = () => {
                   <strong>Monday to Friday</strong>
                 </p>
               </div>
-              <a href="https://wa.me/+251909740768" className="btn btn-link mt-auto">
+              <a href="https://wa.me/+251909740768" target="_blank" className="btn btn-link mt-auto">
                 +251 909 74 07 68
               </a>
             </div>

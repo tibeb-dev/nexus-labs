@@ -19,7 +19,7 @@ const FooterShort = () => {
                 </p>
               </div>
             </div>
-            <div className="col-md-4 col-lg-4">
+            {/* <div className="col-md-4 col-lg-4">
               <div className="footer-single-col text-start text-lg-end text-md-end">
                 <ul className="list-unstyled list-inline footer-social-list mb-0">
                   <li className="list-inline-item">
@@ -52,7 +52,7 @@ const FooterShort = () => {
                   </li>
                 </ul>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

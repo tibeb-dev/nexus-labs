@@ -27,16 +27,16 @@ const Footer = ({ footerLight, style, footerGradient }) => {
                   <div className="footer-single-col mb-4">
                     {footerLight ? (
                       <Image
-                        width={250}
-                        height={36}
+                        width={150}
+                        height={56}
                         src="/logo-color.png"
                         alt="logo"
                         className="img-fluid logo-white"
                       />
                     ) : (
                       <Image
-                        width={113}
-                        height={36}
+                        width={150}
+                        height={56}
                         src="/logo-white.png"
                         alt="logo"
                         className="img-fluid logo-color"
@@ -126,11 +126,11 @@ const Footer = ({ footerLight, style, footerGradient }) => {
               <div className="col-md-7 col-lg-7">
                 <div className="copyright-text">
                   <p className="mb-lg-0 mb-md-0">
-                    &copy; 2024 Nexus, All Rights Reserved.
+                    &copy; 2025 Nexus, All Rights Reserved.
                   </p>
                 </div>
               </div>
-              <div className="col-md-4 col-lg-4">
+              {/* <div className="col-md-4 col-lg-4">
                 <div className="footer-single-col text-start text-lg-end text-md-end">
                   <ul className="list-unstyled list-inline footer-social-list mb-0">
                     <li className="list-inline-item">
@@ -163,7 +163,7 @@ const Footer = ({ footerLight, style, footerGradient }) => {
                     </li>
                   </ul>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

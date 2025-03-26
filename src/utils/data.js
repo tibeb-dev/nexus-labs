@@ -203,7 +203,7 @@ const footerPrimaryPages = [
 
 const footerAddress = [
   {
-    title: "Arat Kilo Arada",
+    title: "Yerer Bole",
     href: "",
   },
   {
@@ -218,7 +218,7 @@ const footerContact = [
   },
   {
     title: "Email",
-    href: "mailto:sintayehuhailemichael@gmail.com",
+    href: "mailto:info@nexustechnologyet.com",
   },
   {
     title: "Whatsapp",

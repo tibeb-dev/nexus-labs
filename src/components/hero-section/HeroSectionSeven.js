@@ -26,8 +26,8 @@ useEffect(() => {
           background: "url('/hero-dot-bg.png') no-repeat center right",
         }}
       >
-        <div className="container h-full flex items-center">
-          <div className="row w-full align-items-center">
+        <div className="container paddingt">
+          <div className="row align-items-center">
             <div className="col-lg-6 col-md-10">
               <div className="hero-content-wrap">
                 <HeroTitle
@@ -63,15 +63,15 @@ useEffect(() => {
 
   return (
     <section
-      className="h-screen flex flex-col justify-center items-center text-white bg-gradient overflow-hidden ptb-80"
+      className="hero-section ptb-120 text-white bg-gradient"
       style={{
         background: "url('/hero-dot-bg.png') no-repeat center right",
       }}
     >
-      <div className="container h-full flex items-center">
-        <div className="row w-full align-items-center">
+      <div className="container">
+        <div className="row align-items-center ">
           <div className="col-lg-6 col-md-10">
-            <div className="hero-content-wrap">
+            <div className="hero-content-wrap mt-5">  
               <HeroTitle
                 title="Your Trusted Partner in IT Excellence"
                 desc="Providing reliable, cutting-edge IT and AI-driven services designed to solve challenges, optimize performance, and help your business thrive in the digital age."
