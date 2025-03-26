@@ -55,24 +55,24 @@ const Navbar = ({
                 {scroll > headerTop || !navDark || itCompany ? (
                   <>
                     <img
-                      width={60}
-                      height={60}
-                      src="/logo-nexus.jpg"
+                      width={123}
+                      height={56}
+                      src="/logo/l1.png"
                       alt="logo"
                       className="img-fluid logo-color rounded-3"
                     />
-                    <span className="ms-3 h4 mb-0 text-dark fw-bold">Nexus Tech</span>
+                    {/* <span className="ms-3 h4 mb-0 text-dark fw-bold">Nexus Tech</span> */}
                   </>
                 ) : (
                   <>
                     <img
                       width={60}
                       height={60}
-                      src="/logo-nexus.jpg"
+                      src="/logo/l1 (1).png"
                       alt="logo"
                       className="img-fluid logo-white rounded-3"
                     />
-                    <span className="ms-3 h4 mb-0 text-white fw-bold">Nexus Tech</span>
+                    {/* <span className="ms-3 h4 mb-0 text-white fw-bold">Nexus Tech</span> */}
                   </>
                 )}
               </a>
@@ -128,7 +128,7 @@ const Navbar = ({
                     <img
                       width={85}
                       height={36}
-                      src="/logo-nexus.jpg"
+                      src="/logo/l1.png"
                       alt="logo"
                       className="img-fluid ps-2 rounded-circle"
                     />

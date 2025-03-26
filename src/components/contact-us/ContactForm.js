@@ -32,7 +32,7 @@ const ContactForm = () => {
         <div className="row justify-content-lg-between align-items-center">
           <div className="col-lg-6 col-md-8">
             <div className="section-heading">
-              <h2> Drop your message and email right here, and we'll get back to you! </h2>
+              <h2>Message us, we’ll reply soon!</h2>
               <p>
                 Fill out the form below and let us know what we can do for you.
               </p>

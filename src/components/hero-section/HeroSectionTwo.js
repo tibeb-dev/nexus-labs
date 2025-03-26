@@ -6,7 +6,7 @@ const HeroSectionTwo = () => {
     <section
       className="about-header-section ptb-120 position-relative overflow-hidden bg-gradient"
       style={{
-        background: "url('/page-header-bg.svg')no-repeat center right",
+        background: "url('/page-header-bg.svg')right center no-repeat",
       }}
     >
       <div className="container">
@@ -32,7 +32,7 @@ const HeroSectionTwo = () => {
               </div>
               <div className="about-content-right">
                 <img
-                  src="/nexus/about-2.jpg"
+                  src="/nexus/about-22.jpg"
                   alt="about"
                   className="img-fluid mb-5 rounded-custom shadow"
                 />
@@ -40,7 +40,7 @@ const HeroSectionTwo = () => {
                   src="/nexus/about-us6.png"
                   alt="about"
                   className="img-fluid rounded-custom about-img-last shadow"
-                  style={{ width: '126%' }}
+                  style={{ width: '356' }}
                 />
               </div>
             </div>

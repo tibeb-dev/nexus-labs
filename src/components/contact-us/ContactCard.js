@@ -40,12 +40,12 @@ const ContactCard = () => {
                 <h5>Email Us</h5>
                 <p>
                   Simply drop us an email at{' '}
-                  <strong> kidussintayehu60@gmail.com </strong>
+                  <strong> info@nexustechnologyet.com </strong>
                   and you will receive a reply within 24 hours
                 </p>
               </div>
               <a
-                href="mailto:kidussintayehu60@gmail.com"
+                href="mailto:info@nexustechnologyet.com"
                 className="btn btn-primary mt-auto"
               >
                 Email Us

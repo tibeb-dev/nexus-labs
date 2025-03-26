@@ -52,7 +52,7 @@ const OurStory = () => {
                 </div>
                 <div className="story-item bg-light border">
                   <h3 className="display-5 fw-bold mb-1 text-warning">
-                    8 Years
+                    2 Years
                   </h3>
                   <h6 className="mb-0 text-white">In Business</h6>
                 </div>
