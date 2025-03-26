@@ -45,7 +45,7 @@ const Footer = ({ footerLight, style, footerGradient }) => {
                   </div>
 
                   <img 
-                    src="/logo-nexuss.png" 
+                    src="/logo/l1 (1).png" 
                     alt="" 
                     width={200}
                     height={82}
