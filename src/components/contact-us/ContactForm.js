@@ -1,19 +1,25 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import Image from 'next/image';
 import emailjs from '@emailjs/browser';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { AiOutlineCheckCircle, AiOutlineCloseCircle } from "react-icons/ai";
+import ReCAPTCHA from 'react-google-recaptcha';
+
 
 const ContactForm = () => {
   const form = useRef();
 
+  const [captchaValue, setCaptchaValue] = useState(null);
   const submitForm = (e) => {
     e.preventDefault();
+    if (!captchaValue) {
+      toast.error("Please verify the reCAPTCHA!");
+      return;
+    }
 
     emailjs.sendForm(
-      "service_bwepqw7",  // Replace with your EmailJS Service ID
-      "template_sz7ttta", // Replace with your EmailJS Template ID
+      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID, // Replace with your EmailJS Template ID
       form.current,
       "mlfoqIg2jRceBTEHH"   // Replace with your EmailJS Public Key
     )
@@ -21,17 +27,17 @@ const ContactForm = () => {
       console.log("Email sent successfully!", response);
       toast.success(
         <div className="flex items-center gap-2">
-          {/* <AiOutlineCheckCircle className="text-green-500 text-xl" /> */}
           Message sent successfully!
         </div>
       );
       form.current.reset();
+      setCaptchaValue(null);
+
     })
     .catch(error => {
       console.error("Error sending email:", error);
       toast.error(
         <div className="flex items-center gap-2">
-          <AiOutlineCloseCircle className="text-red-500 text-xl" />
           Failed to send message, please try again.
         </div>
       );
@@ -71,6 +77,13 @@ const ContactForm = () => {
                   <label htmlFor="message" className="mb-1">Message <span className="text-danger">*</span></label>
                   <textarea className="form-control" id="message" name="message" required placeholder="How can we help you?" style={{ height: '120px' }}></textarea>
                 </div>
+              </div>
+              {/* Google reCAPTCHA */}
+              <div className="mt-3">
+                <ReCAPTCHA
+                  sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+                  onChange={(value) => setCaptchaValue(value)}
+                />
               </div>
               <button type="submit" className="btn btn-primary mt-4">Get in Touch</button>
             </form>
