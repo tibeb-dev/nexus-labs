@@ -21,7 +21,7 @@ const ContactForm = () => {
       console.log("Email sent successfully!", response);
       toast.success(
         <div className="flex items-center gap-2">
-          <AiOutlineCheckCircle className="text-green-500 text-xl" />
+          {/* <AiOutlineCheckCircle className="text-green-500 text-xl" /> */}
           Message sent successfully!
         </div>
       );
