@@ -85,7 +85,7 @@ const ContactForm = () => {
                   onChange={(value) => setCaptchaValue(value)}
                 />
               </div>
-              <button type="submit" className="btn btn-primary mt-4">Get in Touch</button>
+              <button type="submit" className="btn btn-primary mt-4" disabled={!captchaValue}>Get in Touch</button>
             </form>
           </div>
           <div className="col-lg-5 col-md-10">
