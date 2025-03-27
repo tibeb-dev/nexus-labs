@@ -1,7 +1,7 @@
 import Link from "next/link";
 import HeroTitle from "../common/HeroTitle";
 import React, { useEffect, useState } from "react";
-import Lottie from "lottie-react";
+import LottieWrapper from '@components/common/LottieWrapper';
 
 const HeroSectionSeven = () => {
   const [animationData, setAnimationData] = useState(null);
@@ -91,7 +91,7 @@ useEffect(() => {
             <div className="hero-img position-relative circle-shape-images">
               {/* Replace the image with Lottie Animation */}
               <div className="position-relative z-5">
-                <Lottie animationData={animationData} loop={true} className="img-fluid" />
+                <LottieWrapper animationData={animationData} />
               </div>
             </div>
           </div>
