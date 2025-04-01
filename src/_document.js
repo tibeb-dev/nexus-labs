@@ -2,7 +2,7 @@ import Document, { Html, Head, Main, NextScript } from "next/document";
 
 const APP_NAME = "Nexus | SaaS & Software Solutions";
 const APP_DESCRIPTION =
-  "Nexus delivers specialized technology services, including custom software development, cloud solutions, and enterprise IT services. Our expert team leverages cutting-edge technologies to enhance business efficiency and scalability.";
+  "Nexus Technology: Expert Software, Web, and App Development Outsourcing from Ethiopia for Global Clients.";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
