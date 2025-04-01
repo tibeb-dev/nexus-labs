@@ -1,10 +1,40 @@
-/* .container {
-  max-width: 1640px
-}
-.main-menu li a.nav-link {
+ /* .container {
+  max-width: 1540px
+} */
+/* .main-menu li a.nav-link {
   padding: 0.85rem 1rem;
   font-size: 1.075rem;
   font-weight: 500;
   position: relative;
   font-family: "Poppins", sans-serif;
+} */
+.container {
+  max-width: 1420px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* @media (max-width: 1440px) {
+  .container {
+    max-width: 1300px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width:700px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    max-width: 90%;
+    padding: 0 15px;
+  }
 } */
