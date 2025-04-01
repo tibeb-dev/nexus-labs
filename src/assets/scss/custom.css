@@ -9,32 +9,32 @@
   font-family: "Poppins", sans-serif;
 } */
 .container {
-  max-width: 1420px;
+  max-width: 1450px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-/* @media (max-width: 1440px) {
+@media (max-width: 1440px) {
   .container {
-    max-width: 1300px;
+    max-width: 1300px !important;
   }
 }
 
 @media (max-width: 1024px) {
   .container {
-    max-width:700px;
+    max-width:700px !important;
   }
 }
 
 @media (max-width: 768px) {
   .container {
-    max-width: 600px;
+    max-width: 600px !important;
   }
 }
 
 @media (max-width: 640px) {
   .container {
-    max-width: 90%;
+    max-width: 90% !important;
     padding: 0 15px;
   }
-} */
+}
