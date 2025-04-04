@@ -14,7 +14,7 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
           {/* Favicon */}
-          <link rel="icon" href="/logo-nexuss.png" />
+          <link rel="icon" href="/logo/1.jpg"/>
 
           {/* Google Fonts */}
           <link

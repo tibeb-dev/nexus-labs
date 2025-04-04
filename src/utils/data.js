@@ -213,18 +213,18 @@ const footerAddress = [
 ];
 const footerContact = [
   {
-    title: "Tel",
+    title: "+251916830759",
     href: "tel:+251916830759",
   },
   {
-    title: "Email",
+    title: "info@nexustechnologyet.com",
     href: "mailto:info@nexustechnologyet.com",
   },
   {
-    title: "Whatsapp",
-    href: "https://wa.me/+251916830759",
+    title: "LinkedIn",
+    href: "https://www.linkedin.com/company/nexus-ethiopia-tech/",
     target: "_blank"
-  }
+  },
 ];
 
 //navbar data
