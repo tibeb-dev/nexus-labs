@@ -203,13 +203,13 @@ const footerPrimaryPages = [
 
 const footerAddress = [
   {
-    title: "Yerer Bole",
-    href: "",
+    title: "Yerer Bole, Addis Ababa, Ethiopia",
+    href: "https://maps.app.goo.gl/6gUmk8WGGQDyBjAo6",
   },
-  {
-    title: "Addis Ababa, Ethiopia",
-    href: "",
-  }
+  // {
+  //   title: "Addis Ababa, Ethiopia",
+  //   href: "",
+  // }
 ];
 const footerContact = [
   {
