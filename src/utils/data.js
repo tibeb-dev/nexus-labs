@@ -205,6 +205,7 @@ const footerAddress = [
   {
     title: "Yerer Bole, Addis Ababa, Ethiopia",
     href: "https://maps.app.goo.gl/6gUmk8WGGQDyBjAo6",
+    target: "_blank"
   },
   // {
   //   title: "Addis Ababa, Ethiopia",
