@@ -4,13 +4,14 @@ import {
   BsFillEnvelopeFill,
   BsTelephoneInbound,
 } from 'react-icons/bs';
+import { FaMapMarkerAlt } from 'react-icons/fa';
 
 const ContactCard = () => {
   return (
     <section className="contact-promo ptb-120">
       <div className="container">
         <div className="row justify-content-center">
-          <div className="col-lg-4 col-md-6 mt-4 mt-lg-0">
+          <div className="col-lg-3 col-md-6 mt-4 mt-lg-0">
             <div className="contact-us-promo p-5 bg-white rounded-custom custom-shadow text-center d-flex flex-column h-100">
               <span className="fad fa-3x text-primary">
                 <BsFillChatSquareTextFill />
@@ -31,7 +32,7 @@ const ContactCard = () => {
               </a>
             </div>
           </div>
-          <div className="col-lg-4 col-md-6 mt-4 mt-lg-0">
+          <div className="col-lg-3 col-md-6 mt-4 mt-lg-0">
             <div className="contact-us-promo p-5 bg-white rounded-custom custom-shadow text-center d-flex flex-column h-100">
               <span className="fad fa-3x text-primary">
                 <BsFillEnvelopeFill />
@@ -52,7 +53,7 @@ const ContactCard = () => {
               </a>
             </div>
           </div>
-          <div className="col-lg-4 col-md-6 mt-4 mt-lg-0">
+          <div className="col-lg-3 col-md-6 mt-4 mt-lg-0">
             <div className="contact-us-promo p-5 bg-white rounded-custom custom-shadow text-center d-flex flex-column h-100">
               <span className="fad fa-3x text-primary">
                 <BsTelephoneInbound />
@@ -66,6 +67,28 @@ const ContactCard = () => {
               </div>
               <a href="https://wa.me/+251909740768" target="_blank" className="btn btn-link mt-auto">
                 +251 909 74 07 68
+              </a>
+            </div>
+          </div>
+          <div className="col-lg-3 col-md-6 mt-4 mt-lg-0">
+            <div className="contact-us-promo p-5 bg-white rounded-custom custom-shadow text-center d-flex flex-column h-100">
+              <span className="fad fa-3x text-primary">
+                <FaMapMarkerAlt />
+              </span>
+              <div className="contact-promo-info mb-4">
+                <h5>Visit Us</h5>
+                <p>
+                  Come visit our office location{' '}
+                  <strong>Monday to Friday</strong>
+                </p>
+              </div>
+              <a
+                href="https://maps.app.goo.gl/ZqK1o7dtV6rVYRie6"
+                className="btn btn-link mt-auto"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View on Map
               </a>
             </div>
           </div>
