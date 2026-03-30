@@ -2,7 +2,7 @@ import ModernAgencyPortfolio from "@/components/portfolio/ModernAgencyPortfolio"
 import ModernAgencyAbout from "@/components/about/ModernAgencyAbout";
 import ModernAgencyAward from "@/components/award/ModernAgencyAward";
 import ModernAgencyBlog from "@/components/blog/ModernAgencyBlog";
-import ModernAgencyHero from "@/components/hero/ModernAgencyHero";
+import CreativeAgencyHero from "@/components/hero/CreativeAgencyHero";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 const page = () => {
     return (
         <main>
-            <ModernAgencyHero />
+            <CreativeAgencyHero />
             <ModernAgencyAbout />
             <ModernAgencyPortfolio />
             <ModernAgencyAward />

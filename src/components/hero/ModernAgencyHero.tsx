@@ -1,66 +1,112 @@
+"use client";
 import SmartLink from "../common/SmartLink";
 import { ButtonArrowIcon } from "@/svg";
+import { HeroStarIcon } from "@/svg/StarIcons";
 import Image from "next/image";
 
-// Magnetic Image Item
-const MagneticImage = ({
-    src,
+// Trust Badge Item
+const TrustBadge = ({
+    title,
+    subtitle,
+    icon,
     delay,
 }: {
-    src: string;
+    title: string;
+    subtitle: string;
+    icon: React.ReactNode;
     delay: number;
 }) => (
     <div
-        className="mp-hero-magnetic-item mb-20 tp_fade_anim"
+        className="mp-hero-magnetic-item mb-20 tp_fade_anim d-flex flex-column align-items-center justify-content-center text-center p-4"
+        style={{
+            width: "256px",
+            height: "196px",
+            border: "1px solid var(--tp-border-1)",
+            borderRadius: "16px",
+            background: "var(--tp-common-white)",
+            boxShadow: "0 10px 30px rgba(0,0,0,0.05)",
+            transition: "all 0.3s ease",
+            cursor: "pointer"
+        }}
+        onMouseEnter={(e) => {
+            e.currentTarget.style.transform = "translateY(-5px)";
+            e.currentTarget.style.boxShadow = "0 15px 40px rgba(0,0,0,0.08)";
+        }}
+        onMouseLeave={(e) => {
+            e.currentTarget.style.transform = "translateY(0)";
+            e.currentTarget.style.boxShadow = "0 10px 30px rgba(0,0,0,0.05)";
+        }}
         data-delay={`.${delay}`}
         data-fade-from="bottom"
         data-ease="bounce"
     >
-        <Image
-            width={256}
-            height={196}
-            decoding="async"
-            src={src}
-            className="mp-hero-magnetic-image"
-            alt="magnetic image"
-        />
+        <div style={{ marginBottom: "16px", color: "var(--tp-theme-primary)" }}>
+            {icon}
+        </div>
+        <h4 style={{ fontSize: "18px", marginBottom: "6px", fontWeight: 600 }}>{title}</h4>
+        <span style={{ fontSize: "13px", color: "var(--tp-grey-1)" }}>{subtitle}</span>
     </div>
 );
 
 const ModernAgencyHero = () => {
-    const magneticImages = [
-        "/assets/img/hero/mp/thumb.jpg",
-        "/assets/img/hero/mp/thumb-2.jpg",
-        "/assets/img/hero/mp/thumb-3.jpg",
-        "/assets/img/hero/mp/thumb-4.jpg",
+    const trustBadges = [
+        {
+            title: "SOC 2 Type II",
+            subtitle: "Security Verified",
+            icon: (
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    <path d="M9 12l2 2 4-4"></path>
+                </svg>
+            )
+        },
+        {
+            title: "GDPR Ready",
+            subtitle: "Data Privacy",
+            icon: (
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+            )
+        },
+        {
+            title: "ISO 27001",
+            subtitle: "Certified Systems",
+            icon: (
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="8" x2="12" y2="12"></line>
+                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                </svg>
+            )
+        },
+        {
+            title: "99.99% Uptime",
+            subtitle: "Enterprise Reliability",
+            icon: (
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                </svg>
+            )
+        }
     ];
 
     return (
         <div className="mp-hero-area mp-hero-spacing">
             <div className="container">
                 <div className="row align-items-center">
-                    {/* Awards / Logo */}
-                    <div className="col-xl-3">
-                        <div
-                            className="mp-hero-awards mb-30 p-relative d-inline-block tp_fade_anim"
-                            data-delay=".5"
-                            data-fade-from="bottom"
-                            data-ease="bounce"
-                        >
-                            <Image
-                                width={155}
-                                height={156}
-                                className="rotate-infinite"
-                                src="/assets/img/hero/mp/award-year.png"
-                                alt="award"
-                            />
-                            <Image
-                                width={31}
-                                height={15}
-                                className="mp-hero-w-logo"
-                                src="/assets/img/hero/mp/w.png"
-                                alt="logo"
-                            />
+                    {/* Hero Text */}
+                    <div className="col-xl-3 col-md-5">
+                        <div className="tp-hero-dec-wrap mb-30 tp_fade_anim" data-delay=".5">
+                            <p className="tp-hero-dec">
+                                <span className="tp-hero-shape">
+                                    <HeroStarIcon />
+                                </span>
+                                We build websites, apps &<br />
+                                campaigns that actually move the<br />
+                                needle for growing brands.
+                            </p>
                         </div>
                     </div>
 
@@ -101,11 +147,17 @@ const ModernAgencyHero = () => {
                                 </div>
                             </div>
 
-                            {/* Magnetic Images */}
+                            {/* Trust Badges */}
                             <div className="mp-hero-magnetic">
                                 <div className="mp-hero-magnetic-image-wrap d-flex flex-wrap flex-md-nowrap gap-3">
-                                    {magneticImages.map((src, idx) => (
-                                        <MagneticImage key={idx} src={src} delay={0.4 + idx * 0.1} />
+                                    {trustBadges.map((badge, idx) => (
+                                        <TrustBadge
+                                            key={idx}
+                                            title={badge.title}
+                                            subtitle={badge.subtitle}
+                                            icon={badge.icon}
+                                            delay={0.4 + idx * 0.1}
+                                        />
                                     ))}
                                 </div>
                             </div>

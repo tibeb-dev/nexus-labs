@@ -30,8 +30,7 @@ body.tp-magic-cursor #magic-cursor {
 	border-radius: 50%;
 	color: transparent;
 	justify-content: center;
-    mix-blend-mode: difference;
-	background-color: var(--tp-common-black);
+	background-color: var(--tp-theme-primary);
 }
 .cursor-bg-red{
 	#ball{
