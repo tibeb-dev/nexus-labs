@@ -16,7 +16,7 @@
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	background-color: var(--tp-common-black);
+	background-color: var(--tp-theme-primary);
 	border-radius: 50px;
 	&:hover{
 		color: var(--tp-common-white);
@@ -210,16 +210,16 @@
             >*:nth-child(1) {
                 transform: scale3d(1, 1, 1);
                 margin-inline-end: 0;
-                background: var(--tp-common-black);
+                background: var(--tp-theme-primary);
             }
             >*:nth-child(2) {
                 transform: scale3d(1, 1, 1);
-                background: var(--tp-common-black);
+                background: var(--tp-theme-primary);
             }
             >*:nth-child(3) {
                 transform: scale3d(0.5, 0.5, 1);
                 margin-inline-start: -52px;
-                background: var(--tp-common-black);
+                background: var(--tp-theme-primary);
             }
         }
         & .tp-btn-circle {
@@ -234,7 +234,7 @@
             gap: 10px;
             align-items: center;
             justify-content: center;
-            background-color: var(--tp-common-black);
+            background-color: var(--tp-theme-primary);
             color: var(--tp-common-white);
             & i{
                 transform: rotate(-45deg);

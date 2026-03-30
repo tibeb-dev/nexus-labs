@@ -12,12 +12,12 @@
         color: var(--tp-common-white);
     }
     & .tp-main-menu nav ul li a:hover {
-        background: var(--tp-common-white);
-        color: var(--tp-common-black);
+        background: var(--tp-theme-primary);
+        color: var(--tp-common-white);
     }
     & .tp-main-menu nav ul li:hover.has-dropdown > a {
-        background: var(--tp-common-white);
-        color: var(--tp-common-black);
+        background: var(--tp-theme-primary);
+        color: var(--tp-common-white);
     }
     & .tp-main-menu nav ul li .submenu {
         backdrop-filter: blur(40px);
@@ -151,8 +151,8 @@
         }
     }
     & .tp-btn {
-        background-color: var(--tp-common-white);
-        color: var(--tp-common-black);
+        background-color: var(--tp-theme-primary);
+        color: var(--tp-common-white);
     }
     & .tp-btn-grey {
         background: #1a1b1e;

@@ -61,10 +61,10 @@
                             &.active,
                             &:hover{
                                 color: var(--tp-common-white);
-                                background: var(--tp-common-black);
+                                background: var(--tp-theme-primary);
                             }
                             &:hover{
-                                background-color: var(--tp-common-black);
+                                background-color: var(--tp-theme-primary);
                             }
                         }
                     }

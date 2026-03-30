@@ -22,7 +22,7 @@
                         &.has-dropdown{
                             & > a{
                                 color: var(--tp-common-white);
-                                background: var(--tp-common-black);
+                                background: var(--tp-theme-primary);
                             }
                         }
                     }
@@ -36,7 +36,7 @@
                         border-radius: 29px;
                         line-height: 1;
                         &:hover{
-                            background: var(--tp-common-black);
+                            background: var(--tp-theme-primary);
                             color: var(--tp-common-white);
                         }
                     }
@@ -150,7 +150,7 @@
                 & > li{
                     margin-right: 4px;
                     & > a{
-                        background: var(--tp-common-black);
+                        background: var(--tp-theme-primary);
                         color: var(--tp-common-white);
                         padding: 8px 16px 8px 16px;
                     }

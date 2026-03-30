@@ -115,8 +115,8 @@
                     color: var(--tp-common-black);
                     border: 1px solid rgba(2, 11, 24, 0.10);
                     &:hover {
-                        background-color: var(--tp-common-black);
-                        border-color: var(--tp-common-black);
+                        background-color: var(--tp-theme-primary);
+                        border-color: var(--tp-theme-primary);
                         color: var(--tp-common-white);
                     }
                     & svg {
@@ -163,7 +163,7 @@
                         height: 1px;
                         content: '';
                         transition: .4s;
-                        background-color: #1e1e1e;
+                        background-color: var(--tp-theme-primary);
                     }
                     &:hover{
                         color: var(--tp-common-black);

@@ -8,7 +8,7 @@ const CreativeAgencyPortfolio = () => {
     const portfolio = portfolioData.slice(0, 4);
 
     return (
-        <div className="tp-portfolio-area pt-145 pb-60" style={{ backgroundColor: "#1e1e1e" }}>
+        <div className="tp-portfolio-area pt-145 pb-60" style={{ backgroundColor: "var(--tp-theme-primary)" }}>
             <div className="container">
                 <div className="row gx-50">
                     <div className="col-lg-9">
