@@ -26,8 +26,10 @@
             @include bgborder(currentColor, 0,100%);
             @include tp-transition(all .4s ease);
             background-size: 0 6px, 100% 6px;
+            color: #333a94;
             & a{
                 opacity: 1;
+                color: #333a94;
             }
             & .tp-service-icon{
                 opacity: 1;

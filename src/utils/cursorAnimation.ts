@@ -6,7 +6,7 @@ export default function cursorAnimation(): void {
     const body = document.body;
     if (!body.classList.contains("tp-magic-cursor") || body.classList.contains("is-mobile")) return;
 
-    
+
 
     // Wrap .tp-magnetic-item elements
     document.querySelectorAll<HTMLElement>(".tp-magnetic-item").forEach((item) => {
@@ -148,7 +148,7 @@ export default function cursorAnimation(): void {
                 height: ballHeight,
                 opacity: ballOpacity,
                 borderWidth: ballBorderWidth,
-                backgroundColor: "#000",
+                backgroundColor: "#1A1A1A",
             });
             const view = ball.querySelector<HTMLElement>(".ball-view");
             if (view) {

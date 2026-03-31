@@ -56,7 +56,7 @@ const ServiceArea = () => {
         });
     };
     return (
-        <div id="service" ref={containerRef} className="tp-service-area tp-panel-pin-area tp-bg-grey pt-145 pb-90">
+        <div id="service" ref={containerRef} className="tp-service-area tp-panel-pin-area tp-bg-white pt-145 pb-90">
             <div className="container">
                 <div className="row align-items-end">
                     <div className="col-xxl-11 col-xl-12">

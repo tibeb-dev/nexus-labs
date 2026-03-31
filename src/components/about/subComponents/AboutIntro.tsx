@@ -6,7 +6,7 @@ const AboutIntro = () => {
         <div className="tp-about-title-wrap mb-30">
             <h2 className="tp-section-title tp-text-perspective">
                 At cunnet, we don&apos;t just build websites or campaigns, we craft
-                purpose-driven digital journeys.
+                <span style={{ color: "var(--tp-theme-primary)" }}> purpose-driven digital journeys.</span>
                 <span className="tp-about-btn-transform d-inline-block ml-20">
                     <SmartLink className="tp-btn tp-ff-inter" href="/about-us">
                         <span>

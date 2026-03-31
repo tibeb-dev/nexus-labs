@@ -72,7 +72,7 @@ const CreativeAgencyFooter = () => {
                         <div className="row align-items-center">
                             <div className="col-xl-3 col-lg-5">
                                 <div className="tp-footer-copyright-wrap mb-20">
-                                    <span className="tp-footer-copyright">Powered by ThemePure</span>
+                                    <span className="tp-footer-copyright">Powered by <span style={{ color: "var(--tp-theme-primary)" }}>ThemePure</span></span>
                                 </div>
                             </div>
                             <div className="col-xl-6 col-lg-7">

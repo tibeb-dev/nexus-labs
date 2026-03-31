@@ -1,23 +1,18 @@
 $colors: (
-    'common': (
-        'white': #FFFFFF,
+    'common': ('white': #FFFFFF,
         'black': #1e1e1e,
         'bubbles': #e1eeb7,
     ),
-    'grey': (
-        '1':#5e5959,
+    'grey': ('1':#5e5959,
         '2':#f3f3f3,
         '3':#b6bcc6,
         '4':#f6f6f6,
         '5':#d7cdcd,
     ),
-    'border': (
-        '1': rgba(30, 30, 30, 0.1),
+    'border': ('1': rgba(30, 30, 30, 0.1),
     ),
-    'theme': (
-        'primary': #00008B ,
+    'theme': ('primary': #333a94,
     ),
-    'gradient':(
-        'primary': linear-gradient(90deg, #00008B  0%, #4169E1 100%),
+    'gradient':('primary': linear-gradient(90deg, #333a94 0%, #4169E1 100%),
     ),
 );

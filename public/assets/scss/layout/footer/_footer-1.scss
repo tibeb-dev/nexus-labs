@@ -76,6 +76,9 @@
         @media #{$xs}{
             font-size: 52px;
         }
+        & a {
+            color: var(--tp-theme-primary);
+        }
     }
     &-copyright{
         font-weight: 500;

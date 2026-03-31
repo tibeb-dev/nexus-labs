@@ -2,6 +2,7 @@
 import SmartLink from "../common/SmartLink";
 import { ButtonArrowIcon } from "@/svg";
 import { HeroStarIcon } from "@/svg/StarIcons";
+import { color } from "framer-motion";
 import Image from "next/image";
 
 // Trust Badge Item
@@ -116,7 +117,7 @@ const ModernAgencyHero = () => {
                             <h2 className="mp-hero-title tp-ff-inter mb-40 tp-char-animation">
                                 The perfect place
                                 <br />
-                                for your masterpiece
+                                for your <span style={{ color: "var(--tp-theme-primary)" }}>masterpiece</span>
                             </h2>
 
                             {/* Hero Buttons */}
@@ -174,7 +175,7 @@ const ModernAgencyHero = () => {
                             data-fade-from="bottom"
                             data-ease="bounce"
                         >
-                            <h2 className="mp-hero-bigtitle tp-ff-sequel-semi-bold">
+                            <h2 className="mp-hero-bigtitle tp-ff-sequel-semi-bold" style={{ color: "var(--tp-theme-primary)" }}>
                                 Cunnet
                             </h2>
                         </div>

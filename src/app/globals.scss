@@ -13,7 +13,7 @@
 
 .cunnet-dark {
     /* Dark Override */
-    --color-bg-section: #00008B;
+    --color-bg-section: #333a94;
     --color-bg-hero: #0E0F11;
 }
 
@@ -21,6 +21,7 @@
 .tp-section-bg {
     background-color: var(--color-bg-section);
 }
+
 /* reusable class for hero background */
 .tp-hero-bg {
     background-color: var(--color-bg-hero);
@@ -32,19 +33,22 @@
     width: auto;
     object-fit: contain;
 }
+
 .port-img img {
     height: 100%;
     width: auto;
     object-fit: contain;
 }
+
 .z-index-high {
     z-index: 99 !important;
 }
 
-.form-error{
+.form-error {
     font-size: 12px;
     color: red;
 }
+
 //product reviews rating style
 .tp-product-details-review-form-rating-icon i {
     font-size: 16px;
@@ -100,12 +104,13 @@
     transform: scale(1.2);
 }
 
-.tp-slider-transtion{
-    & .swiper-wrapper{
+.tp-slider-transtion {
+    & .swiper-wrapper {
         -webkit-transition-timing-function: linear;
         transition-timing-function: linear;
     }
-    & .swiper-slide{
+
+    & .swiper-slide {
         width: auto;
     }
 }

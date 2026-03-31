@@ -8,6 +8,8 @@ import { PageHeaderProps } from "@/types/header-dt";
 import useGlobalContext from "@/hooks/useContext";
 import { SearchIcon } from "@/svg/SearchIcons";
 import Image from "next/image";
+import SmartLink from "@/components/common/SmartLink";
+import { ButtonArrowIcon } from "@/svg";
 
 
 const PageHeader = ({ hideMainMenu = false, sideColumnClass = "col-xl-3 col-6", useSecondaryMenu = false,
@@ -54,32 +56,23 @@ const PageHeader = ({ hideMainMenu = false, sideColumnClass = "col-xl-3 col-6", 
                             {/* Actions */}
                             <div className={sideColumnClass}>
                                 <div className="tp-header-right d-flex justify-content-end align-items-center">
-                                    <button onClick={toggleSearch}
-                                        className="tp-header-search-btn tp-search-click"
-                                    >
-                                        <SearchIcon />
-                                    </button>
-
-                                    <button
-                                        onClick={handleMenuToggle}
-                                        className="tp-menu-bar tp-header-sidebar-btn ml-10"
-                                    >
-                                        <span />
-                                        <span />
-                                    </button>
+                                    <SmartLink className="tp-btn" href="/contact-us">
+                                        <span>
+                                            <span className="text-1">Book Appointment</span>
+                                            <span className="text-2">Book Appointment</span>
+                                        </span>
+                                        <i>
+                                            <ButtonArrowIcon />
+                                            <ButtonArrowIcon />
+                                        </i>
+                                    </SmartLink>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 {/* -- header area end -- */}
-
-                {/* -- sticky-menu-area -- */}
-                <button onClick={toggleSecondaryOffcanvas} id="header-sticky" className={`hamburger-open-btn tp-header-sidebar-btn hamburger-sticky-menu ${isSticky ? "header-sticky" : ""}`}>
-                    <span></span>
-                    <span></span>
-                </button>
-                {/* -- sticky-menu-end -- */}
+                {/* -- header area end -- */}
             </header>
 
             {/* ---------------- Offcanvas Panels ---------------- */}
