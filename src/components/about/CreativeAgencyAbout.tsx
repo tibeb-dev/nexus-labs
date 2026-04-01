@@ -14,6 +14,7 @@ const features = [
             "We craft digital experiences uniquely aligned with your brand goals and audience needs.",
         image: "/assets/img/about/thumb-2.jpg",
     },
+    
 ];
 
 const CreativeAgencyAbout = () => {

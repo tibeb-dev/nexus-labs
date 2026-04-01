@@ -4,31 +4,31 @@ import { serviceDT } from "@/types/service-dt";
 const servicesData: serviceDT[] = [
     {
         id: 1,
-        title: "Branding",
+        title: "UI/UX Design",
         image: "/assets/img/service/service.jpg",
         description: "Creating a unique brand identity that stands out and connects with your audience.",
     },
     {
         id: 2,
-        title: "Infodesign",
+        title: "Web Development",
         image: "/assets/img/service/service-2.jpg",
         description: "Designing clear and engaging visual information for easy understanding and impact.",
     },
     {
         id: 3,
-        title: "Digital",
+        title: "Mobile App Development",
         image: "/assets/img/service/service-3.jpg",
         description: "Delivering innovative digital solutions to grow your online presence effectively.",
     },
     {
         id: 4,
-        title: "Editorial",
+        title: "AI SaaS Development",
         image: "/assets/img/service/service-4.jpg",
         description: "Crafting compelling editorial layouts that communicate your story visually.",
     },
     {
         id: 5,
-        title: "Raum",
+        title: "Business Automation",
         image: "/assets/img/service/service-4.jpg",
         description: "Designing immersive spatial experiences that blend aesthetics and functionality.",
     },

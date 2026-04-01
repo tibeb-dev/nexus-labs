@@ -4,26 +4,26 @@ const portfolioData: portfolioDT[] = [
     //Home Creative Agency Portfolio data start
     {
         id: 1,
-        title: "Mirela Vienna",
-        subtitle: "Branding 2019",
+        title: "Facts.ly",
+        subtitle: "AI Fact Checking Platform 2025",
         image: "/assets/img/portfolio/portfolio.jpg"
     },
     {
         id: 2,
-        title: "Dorma Tokyo",
-        subtitle: "Branding 2019",
+        title: "GiftXD",
+        subtitle: "Full-Stack Development 2023",
         image: "/assets/img/portfolio/portfolio-2.jpg"
     },
     {
         id: 3,
-        title: "Dorma Tokyo",
-        subtitle: "Branding 2019",
+        title: "AiDocBuilder",
+        subtitle: "AI Document Automation 2026",
         image: "/assets/img/portfolio/portfolio-3.jpg"
     },
     {
         id: 4,
-        title: "Luneth Prague",
-        subtitle: "Branding 2019",
+        title: "Mangrove Technology",
+        subtitle: "Fintech Platform 2025",
         image: "/assets/img/portfolio/portfolio-4.jpg"
     },
     //Home Creative Agency Portfolio data end
@@ -236,37 +236,37 @@ const portfolioData: portfolioDT[] = [
     //portfolio skew slider data start
     {
         id: 33,
-        image: "/assets/img/portfolio/skew/skew-1.jpg",
+        image: "/assets/img/portfolio/creative/cr-slider-1.jpg",
         title: 'Digital platform',
         tags: ['simple', 'logistics'],
     },
     {
         id: 34,
-        image: "/assets/img/portfolio/skew/skew-2.jpg",
+        image: "/assets/img/portfolio/creative/cr-slider-6.jpg",
         title: 'Digital platform',
         tags: ['Smart', 'platform']
     },
     {
         id: 35,
-        image: "/assets/img/portfolio/skew/skew-3.jpg",
+        image: "/assets/img/portfolio/creative/cr-slider-8.jpg",
         title: 'Digital platform',
         tags: ['Royal', 'Benz']
     },
     {
         id: 36,
-        image: "/assets/img/portfolio/skew/skew-4.jpg",
+        image: "/assets/img/portfolio/creative/cr-slider-9.jpg",
         title: 'Digital platform',
         tags: ['World\'s', 'Relays']
     },
     {
         id: 37,
-        image: "/assets/img/portfolio/skew/skew-5.jpg",
+        image: "/assets/img/portfolio/creative/cr-slider-1.jpg",
         title: 'Digital platform',
         tags: ['Bright', 'Captive']
     },
     {
         id: 38,
-        image: "/assets/img/portfolio/skew/skew-6.jpg",
+        image: "/assets/img/portfolio/creative/cr-slider-8.jpg",
         title: 'Interactive Mind',
         tags: ['Bright', 'Mind']
     },
@@ -306,9 +306,9 @@ const portfolioData: portfolioDT[] = [
     //portfolio page main portfolio data start
     {
         id: 44,
-        title: "Times One Hundred",
+        title: "Facts.ly",
         image: "/assets/img/portfolio/portfolio-col-2/portfolio.jpg",
-        tags: ["Branding", "Web Design", "Web development"],
+        tags: ["AI", "Full Stack Development", "Automation"],
         filterCategory: ["design", "web"],
     },
     {
@@ -351,9 +351,9 @@ const portfolioData: portfolioDT[] = [
     //portfolio page two main portfolo data start
     {
         id: 50,
-        title: "Times One Hundred",
+        title: "Facts.ly",
         image: "/assets/img/portfolio/portfolio-col-3/portfolio.jpg",
-        tags: ["Branding", "Web Design"],
+        tags: ["Web development", "AI"],
         filterCategory: ["design", "web"],
     },
     {

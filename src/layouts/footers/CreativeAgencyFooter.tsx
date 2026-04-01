@@ -46,10 +46,10 @@ const CreativeAgencyFooter = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-xxl-4 col-xl-5 offset-xxl-5 offset-xl-3 col-lg-6">
-                                <div className="tp-footer-widget ml-40 mb-30 tp_fade_anim" data-delay=".5">
+                            <div className="col-xxl-4 col-xl-5 offset-xxl-4 offset-xl-2 col-lg-6">
+                                <div className="tp-footer-widget ml-32 mb-30 tp_fade_anim" data-delay=".5">
                                     <span className="tp-footer-dec">Searching for exceptional talents?</span>
-                                    <h4 className="tp-footer-email tp-ff-sequel-roman"><Link href="mailto:cunnet@gmail.com">cunnet@gmail.com</Link></h4>
+                                    <h4 className="tp-footer-email tp-ff-sequel-roman"><Link href="mailto:info@nexustechnologyet.com">info@nexustechnologyet.com</Link></h4>
                                 </div>
                             </div>
                         </div>

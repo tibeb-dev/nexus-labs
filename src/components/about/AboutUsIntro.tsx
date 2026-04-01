@@ -34,7 +34,7 @@ const AboutUsIntro = () => {
                     <div className="col-xxl-10 col-xl-12">
                         <div className="tp-about-title-wrap mb-30">
                             <h2 className="tp-section-title reveal-text">
-                                At Cunnet,we don&apos;t just build website<br/>or campaigns we craft purpose-driven<br/>digital journeys.
+                                At Cunnet,we don&apos;t just build website<br/>or apps we design purpose-driven<br/>digital journeys.
                             </h2>
                         </div>
                     </div>

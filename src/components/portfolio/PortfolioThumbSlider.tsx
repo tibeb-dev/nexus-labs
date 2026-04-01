@@ -14,7 +14,7 @@ const PortfolioThumbSliderMain: React.FC = () => {
                 <div className="tp-portfolio-slider__copyright d-none d-lg-block">
                     <p>
                         Have a project in mind?{' '}
-                        <Link href="#">
+                        <Link href="/contact-me">
                             Let&apos;s Talk.
                         </Link>
                     </p>
@@ -22,7 +22,7 @@ const PortfolioThumbSliderMain: React.FC = () => {
 
                 <div className="tp-portfolio-slider__mail d-none d-sm-block">
                     <Link href="mailto:agntix@gmail.com">
-                        agntix@gmail.com
+                        info@gmail.com
                     </Link>
                 </div>
 

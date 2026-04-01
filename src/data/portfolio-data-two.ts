@@ -37,7 +37,7 @@ export const portfolioThumbSliderItems: PortfolioItem[] = [
     },
     {
         id: 5,
-        image: "/assets/img/portfolio/creative/cr-slider-10.jpg",
+        image: "/assets/img/portfolio/creative/cr-slider-1.jpg",
         smallImage: "/assets/img/portfolio/creative/cr-slider-10.jpg",
         name: 'Mia Tobez',
         link: '/portfolio-details-image-comparison'

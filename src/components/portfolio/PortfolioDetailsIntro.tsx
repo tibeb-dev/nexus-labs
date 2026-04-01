@@ -20,32 +20,33 @@ const PortfolioDetailsIntro = ({ id }: IdProps) => {
                             <div className="col-lg-3 col-md-6 col-sm-6">
                                 <div className="tp-pd-2-bottom-item mb-20">
                                     <span>Role</span>
-                                    <h6>Envato Market</h6>
+                                    <h6>Full Stack and AI Automation Development</h6>
+                                </div>
+                            </div>
+                            <div className="col-lg-3 col-md-6 col-sm-6">
+                                <div className="tp-pd-2-bottom-item mb-20">
+                                    <span>Industry</span>
+                                    <h6>AI-Powered Knowledge Platform
+                                    </h6>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-6 col-sm-6">
                                 <div className="tp-pd-2-bottom-item mb-20">
                                     <span>Duration</span>
-                                    <h6>UX, UI Design, Development</h6>
+                                    <h6>8 to 10 Weeks</h6>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-6 col-sm-6">
                                 <div className="tp-pd-2-bottom-item mb-20">
-                                    <span>Duration</span>
-                                    <h6>8 March 2025</h6>
-                                </div>
-                            </div>
-                            <div className="col-lg-3 col-md-6 col-sm-6">
-                                <div className="tp-pd-2-bottom-item mb-20">
-                                    <span>Designer</span>
-                                    <h6>ThemePure</h6>
+                                    <span>Team</span>
+                                    <h6>Nexus Technology</h6>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="col-xl-2">
                         <div className="text-xl-end">
-                            <SmartLink className="tp-btn tp-btn-border" href="/about-us">
+                            <SmartLink className="tp-btn tp-btn-border" href="sharethetruth.app">
                                 <span>
                                     <span className="text-1">Visit Site</span>
                                     <span className="text-2">Visit Site</span>

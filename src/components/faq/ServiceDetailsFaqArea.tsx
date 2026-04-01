@@ -44,7 +44,7 @@ const ServiceDetailsFaqArea = () => {
                             <h2 className="tp-section-title reveal-text fs-72 mb-30">
                                 At cunnet, we don’t just
                                 <br />
-                                build website or campaigns
+                                build website or app
                                 <br />
                                 we craft purpose.
                             </h2>

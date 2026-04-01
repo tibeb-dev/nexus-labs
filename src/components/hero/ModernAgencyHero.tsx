@@ -104,9 +104,9 @@ const ModernAgencyHero = () => {
                                 <span className="tp-hero-shape">
                                     <HeroStarIcon />
                                 </span>
-                                We build websites, apps &<br />
-                                campaigns that actually move the<br />
-                                needle for growing brands.
+                                We build websites, apps & intelligent<br />
+                                 automation systems that help businesses<br />
+                                 operate smarter and grow faster.
                             </p>
                         </div>
                     </div>
@@ -115,9 +115,9 @@ const ModernAgencyHero = () => {
                     <div className="col-xl-9">
                         <div className="mp-hero-content ml-75">
                             <h2 className="mp-hero-title tp-ff-inter mb-40 tp-char-animation">
-                                The perfect place
+                                Building scalable
                                 <br />
-                                for your <span style={{ color: "var(--tp-theme-primary)" }}>masterpiece</span>
+                                <span style={{ color: "var(--tp-theme-primary)" }}> software and AI-powered systems </span>for modern businesses
                             </h2>
 
                             {/* Hero Buttons */}
@@ -135,7 +135,7 @@ const ModernAgencyHero = () => {
                                     </SmartLink>
                                 </div>
                                 <div className="tp_fade_anim" data-delay=".6" data-fade-from="bottom" data-ease="bounce">
-                                    <SmartLink className="tp-btn tp-btn-grey mb-10" href="/about-me">
+                                    <SmartLink className="tp-btn mb-10" href="/about-me">
                                         <span>
                                             <span className="text-1">Contact Me</span>
                                             <span className="text-2">Contact Me</span>
@@ -176,7 +176,7 @@ const ModernAgencyHero = () => {
                             data-ease="bounce"
                         >
                             <h2 className="mp-hero-bigtitle tp-ff-sequel-semi-bold" style={{ color: "var(--tp-theme-primary)" }}>
-                                Cunnet
+                                Nexus
                             </h2>
                         </div>
                     </div>

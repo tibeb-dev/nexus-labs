@@ -62,7 +62,7 @@ const ServiceArea = () => {
                     <div className="col-xxl-11 col-xl-12">
                         <div className="tp-about-title-wrap mb-30">
                             <h2 className="tp-section-title reveal-text">At cunnet, we don&apos;t just build website<br />
-                                or campaigns we craft purpose-driven
+                                or app we craft purpose-driven
                                 digital journeys.
                             </h2>
                         </div>
