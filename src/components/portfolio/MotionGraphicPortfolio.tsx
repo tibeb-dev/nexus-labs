@@ -3,7 +3,7 @@ import portfolioData from "@/data/portfolio-data";
 import { ArrowIconFive } from "@/svg/ArrowIcons";
 import SmartLink from "../common/SmartLink";
 
-const MotionGraphicPortfolio = () => {
+const MotionGraphicPortfolio = ({ theme }: { theme?: "dark" | "light" }) => {
     //display portfolio item
     const displayPortfolio = portfolioData.slice(24, 27);
 
@@ -14,12 +14,12 @@ const MotionGraphicPortfolio = () => {
                     {/* Left Content */}
                     <div className="col-lg-5">
                         <div className="mg-portfolio-title-wrap mg-portfolio-pin mb-30">
-                            <h2 className="ca-section-title fs-100 lh-1 mb-30 reveal-text">
+                            <h2 className={`ca-section-title fs-100 lh-1 mb-30 reveal-text ${theme === "dark" ? "text-white" : ""}`}>
                                 Featured projects
                             </h2>
 
                             <div className="tp_fade_anim" data-delay=".3">
-                                <p className="mg-portfolio-dec mb-50">
+                                <p className={`mg-portfolio-dec mb-50 ${theme === "dark" ? "text-white" : ""}`}>
                                     Welcome to Cunnet — where design innovation converges with
                                     <br />
                                     cutting-edge technology to bring your brand&apos;s essence to life
@@ -39,7 +39,7 @@ const MotionGraphicPortfolio = () => {
                                     <ArrowIconFive />
                                 </SmartLink>
 
-                                <SmartLink className="tp-btn z-index-1" href="/portfolio">
+                                <SmartLink className={`tp-btn z-index-1 ${theme === "dark" ? "tp-btn-white-border" : ""}`} href="/portfolio">
                                     See all portfolio
                                 </SmartLink>
 
@@ -54,7 +54,7 @@ const MotionGraphicPortfolio = () => {
                     <div className="col-lg-7">
                         <div className="mg-portfolio-item-wrap ml-130 mb-40">
                             {displayPortfolio.map((item) => (
-                                <MotionGraphicPortItem key={item.id} item={item} />
+                                <MotionGraphicPortItem key={item.id} item={item} theme={theme} />
                             ))}
                         </div>
                     </div>

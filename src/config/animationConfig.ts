@@ -5,7 +5,7 @@ import { AboutThumbAnimation, AwardAnimation, charAnimation, heroMagneticAnimati
 
 export const animationConfig: Record<string, (() => void)[]> = {
     //Light page animation
-    "/creative-agency": [titleMiddleAnimetion, textPerspectiveAnim, servicePanelPinAnim, textScaleHoverAnim, heroScaleGallery],
+    "/creative-agency": [titleMiddleAnimetion, textPerspectiveAnim, servicePanelPinAnim, textScaleHoverAnim, heroScaleGallery, panelPinAnimation],
     "/digital-studio": [tpHoverWebGL, portfolioTextZoomAnim, textScaleHoverAnim, milScaleAnimation],
     "/modern-agency": [charAnimation, heroMagneticAnimation, jumpTextAnimation, AboutThumbAnimation, AwardAnimation, tpHoverWebGL, textScaleHoverAnim],
     "/personal-portfolio": [tpHoverWebGL, textScaleHoverAnim, charAnimation],
@@ -22,7 +22,7 @@ export const animationConfig: Record<string, (() => void)[]> = {
     "/blog": [tpHoverWebGL],
 
     //Dark page animation
-    "/dark/creative-agency": [titleMiddleAnimetion, textPerspectiveAnim, servicePanelPinAnim, textScaleHoverAnim, heroScaleGallery],
+    "/dark/creative-agency": [titleMiddleAnimetion, textPerspectiveAnim, servicePanelPinAnim, textScaleHoverAnim, heroScaleGallery, panelPinAnimation],
     "/dark/digital-studio": [tpHoverWebGL, portfolioTextZoomAnim, textScaleHoverAnim, milScaleAnimation],
     "/dark/modern-agency": [charAnimation, heroMagneticAnimation, jumpTextAnimation, AboutThumbAnimation, AwardAnimation, tpHoverWebGL, textScaleHoverAnim],
     "/dark/personal-portfolio": [tpHoverWebGL, textScaleHoverAnim, charAnimation],

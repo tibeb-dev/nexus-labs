@@ -5,6 +5,7 @@ import ModernAgencyHero from "@/components/hero/ModernAgencyHero";
 import ModernAgencyPortfolio from "@/components/portfolio/ModernAgencyPortfolio";
 import ShopAgencyTestimonial from "@/components/testimonial/ShopAgencyTestimonial";
 import DigitalStudioFaqArea from "@/components/faq/DigitalStudioFaqArea";
+import MotionGraphicPortfolio from "@/components/portfolio/MotionGraphicPortfolio";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -18,7 +19,10 @@ const page = () => {
             <CreativeAgencyAbout />
             <CreativeAgencyService />
             {/* <ModernAgencyPortfolio /> */}
-            <CreativeAgencyPortfolio />
+            {/* <CreativeAgencyPortfolio /> */}
+            <div style={{ backgroundColor: "var(--tp-theme-primary)" }}>
+                <MotionGraphicPortfolio theme="dark" />
+            </div>
             <ShopAgencyTestimonial />
             <DigitalStudioFaqArea />
         </main>

@@ -8,7 +8,7 @@ import Image from "next/image";
 
 const ShopAgencyTestimonial = () => {
     return (
-        <div className="shop-testimonial-area pb-100">
+        <div className="shop-testimonial-area pt-145 pb-100">
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-xl-10">

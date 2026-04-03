@@ -4,20 +4,21 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 interface portfolioPropsDT {
-    item: portfolioDT
+    item: portfolioDT;
+    theme?: "dark" | "light";
 }
 
-const PortfolioTags = ({ tags }: { tags: string[] }) => (
+const PortfolioTags = ({ tags, theme }: { tags: string[], theme?: "dark" | "light" }) => (
     <ul>
         {tags.map((tag, index) => (
             <li key={index}>
-                <Link href="#">{tag}</Link>
+                <Link href="#" className={theme === "dark" ? "text-white" : ""}>{tag}</Link>
             </li>
         ))}
     </ul>
 );
 
-const MotionGraphicPortItem: React.FC<portfolioPropsDT> = ({ item }) => {
+const MotionGraphicPortItem: React.FC<portfolioPropsDT> = ({ item, theme }) => {
     return (
         <div className="mg-portfolio-item anim-zoomin-wrap mb-55">
             <div
@@ -30,14 +31,14 @@ const MotionGraphicPortItem: React.FC<portfolioPropsDT> = ({ item }) => {
             </div>
 
             <div className="mg-portfolio-content cs-portfolio-content d-flex align-items-center flex-wrap justify-content-between">
-                <h3 className="cs-portfolio-title tp-title-anim fix mr-20 tp-ff-sequel-semi-bold">
-                    <SmartLink href={`/portfolio-details/${item.id}`} className="tp-title-text">
+                <h3 className={`cs-portfolio-title tp-title-anim fix mr-20 tp-ff-sequel-semi-bold ${theme === "dark" ? "text-white" : ""}`}>
+                    <SmartLink href={`/portfolio-details/${item.id}`} className={`tp-title-text ${theme === "dark" ? "text-white" : ""}`}>
                         {item.title}
                     </SmartLink>
                 </h3>
 
                 <div className="cs-portfolio-tag">
-                    <PortfolioTags tags={item.tags ?? []} />
+                    <PortfolioTags tags={item.tags ?? []} theme={theme} />
                 </div>
             </div>
         </div>
