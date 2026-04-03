@@ -51,14 +51,14 @@ $font-family: (
     'ff': (
         'body': "'Inter', sans-serif",
         'inter': "'Inter', sans-serif",
-        'heading': "'Sequel Sans Medium Head', sans-serif",
+        'heading': "var(--font-montserrat), 'Montserrat', sans-serif",
         'p': "'Inter', sans-serif",
         'jost': "'Jost', sans-serif",
-        'sequel-medium': "'Sequel Sans Medium Head', sans-serif",
-        'sequel-roman': "'Sequel Sans Roman Head', sans-serif",
-        'sequel-bold-head': "'Sequel Sans Bold Head', sans-serif",
-        'sequel-semi-bold': "'Sequel Sans Semi Bold Head', sans-serif",
-        'sequel-heavy-disp': "'Sequel Sans Heavy Disp', sans-serif",
+        'sequel-medium': "var(--font-montserrat), 'Montserrat', sans-serif",
+        'sequel-roman': "var(--font-montserrat), 'Montserrat', sans-serif",
+        'sequel-bold-head': "var(--font-montserrat), 'Montserrat', sans-serif",
+        'sequel-semi-bold': "var(--font-montserrat), 'Montserrat', sans-serif",
+        'sequel-heavy-disp': "var(--font-montserrat), 'Montserrat', sans-serif",
         'fontawesome': '"Font Awesome 6 Pro"',
     )
 );

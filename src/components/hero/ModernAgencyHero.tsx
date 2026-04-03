@@ -119,7 +119,7 @@ const ModernAgencyHero = () => {
                             data-fade-from="bottom"
                             data-ease="bounce"
                         >
-                            <h2 className="mp-hero-bigtitle tp-ff-sequel-semi-bold" style={{ color: "var(--tp-theme-primary)", letterSpacing: "0.1em", textTransform: "uppercase" }}>
+                            <h2 className="mp-hero-bigtitle tp-ff-sequel-semi-bold" style={{ color: "var(--tp-theme-primary)", letterSpacing: "0.1em", textTransform: "uppercase", fontWeight: 900 }}>
                                 Nexus
                             </h2>
                         </div>
