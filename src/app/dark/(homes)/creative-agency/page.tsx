@@ -1,7 +1,7 @@
 import CreativeAgencyPortfolio from "@/components/portfolio/CreativeAgencyPortfolio";
 import CreativeAgencyService from "@/components/service/CreativeAgencyService";
 import CreativeAgencyAbout from "@/components/about/CreativeAgencyAbout";
-import CreativeAgencyHero from "@/components/hero/CreativeAgencyHero";
+import ModernAgencyHero from "@/components/hero/ModernAgencyHero";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 const page = () => {
     return (
         <main>
-            <CreativeAgencyHero />
+            <ModernAgencyHero />
             <CreativeAgencyAbout />
             <CreativeAgencyService />
             <CreativeAgencyPortfolio />

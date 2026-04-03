@@ -4,94 +4,28 @@ import { ButtonArrowIcon } from "@/svg";
 import { HeroStarIcon } from "@/svg/StarIcons";
 import { color } from "framer-motion";
 import Image from "next/image";
+import { brand_slider_params } from "@/constant/swiper";
+import { Autoplay, FreeMode } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import Link from "next/link";
 
-// Trust Badge Item
-const TrustBadge = ({
-    title,
-    subtitle,
-    icon,
-    delay,
-}: {
-    title: string;
-    subtitle: string;
-    icon: React.ReactNode;
-    delay: number;
-}) => (
-    <div
-        className="mp-hero-magnetic-item mb-20 tp_fade_anim d-flex flex-column align-items-center justify-content-center text-center p-4"
-        style={{
-            width: "256px",
-            height: "196px",
-            border: "1px solid var(--tp-border-1)",
-            borderRadius: "16px",
-            background: "var(--tp-common-white)",
-            boxShadow: "0 10px 30px rgba(0,0,0,0.05)",
-            transition: "all 0.3s ease",
-            cursor: "pointer"
-        }}
-        onMouseEnter={(e) => {
-            e.currentTarget.style.transform = "translateY(-5px)";
-            e.currentTarget.style.boxShadow = "0 15px 40px rgba(0,0,0,0.08)";
-        }}
-        onMouseLeave={(e) => {
-            e.currentTarget.style.transform = "translateY(0)";
-            e.currentTarget.style.boxShadow = "0 10px 30px rgba(0,0,0,0.05)";
-        }}
-        data-delay={`.${delay}`}
-        data-fade-from="bottom"
-        data-ease="bounce"
-    >
-        <div style={{ marginBottom: "16px", color: "var(--tp-theme-primary)" }}>
-            {icon}
-        </div>
-        <h4 style={{ fontSize: "18px", marginBottom: "6px", fontWeight: 600 }}>{title}</h4>
-        <span style={{ fontSize: "13px", color: "var(--tp-grey-1)" }}>{subtitle}</span>
-    </div>
-);
+const brandLogos = [
+    { img: "/assets/img/brand/logo.png", width: 128, height: 30 },
+    { img: "/assets/img/brand/logo-2.png", width: 75, height: 40 },
+    { img: "/assets/img/brand/logo-3.png", width: 94, height: 50 },
+    { img: "/assets/img/brand/logo-4.png", width: 128, height: 38 },
+    { img: "/assets/img/brand/logo-5.png", width: 84, height: 38 },
+    { img: "/assets/img/brand/logo-6.png", width: 125, height: 46 },
+    { img: "/assets/img/brand/logo.png", width: 128, height: 30 },
+    { img: "/assets/img/brand/logo-2.png", width: 75, height: 40 },
+    { img: "/assets/img/brand/logo-3.png", width: 94, height: 50 },
+    { img: "/assets/img/brand/logo-4.png", width: 128, height: 38 },
+    { img: "/assets/img/brand/logo-5.png", width: 84, height: 38 },
+    { img: "/assets/img/brand/logo-6.png", width: 125, height: 46 },
+];
+const repeatedLogos = [...brandLogos, ...brandLogos, ...brandLogos];
 
 const ModernAgencyHero = () => {
-    const trustBadges = [
-        {
-            title: "SOC 2 Type II",
-            subtitle: "Security Verified",
-            icon: (
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                    <path d="M9 12l2 2 4-4"></path>
-                </svg>
-            )
-        },
-        {
-            title: "GDPR Ready",
-            subtitle: "Data Privacy",
-            icon: (
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-                </svg>
-            )
-        },
-        {
-            title: "ISO 27001",
-            subtitle: "Certified Systems",
-            icon: (
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <line x1="12" y1="8" x2="12" y2="12"></line>
-                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
-                </svg>
-            )
-        },
-        {
-            title: "99.99% Uptime",
-            subtitle: "Enterprise Reliability",
-            icon: (
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                </svg>
-            )
-        }
-    ];
 
     return (
         <div className="mp-hero-area mp-hero-spacing">
@@ -105,8 +39,8 @@ const ModernAgencyHero = () => {
                                     <HeroStarIcon />
                                 </span>
                                 We build websites, apps & intelligent<br />
-                                 automation systems that help businesses<br />
-                                 operate smarter and grow faster.
+                                automation systems that help businesses<br />
+                                operate smarter and grow faster.
                             </p>
                         </div>
                     </div>
@@ -148,24 +82,34 @@ const ModernAgencyHero = () => {
                                 </div>
                             </div>
 
-                            {/* Trust Badges */}
-                            <div className="mp-hero-magnetic">
-                                <div className="mp-hero-magnetic-image-wrap d-flex flex-wrap flex-md-nowrap gap-3">
-                                    {trustBadges.map((badge, idx) => (
-                                        <TrustBadge
-                                            key={idx}
-                                            title={badge.title}
-                                            subtitle={badge.subtitle}
-                                            icon={badge.icon}
-                                            delay={0.4 + idx * 0.1}
-                                        />
-                                    ))}
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
+            <div className="ca-brand-area mt-30 mb-30" style={{ overflow: "hidden" }}>
+                <div className="ca-brand-slider-active tp-slider-transtion">
+                    <Swiper
+                        modules={[Autoplay, FreeMode]}
+                        {...brand_slider_params}
+                    >
+                        {repeatedLogos.map((brand, index) => (
+                            <SwiperSlide key={index}>
+                                <div className="ca-brand-logo">
+                                    <Image
+                                        src={brand.img}
+                                        width={brand.width}
+                                        height={brand.height}
+                                        alt="Brand Logo"
+                                    />
+                                </div>
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+                </div>
+            </div>
+
+            <div className="container">
                 {/* Big Title */}
                 <div className="row">
                     <div className="col-lg-12">
