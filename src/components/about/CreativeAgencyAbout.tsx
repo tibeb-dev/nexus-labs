@@ -1,5 +1,6 @@
 import AboutFeatureItem from "./subComponents/AboutFeatureItem";
 import AboutIntro from "./subComponents/AboutIntro";
+import { ArrowIcon } from "@/svg";
 
 const features = [
     {
@@ -14,7 +15,7 @@ const features = [
             "We craft digital experiences uniquely aligned with your brand goals and audience needs.",
         image: "/assets/img/about/thumb-2.jpg",
     },
-    
+
 ];
 
 const CreativeAgencyAbout = () => {
@@ -27,9 +28,23 @@ const CreativeAgencyAbout = () => {
                     </div>
                 </div>
 
-                <div className="tp-about-border mt-20 pt-55">
+                <div className="tp-about-border mt-20 pt-55 pb-100 tp-about-pin-area">
                     <div className="row">
-                        <div className="col-lg-4" />
+                        <div className="col-lg-4">
+                            <div className="tp-about-mission-pin tp_fade_anim" data-fade-from="left" data-delay=".4">
+                                <div className="tp-about-subtitle-wrap mb-30">
+                                    <span className="tp-about-subtitle">
+                                        <ArrowIcon /> About Us
+                                    </span>
+                                </div>
+                                <div className="tp-about-mission-quote pr-40">
+                                    <p className="tp-ff-inter" style={{ fontSize: "15px", color: "#777", lineHeight: "1.7" }}>
+                                        "Our core principle is simple: technology should amplify creativity, not constrain it. So, build digital systems that push boundaries."
+                                    </p>
+                                    <span className="text-uppercase tp-ff-sequel-roman mt-20 d-block" style={{ fontSize: "11px", letterSpacing: "0.1em", color: "var(--tp-theme-primary)" }}>— Nexus Technology</span>
+                                </div>
+                            </div>
+                        </div>
                         <div className="col-lg-8">
                             <div className="tp-about-thumb-wrap ml-75">
                                 <div className="row gx-80">

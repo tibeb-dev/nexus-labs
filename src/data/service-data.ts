@@ -32,12 +32,6 @@ const servicesData: serviceDT[] = [
         image: "/assets/img/service/service-4.jpg",
         description: "Designing immersive spatial experiences that blend aesthetics and functionality.",
     },
-    {
-        id: 6,
-        title: "Champagne",
-        image: "/assets/img/service/service-4.jpg",
-        description: "Providing premium, elegant designs that reflect sophistication and style.",
-    },
     //agency shop service data start
     {
         id: 7,

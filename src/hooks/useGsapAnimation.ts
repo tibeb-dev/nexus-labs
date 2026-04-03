@@ -285,6 +285,28 @@ export const panelPinAnimation = () => {
   });
 };
 
+export const aboutMissionPinAnimation = () => {
+  const pr = gsap.matchMedia();
+  pr.add("(min-width: 1199px)", () => {
+    const tl = gsap.timeline();
+    const panels = document.querySelectorAll('.tp-about-mission-pin')
+    panels.forEach((section) => {
+      tl.to(section, {
+        scrollTrigger: {
+          trigger: section,
+          pin: section,
+          scrub: 1,
+          start: 'top 15%',
+          end: "bottom 70%",
+          endTrigger: '.tp-about-pin-area',
+          pinSpacing: false,
+          markers: false,
+        },
+      })
+    })
+  });
+};
+
 // webgl images hover animation
 
 type HoverWrapper = HTMLElement & {

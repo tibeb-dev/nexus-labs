@@ -1,11 +1,11 @@
 // Create a central animation configuration object
 // Each key represents a route (page path)
 // Each value is an array of animation functions to run on that route
-import { AboutThumbAnimation, AwardAnimation, charAnimation, heroMagneticAnimation, jumpTextAnimation, portfolioTextZoomAnim, servicePanelPinAnim, textPerspectiveAnim, textScaleHoverAnim, titleMiddleAnimetion, tpHoverWebGL, panelPinAnimation, productPinAnimation, initPrimaryMarqueeAnimation, initSecondaryMarqueeAnimation, careerPinAnimation, milScaleAnimation, heroScaleGallery } from "@/hooks/useGsapAnimation";
+import { AboutThumbAnimation, AwardAnimation, charAnimation, heroMagneticAnimation, jumpTextAnimation, portfolioTextZoomAnim, servicePanelPinAnim, textPerspectiveAnim, textScaleHoverAnim, titleMiddleAnimetion, tpHoverWebGL, panelPinAnimation, productPinAnimation, initPrimaryMarqueeAnimation, initSecondaryMarqueeAnimation, careerPinAnimation, milScaleAnimation, heroScaleGallery, aboutMissionPinAnimation } from "@/hooks/useGsapAnimation";
 
 export const animationConfig: Record<string, (() => void)[]> = {
     //Light page animation
-    "/creative-agency": [titleMiddleAnimetion, textPerspectiveAnim, servicePanelPinAnim, textScaleHoverAnim, heroScaleGallery, panelPinAnimation],
+    "/creative-agency": [titleMiddleAnimetion, textPerspectiveAnim, servicePanelPinAnim, textScaleHoverAnim, heroScaleGallery, panelPinAnimation, aboutMissionPinAnimation],
     "/digital-studio": [tpHoverWebGL, portfolioTextZoomAnim, textScaleHoverAnim, milScaleAnimation],
     "/modern-agency": [charAnimation, heroMagneticAnimation, jumpTextAnimation, AboutThumbAnimation, AwardAnimation, tpHoverWebGL, textScaleHoverAnim],
     "/personal-portfolio": [tpHoverWebGL, textScaleHoverAnim, charAnimation],
@@ -22,7 +22,7 @@ export const animationConfig: Record<string, (() => void)[]> = {
     "/blog": [tpHoverWebGL],
 
     //Dark page animation
-    "/dark/creative-agency": [titleMiddleAnimetion, textPerspectiveAnim, servicePanelPinAnim, textScaleHoverAnim, heroScaleGallery, panelPinAnimation],
+    "/dark/creative-agency": [titleMiddleAnimetion, textPerspectiveAnim, servicePanelPinAnim, textScaleHoverAnim, heroScaleGallery, panelPinAnimation, aboutMissionPinAnimation],
     "/dark/digital-studio": [tpHoverWebGL, portfolioTextZoomAnim, textScaleHoverAnim, milScaleAnimation],
     "/dark/modern-agency": [charAnimation, heroMagneticAnimation, jumpTextAnimation, AboutThumbAnimation, AwardAnimation, tpHoverWebGL, textScaleHoverAnim],
     "/dark/personal-portfolio": [tpHoverWebGL, textScaleHoverAnim, charAnimation],

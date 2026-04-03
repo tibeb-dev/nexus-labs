@@ -112,7 +112,7 @@ const CreativeAgencyService = () => {
                                         }`}
                                     onMouseEnter={() => handleHover(index)}
                                 >
-                                    <h2 className="tp-service-title tp-ff-sequel-roman d-inline-block">
+                                    <h2 className="tp-service-title tp-ff-sequel-roman d-inline-block" style={{ fontSize: "clamp(36px, 5vw, 72px)" }}>
                                         <SmartLink href={`/service-details/${service.id}`}>
                                             {service.title}
                                             <span className="tp-service-icon d-inline-block">

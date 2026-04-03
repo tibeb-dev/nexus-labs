@@ -38,7 +38,7 @@ const ModernAgencyHero = () => {
                                 <span className="tp-hero-shape">
                                     <HeroStarIcon />
                                 </span>
-                                We build websites, apps & intelligent<br />
+                                We build websites, apps & intelligent <br />
                                 automation systems that help businesses<br />
                                 operate smarter and grow faster.
                             </p>
@@ -49,9 +49,9 @@ const ModernAgencyHero = () => {
                     <div className="col-xl-9">
                         <div className="mp-hero-content ml-75">
                             <h2 className="mp-hero-title tp-ff-inter mb-40 tp-char-animation">
-                                Building scalable
+                                Scalable software and AI powered systems for
                                 <br />
-                                <span style={{ color: "var(--tp-theme-primary)" }}> software and AI-powered systems </span>for modern businesses
+                                <span style={{ color: "var(--tp-theme-primary)" }}> modern businesses. </span>
                             </h2>
 
                             {/* Hero Buttons */}
@@ -71,8 +71,8 @@ const ModernAgencyHero = () => {
                                 <div className="tp_fade_anim" data-delay=".6" data-fade-from="bottom" data-ease="bounce">
                                     <SmartLink className="tp-btn mb-10" href="/about-me">
                                         <span>
-                                            <span className="text-1">Contact Me</span>
-                                            <span className="text-2">Contact Me</span>
+                                            <span className="text-1">Contact Us</span>
+                                            <span className="text-2">Contact Us</span>
                                         </span>
                                         <i>
                                             <ButtonArrowIcon />

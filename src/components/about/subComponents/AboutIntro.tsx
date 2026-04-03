@@ -21,11 +21,6 @@ const AboutIntro = () => {
                 </span>
             </h2>
 
-            <div className="tp-about-subtitle-wrap mt-30">
-                <span className="tp-about-subtitle">
-                    <ArrowIcon /> About Us
-                </span>
-            </div>
         </div>
     );
 };
