@@ -10,7 +10,7 @@ export interface MenuColumn {
 
 export interface MenuItem {
     id: number;
-    type: "mega" | "dropdown";
+    type: "mega" | "dropdown" | "simple";
     label: string;
     href: string;
     // `columns` exists only for "mega" type, optional otherwise

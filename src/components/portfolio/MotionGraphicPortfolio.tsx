@@ -36,15 +36,15 @@ const MotionGraphicPortfolio = ({ theme }: { theme?: "dark" | "light" }) => {
                                 data-fade-from="bottom"
                                 data-ease="bounce"
                             >
-                                <SmartLink className="tp-btn-circle" href="/portfolio-col-3">
+                                <SmartLink className="tp-btn-circle" href="/projects">
                                     <ArrowIconFive />
                                 </SmartLink>
 
-                                <SmartLink className={`tp-btn z-index-1 ${theme === "dark" ? "tp-btn-white-border" : ""}`} href="/portfolio-col-3">
+                                <SmartLink className={`tp-btn z-index-1 ${theme === "dark" ? "tp-btn-white-border" : ""}`} href="/projects">
                                     See all portfolio
                                 </SmartLink>
 
-                                <SmartLink className="tp-btn-circle" href="/portfolio-col-3">
+                                <SmartLink className="tp-btn-circle" href="/projects">
                                     <ArrowIconFive />
                                 </SmartLink>
                             </div>

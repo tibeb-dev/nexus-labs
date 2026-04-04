@@ -23,22 +23,29 @@ const StickyMainMenu = ({ onClose }: { onClose?: () => void }) => {
         <ul>
             {menu.map((item, index) => {
                 const isActive = activeIndex === index;
+                const hasDropdown = item.type !== "simple";
 
                 return (
                     <li
                         key={index}
-                        className={`has-dropdown ${isActive ? "active" : ""}`}
+                        className={`${hasDropdown ? "has-dropdown" : ""} ${isActive && hasDropdown ? "active" : ""}`.trim()}
                     >
                         {/* ===== MENU LABEL ===== */}
-                        <a
-                            href="#"
-                            onClick={(e) => {
-                                e.preventDefault();
-                                handleMenuClick(index);
-                            }}
-                        >
-                            {item.label}
-                        </a>
+                        {hasDropdown ? (
+                            <a
+                                href="#"
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    handleMenuClick(index);
+                                }}
+                            >
+                                {item.label}
+                            </a>
+                        ) : (
+                            <Link href={item.href} onClick={handleLinkClick}>
+                                {item.label}
+                            </Link>
+                        )}
 
                         {/* ===== MEGA MENU ===== */}
                         {item.type === "mega" && item.columns && (
@@ -95,12 +102,14 @@ const StickyMainMenu = ({ onClose }: { onClose?: () => void }) => {
                         )}
 
                         {/* ===== TOGGLE BUTTON ===== */}
-                        <button
-                            className="tp-menu-close"
-                            onClick={() => handleMenuClick(index)}
-                        >
-                            <i className="fa-solid fa-plus"></i>
-                        </button>
+                        {hasDropdown && (
+                            <button
+                                className="tp-menu-close"
+                                onClick={() => handleMenuClick(index)}
+                            >
+                                <i className="fa-solid fa-plus"></i>
+                            </button>
+                        )}
                     </li>
                 );
             })}

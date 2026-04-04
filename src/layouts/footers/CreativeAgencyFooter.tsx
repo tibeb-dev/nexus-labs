@@ -38,11 +38,9 @@ const CreativeAgencyFooter = () => {
                                 <div className="tp-footer-widget tp-footer-link mb-30 tp_fade_anim" data-delay=".4">
                                     <h5 className="tp-footer-subtitle mb-25">Quick links</h5>
                                     <div className="tp-hero-social">
-                                        {QUICK_LINKS.map((item) => (
-                                            <Link key={item} href="#">
-                                                {item}
-                                            </Link>
-                                        ))}
+                                        <Link href="/">Home</Link>
+                                        <Link href="/projects">Projects</Link>
+                                        <Link href="/contact-us">Contact Us</Link>
                                     </div>
                                 </div>
                             </div>

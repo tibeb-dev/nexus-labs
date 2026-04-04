@@ -9,7 +9,7 @@ export default function HeaderMenu() {
     return (
         <ul>
             {menu.map((item) => (
-                <li key={item.label} className="has-dropdown">
+                <li key={item.label} className={item.type !== "simple" ? "has-dropdown" : ""}>
                     <Link href={item.href}>{item.label}</Link>
                     {item.type === "mega" && (
                         <div className="tp-submenu submenu tp-megamenu">

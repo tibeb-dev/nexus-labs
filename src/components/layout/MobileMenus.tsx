@@ -25,20 +25,22 @@ const MobileMenus = () => {
                 return (
                     <li
                         key={menu.id}
-                        className={`has-dropdown ${isActive ? "active" : ""}`}
+                        className={`${hasDropdown ? "has-dropdown" : ""} ${isActive && hasDropdown ? "active" : ""}`.trim()}
                     >
                         {/* MENU TITLE */}
-                        <a
-                            href={menu.href}
-                            onClick={(e) => {
-                                if (hasDropdown) {
+                        {hasDropdown ? (
+                            <a
+                                href={menu.href}
+                                onClick={(e) => {
                                     e.preventDefault();
                                     toggleMenu(menu.id);
-                                }
-                            }}
-                        >
-                            {menu.label}
-                        </a>
+                                }}
+                            >
+                                {menu.label}
+                            </a>
+                        ) : (
+                            <Link href={menu.href}>{menu.label}</Link>
+                        )}
 
                         {/* + / × BUTTON */}
                         {hasDropdown && (

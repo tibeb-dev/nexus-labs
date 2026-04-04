@@ -5,7 +5,7 @@ import { AboutThumbAnimation, AwardAnimation, charAnimation, heroMagneticAnimati
 
 export const animationConfig: Record<string, (() => void)[]> = {
     //Light page animation
-    "/creative-agency": [titleMiddleAnimetion, textPerspectiveAnim, servicePanelPinAnim, textScaleHoverAnim, heroScaleGallery, panelPinAnimation, aboutMissionPinAnimation],
+    "/": [titleMiddleAnimetion, textPerspectiveAnim, servicePanelPinAnim, textScaleHoverAnim, heroScaleGallery, panelPinAnimation, aboutMissionPinAnimation],
     "/digital-studio": [tpHoverWebGL, portfolioTextZoomAnim, textScaleHoverAnim, milScaleAnimation],
     "/modern-agency": [charAnimation, heroMagneticAnimation, jumpTextAnimation, AboutThumbAnimation, AwardAnimation, tpHoverWebGL, textScaleHoverAnim],
     "/personal-portfolio": [tpHoverWebGL, textScaleHoverAnim, charAnimation],
@@ -19,7 +19,7 @@ export const animationConfig: Record<string, (() => void)[]> = {
     "/team": [tpHoverWebGL],
     "/career-details": [careerPinAnimation],
     "/portfolio-details-gallery": [initPrimaryMarqueeAnimation],
-    "/portfolio-col-3": [textPerspectiveAnim, textScaleHoverAnim],
+    "/projects": [textPerspectiveAnim, textScaleHoverAnim],
     "/portfolio-details": [textPerspectiveAnim, textScaleHoverAnim],
     "/blog": [tpHoverWebGL],
 
