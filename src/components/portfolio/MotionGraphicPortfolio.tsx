@@ -5,7 +5,8 @@ import SmartLink from "../common/SmartLink";
 
 const MotionGraphicPortfolio = ({ theme }: { theme?: "dark" | "light" }) => {
     //display portfolio item
-    const displayPortfolio = portfolioData.slice(24, 27);
+    const featuredIds = [510, 500, 512];
+    const displayPortfolio = featuredIds.map(id => portfolioData.find(item => item.id === id)).filter((item): item is NonNullable<typeof item> => Boolean(item));
 
     return (
         <div className="mg-portfolio-area pt-145 pb-65">
@@ -35,15 +36,15 @@ const MotionGraphicPortfolio = ({ theme }: { theme?: "dark" | "light" }) => {
                                 data-fade-from="bottom"
                                 data-ease="bounce"
                             >
-                                <SmartLink className="tp-btn-circle" href="/portfolio">
+                                <SmartLink className="tp-btn-circle" href="/portfolio-col-3">
                                     <ArrowIconFive />
                                 </SmartLink>
 
-                                <SmartLink className={`tp-btn z-index-1 ${theme === "dark" ? "tp-btn-white-border" : ""}`} href="/portfolio">
+                                <SmartLink className={`tp-btn z-index-1 ${theme === "dark" ? "tp-btn-white-border" : ""}`} href="/portfolio-col-3">
                                     See all portfolio
                                 </SmartLink>
 
-                                <SmartLink className="tp-btn-circle" href="/portfolio">
+                                <SmartLink className="tp-btn-circle" href="/portfolio-col-3">
                                     <ArrowIconFive />
                                 </SmartLink>
                             </div>

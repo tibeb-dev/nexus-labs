@@ -7,7 +7,7 @@ import { useState } from "react";
 
 const PortfolioColThree = () => {
     const [activeTab, setActiveTab] = useState("all");
-    const portfolio = portfolioData.slice(49, 58);
+    const portfolio = portfolioData.slice(49, 62);
 
     // Filter portfolio based on active tab
     const filteredPortfolio =

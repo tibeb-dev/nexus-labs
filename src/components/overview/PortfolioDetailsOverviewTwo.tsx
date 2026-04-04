@@ -1,5 +1,8 @@
+import portfolioData from "@/data/portfolio-data";
+import { IdProps } from "@/types/custom-dt";
 
-const PortfolioDetailsOverviewTwo = () => {
+const PortfolioDetailsOverviewTwo = ({ id }: IdProps) => {
+    const portfolio = portfolioData.find((item) => item.id == id);
     return (
         <div className="tp-pd-2-overview-ptb pb-25">
             <div className="container">
@@ -12,17 +15,15 @@ const PortfolioDetailsOverviewTwo = () => {
                     </div>
                     <div className="col-xl-5 col-lg-6">
                         <div className="tp-pd-2-overview-wrap mr-100">
-                            <p>Solfeggio Obscuro is a music event shaped by the pulse of the underground,
-                                where rhythm moves the body and sound opens the mind. Obscuro suggests
-                                more than darkness—it speaks to the hidden,</p>
-                            <p>the not immediately understood. That mood shaped a visual language that
-                                doesn&apos;t explain, but invites. Nothing screams for attention, but everything
-                                pulls you in. It&apos;s not trying to be nostalgic,</p>
-                            <ul>
-                                <li>Branding and identity</li>
-                                <li>Websites and digital platforms</li>
-                                <li>Content strategy for social media</li>
-                            </ul>
+                            <p>{portfolio?.brandOverview || "Brand overview and description goes here. It provides a quick summary of the service."}</p>
+                            
+                            {portfolio?.keyFeatures && portfolio.keyFeatures.length > 0 && (
+                                <ul className="mt-30">
+                                    {portfolio.keyFeatures.map((feature, idx) => (
+                                        <li key={idx}>{feature}</li>
+                                    ))}
+                                </ul>
+                            )}
                         </div>
                     </div>
                     </div>

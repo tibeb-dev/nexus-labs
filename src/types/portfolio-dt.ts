@@ -10,5 +10,13 @@ export interface portfolioDT {
     category?: string;
     bgClass?: string
     tags?: string[];
-    filterCategory?:string[]
+    filterCategory?:string[];
+    role?: string;
+    platform?: string;
+    services?: string;
+    timeline?: string;
+    team?: string;
+    liveSite?: string;
+    brandOverview?: string;
+    keyFeatures?: string[];
 }

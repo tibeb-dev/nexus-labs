@@ -7,6 +7,11 @@
     &-link{
         & .tp-hero-social {
             justify-content: start;
+            & a:hover {
+                background: var(--tp-theme-primary);
+                border-color: var(--tp-theme-primary);
+                color: var(--tp-common-white);
+            }
         }
     }
     &-subtitle{
@@ -106,7 +111,8 @@
                 display: inline-block;
                 line-height: 1;
                 &:hover{
-                    background: var(--tp-common-black);
+                    background: var(--tp-theme-primary);
+                    border-color: var(--tp-theme-primary);
                     color: var(--tp-common-white);
                 }
                 & svg{

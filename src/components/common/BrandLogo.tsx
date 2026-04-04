@@ -11,14 +11,14 @@ type BrandLogoProps = {
 const BrandLogo = ({
     logo1Width = 140,
     logo2Width = 140,
-    logo1Height = 29,
+    logo1Height = 62,
     logo2Height = 34,
 }: BrandLogoProps) => {
     return (
         <SmartLink href="/">
             <Image
                 className="logo-1"
-                src="/assets/img/logo/logo.png"
+                src="/assets/img/logo/nexuslogo.png"
                 alt="logo"
                 width={logo1Width}
                 height={logo1Height}

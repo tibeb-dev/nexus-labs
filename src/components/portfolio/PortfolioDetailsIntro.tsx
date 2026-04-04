@@ -20,33 +20,32 @@ const PortfolioDetailsIntro = ({ id }: IdProps) => {
                             <div className="col-lg-3 col-md-6 col-sm-6">
                                 <div className="tp-pd-2-bottom-item mb-20">
                                     <span>Role</span>
-                                    <h6>Full Stack and AI Automation Development</h6>
+                                    <h6>{portfolio?.role || "Full-Stack Development, AI Integration"}</h6>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-6 col-sm-6">
                                 <div className="tp-pd-2-bottom-item mb-20">
-                                    <span>Industry</span>
-                                    <h6>AI-Powered Knowledge Platform
-                                    </h6>
+                                    <span>Platform / Industry</span>
+                                    <h6>{portfolio?.platform || "AI-Powered SaaS Platform"}</h6>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-6 col-sm-6">
                                 <div className="tp-pd-2-bottom-item mb-20">
-                                    <span>Duration</span>
-                                    <h6>8 to 10 Weeks</h6>
+                                    <span>Timeline</span>
+                                    <h6>{portfolio?.timeline || "6–8 Weeks"}</h6>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-6 col-sm-6">
                                 <div className="tp-pd-2-bottom-item mb-20">
                                     <span>Team</span>
-                                    <h6>Nexus Technology</h6>
+                                    <h6>{portfolio?.team || "Nexus Labs"}</h6>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="col-xl-2">
                         <div className="text-xl-end">
-                            <SmartLink className="tp-btn tp-btn-border" href="sharethetruth.app">
+                            <SmartLink className="tp-btn tp-btn-border" href={portfolio?.liveSite || "#"}>
                                 <span>
                                     <span className="text-1">Visit Site</span>
                                     <span className="text-2">Visit Site</span>

@@ -53,8 +53,9 @@ export const portfolioThumbSliderItems: PortfolioItem[] = [
 
 export const filterItems = [
     { key: "all", label: "All" },
-    { key: "design", label: "Design" },
-    { key: "motion", label: "Motion" },
-    { key: "web", label: "Web dev" },
-    { key: "ai", label: "AI Tools" },
+    { key: "ai", label: "AI Projects" },
+    { key: "fintech", label: "Fintech" },
+    { key: "ecommerce", label: "E-Commerce" },
+    { key: "company", label: "Company Sites" },
+    { key: "other", label: "Other Projects" },
 ];

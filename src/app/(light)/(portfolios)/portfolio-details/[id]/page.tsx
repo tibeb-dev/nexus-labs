@@ -2,7 +2,6 @@
 import PortfolioDetailsOverviewTwo from "@/components/overview/PortfolioDetailsOverviewTwo";
 import PortfolioSingleCard from "@/components/portfolio/subComponents/PortfolioSingleCard";
 import PortfolioDetailsIntro from "@/components/portfolio/PortfolioDetailsIntro";
-import PortfolioDetailsStep from "@/components/process/PortfolioDetailsProcess";
 import PortfolioDetailsThumb from "@/components/gallery/PortfolioDetailsThumb";
 import { PageParamsProps } from "@/types/custom-dt";
 import portfolioData from "@/data/portfolio-data";
@@ -10,14 +9,13 @@ import portfolioData from "@/data/portfolio-data";
 export default async function PortfolioDetails(props: PageParamsProps) {
     const resolvedParams = await props.params;
     const { id } = resolvedParams;
-    const portfolioItems = portfolioData.slice(43, 45);
+    const portfolioItems = portfolioData.slice(49, 51);
 
     return (
         <main>
             <PortfolioDetailsIntro id={id}/>
-            <PortfolioDetailsOverviewTwo />
+            <PortfolioDetailsOverviewTwo id={id}/>
             <PortfolioDetailsThumb />
-            <PortfolioDetailsStep animateCls="reveal-text" />
             
             {/* related portfolio item */}
             <div className="tp-portfolio-area pb-110">

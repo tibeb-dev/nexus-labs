@@ -56,7 +56,7 @@ const CreativeAgencyFooter = () => {
                         <div className="row align-items-end mt-35">
                             <div className="col-lg-4">
                                 <div className="tp-header-logo tp-footer-logo mb-30 tp_fade_anim" data-delay=".6">
-                                    <BrandLogo logo1Width={229} logo1Height={48} logo2Width={229} logo2Height={56} />
+                                    <BrandLogo logo1Width={229} logo1Height={68} logo2Width={229} logo2Height={56} />
                                 </div>
                             </div>
                             <div className="col-lg-8">

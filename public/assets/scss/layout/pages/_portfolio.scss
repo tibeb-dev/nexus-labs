@@ -600,8 +600,8 @@
             color: var(--tp-common-black);
             border: 1px solid rgba(27, 23, 15, 0.1);
             &:hover{
-                border-color: var(--tp-common-black);
-                background: var(--tp-common-black);
+                border-color: var(--tp-theme-primary);
+                background: var(--tp-theme-primary);
                 color: var(--tp-common-white);
             }
         }

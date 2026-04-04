@@ -19,6 +19,8 @@ export const animationConfig: Record<string, (() => void)[]> = {
     "/team": [tpHoverWebGL],
     "/career-details": [careerPinAnimation],
     "/portfolio-details-gallery": [initPrimaryMarqueeAnimation],
+    "/portfolio-col-3": [textPerspectiveAnim, textScaleHoverAnim],
+    "/portfolio-details": [textPerspectiveAnim, textScaleHoverAnim],
     "/blog": [tpHoverWebGL],
 
     //Dark page animation
