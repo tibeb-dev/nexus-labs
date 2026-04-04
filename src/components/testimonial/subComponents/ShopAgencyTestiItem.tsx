@@ -4,21 +4,37 @@ type ShopAgencyTestiItemProps = {
     name: string;
     brand: string;
     role: string;
+    initials?: string;
 };
 
-const ShopAgencyTestiItem = ({ id, comment, name, brand, role }: ShopAgencyTestiItemProps) => {
+const ShopAgencyTestiItem = ({ id, comment, name, role, initials }: ShopAgencyTestiItemProps) => {
     return (
         <div key={id} className="swiper-slide">
             <div className="shop-testimonial-item text-center">
-                <h4 className="shop-testimonial-comment tp-ff-jost fw-500 mb-30">
-                    {comment}
+                <h4 className="shop-testimonial-comment tp-ff-jost fw-500 mb-40" style={{ fontSize: "clamp(20px, 2.5vw, 32px)", lineHeight: 1.5 }}>
+                    &ldquo;{comment}&rdquo;
                 </h4>
-                <span className="shop-testimonial-name fw-500 mb-40 d-block">
-                    {name}
-                </span>
-                <div className="shop-testimonial-brand-name">
-                    <b className="fw-500">{brand}</b>
-                    <span className="d-block">{role}</span>
+                <div className="shop-testimonial-brand-name mt-20 d-flex flex-column align-items-center gap-3">
+                    <div style={{
+                        width: "52px",
+                        height: "52px",
+                        borderRadius: "50%",
+                        background: "var(--tp-theme-primary)",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        color: "#fff",
+                        fontWeight: 700,
+                        fontSize: "16px",
+                        letterSpacing: "0.05em",
+                        flexShrink: 0,
+                    }}>
+                        {initials}
+                    </div>
+                    <div>
+                        <b className="fw-700 d-block" style={{ fontSize: "18px", letterSpacing: "-0.02em" }}>{name}</b>
+                        <span className="d-block" style={{ fontSize: "14px", opacity: 0.55, marginTop: "4px" }}>{role}</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -26,3 +42,4 @@ const ShopAgencyTestiItem = ({ id, comment, name, brand, role }: ShopAgencyTesti
 };
 
 export default ShopAgencyTestiItem;
+

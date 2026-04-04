@@ -17,7 +17,7 @@
     &-item{
         border-radius: 0;
         box-shadow: 0 0 2px 0 rgba(39, 39, 46, 0.04);
-        background: #f6f6f6;
+        background: transparent;
         padding: 10px 30px 10px 30px;
         margin-bottom: 16px;
     }
@@ -71,8 +71,8 @@
             top: 7px;
             width: 36px;
             height: 36px;
-            border: 1px solid var(--tp-common-black);
-            background: var(--tp-common-black);
+            border: 1px solid var(--tp-theme-primary);
+            background: var(--tp-theme-primary);
             text-align: center;
             border-radius: 30px;
             line-height: 35px;

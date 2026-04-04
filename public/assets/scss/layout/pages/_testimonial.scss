@@ -125,17 +125,17 @@
 
 .shop-testimonial{
     &-comment{
-        font-size: 62px;
-        line-height: 116%;
-        letter-spacing: -0.04em;
+        font-size: 32px;
+        line-height: 140%;
+        letter-spacing: -0.02em;
         @media #{$xl,$lg}{
-            font-size: 48px;
+            font-size: 26px;
         }
         @media #{$md,$sm}{
-            font-size: 38px;
+            font-size: 22px;
         }
         @media #{$xs}{
-            font-size: 30px;
+            font-size: 20px;
         }
     }
     &-name{
@@ -191,7 +191,8 @@
             cursor: pointer;
             transition: all .5s ease;
             &:hover{
-                background: var(--tp-common-black);
+                background: var(--tp-theme-primary);
+                border-color: var(--tp-theme-primary);
                 color: var(--tp-common-white);
             }
         }

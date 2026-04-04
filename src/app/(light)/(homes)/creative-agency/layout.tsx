@@ -6,6 +6,7 @@ import HeaderSearch from "@/layouts/headers/subComponents/HeaderSearch";
 import BackToTop from "@/components/shared/BackToTop/BackToTop";
 import PageHeader from "@/layouts/headers/PageHeader";
 import AppProvider from "@/provider/AppProvider";
+import BootstrapLoader from "@/layouts/BootstrapLoader";
 
 export default function CreativeLayout({
     children,
@@ -16,21 +17,23 @@ export default function CreativeLayout({
         <CursorAndBackgroundProvider>
             <ScrollSmoothProvider>
                 <AnimationWrapper>
-                    <AppProvider>
-                        {/* -- global component -- */}
-                        <div id="magic-cursor" className="cursor-black-bg">
-                            <div id="ball"></div>
-                        </div>
-                        <BackToTop />
-                        <HeaderSearch />
-                        <PageHeader />
-                        <div id="smooth-wrapper">
-                            <div id="smooth-content">
-                                {children}
-                                <CreativeAgencyFooter />
+                    <BootstrapLoader>
+                        <AppProvider>
+                            {/* -- global component -- */}
+                            <div id="magic-cursor" className="cursor-black-bg">
+                                <div id="ball"></div>
                             </div>
-                        </div>
-                    </AppProvider>
+                            <BackToTop />
+                            <HeaderSearch />
+                            <PageHeader />
+                            <div id="smooth-wrapper">
+                                <div id="smooth-content">
+                                    {children}
+                                    <CreativeAgencyFooter />
+                                </div>
+                            </div>
+                        </AppProvider>
+                    </BootstrapLoader>
                 </AnimationWrapper>
             </ScrollSmoothProvider >
         </CursorAndBackgroundProvider >

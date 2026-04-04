@@ -24,6 +24,9 @@ const page = () => {
                 <MotionGraphicPortfolio theme="dark" />
             </div>
             <ShopAgencyTestimonial />
+            <div className="container">
+                <div className="tp-about-border"></div>
+            </div>
             <DigitalStudioFaqArea />
         </main>
     );
