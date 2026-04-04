@@ -4,15 +4,16 @@
 /*  7.10 error css
 /*----------------------------------------*/
 
-.tp-error{
-    &-title{
+.tp-error {
+    &-title {
         font-weight: 700;
         font-size: 64px;
         margin-bottom: 50px;
-        color: var(--tp-common-black);
+        color: var(--tp-theme-primary);
         font-family: var(--tp-ff-inter);
     }
-    &-title-sm{
+
+    &-title-sm {
         font-weight: 600;
         font-size: 26px;
         line-height: 1;
@@ -20,14 +21,16 @@
         color: var(--tp-common-black);
         font-family: var(--tp-ff-inter);
     }
-    &-content{
-        & p{
+
+    &-content {
+        & p {
             font-weight: 400;
             font-size: 18px;
             color: #57575a;
             margin-bottom: 30px;
         }
-        & .tp-btn{
+
+        & .tp-btn {
             height: 60px;
             line-height: 55px;
             border-radius: 40px;
@@ -41,18 +44,20 @@
             text-transform: capitalize;
             position: relative;
             transition: all 0.3s;
-            background-color: var(--tp-common-black);
+            background-color: var(--tp-theme-primary);
             color: var(--tp-common-white);
             border: 2px solid transparent;
-            &:hover{
+
+            &:hover {
                 background-color: transparent;
-                color: var(--tp-common-black);
-                border-color: var(--tp-common-black);
+                color: var(--tp-theme-primary);
+                border-color: var(--tp-theme-primary);
             }
         }
     }
-    &-wrapper{
-        & img{
+
+    &-wrapper {
+        & img {
             margin-bottom: 55px;
         }
     }

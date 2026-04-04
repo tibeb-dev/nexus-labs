@@ -12,7 +12,7 @@ const ContactUsTopIntro = () => {
                                     <span><Link href="/">Website</Link></span>
                                     <span>Contact</span>
                                 </div>
-                                <h3 className="tp-section-title fs-92 tp-ff-sequel-semi-bold tp_fade_anim" data-delay=".5">Get In Tuch</h3>
+                                <h3 className="tp-section-title fs-92 tp-ff-sequel-semi-bold tp_fade_anim" data-delay=".5">Get In Touch</h3>
                             </div>
                         </div>
                     </div>

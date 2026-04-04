@@ -1,7 +1,7 @@
 import CursorAndBackgroundProvider from "@/provider/CustomCursorProvider";
 import ScrollSmoothProvider from "@/provider/ScrollSmoothProvider";
 import AnimationWrapper from "@/components/shared/animation/AnimationWrapper";
-import BrandingStudioFooter from "@/layouts/footers/BrandingStudioFooter";
+import CreativeAgencyFooter from "@/layouts/footers/CreativeAgencyFooter";
 import HeaderSearch from "@/layouts/headers/subComponents/HeaderSearch";
 import BackToTop from "@/components/shared/BackToTop/BackToTop";
 import BootstrapLoader from "@/layouts/BootstrapLoader";
@@ -29,7 +29,7 @@ export default function ContactUsLayout({
                             <div id="smooth-wrapper">
                                 <div id="smooth-content">
                                     {children}
-                                    <BrandingStudioFooter />
+                                    <CreativeAgencyFooter />
                                 </div>
                             </div>
                         </BootstrapLoader>

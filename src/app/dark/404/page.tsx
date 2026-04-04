@@ -6,6 +6,8 @@ export const metadata: Metadata = {
     title: "404 Page - Digital Agency & Creative Portfolio",
 };
 
+import errorImg from "../../../../public/assets/img/error/error.png";
+
 const page = () => {
     return (
         <div className="tp-error-area pt-190 pb-120">
@@ -14,7 +16,7 @@ const page = () => {
                     <div className="col-xl-12">
                         <div className="tp-error-wrapper text-center">
                             <h4 className="tp-error-title">Oops!</h4>
-                            <Image className="img-fluid" width={866} height={340} src="/assets/img/error/error.png" alt="error image" />
+                            <Image className="img-fluid" src={errorImg} alt="error image" />
                             <div className="tp-error-content">
                                 <h4 className="tp-error-title-sm">Something went Wrong...</h4>
                                 <p>Sorry, we {`couldn't`} find your page.</p>

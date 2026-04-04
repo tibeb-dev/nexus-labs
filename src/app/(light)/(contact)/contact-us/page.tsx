@@ -1,8 +1,6 @@
 import ContactUsTopIntro from "@/components/contact/ContactUsTopIntro";
 import ContactUsFormArea from "@/components/contact/ContactUsFormArea";
-import ContactUsInfoArea from "@/components/contact/ContactUsInfoArea";
 import ContactInnerMap from "@/components/contact/ContactInnerMap";
-import ContactUsAbout from "@/components/about/ContactUsAbout";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -15,8 +13,6 @@ const page = () => {
             <ContactUsTopIntro />
             <ContactInnerMap />
             <ContactUsFormArea />
-            <ContactUsAbout />
-            <ContactUsInfoArea />
         </main>
     );
 };
