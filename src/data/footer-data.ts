@@ -13,7 +13,7 @@ export const QUICK_LINKS = [
 export const SOCIAL_LINKS = [
     "Facebook",
     "Twitter",
-    "Dribbble",
+    "Linkedin",
     "Instagram",
     "YouTube",
 ];
