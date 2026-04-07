@@ -4,7 +4,7 @@ import CreativeAgencyAbout from "@/components/about/CreativeAgencyAbout";
 import ModernAgencyHero from "@/components/hero/ModernAgencyHero";
 import ModernAgencyPortfolio from "@/components/portfolio/ModernAgencyPortfolio";
 import ShopAgencyTestimonial from "@/components/testimonial/ShopAgencyTestimonial";
-import DigitalStudioFaqArea from "@/components/faq/DigitalStudioFaqArea";
+import MotionGraphicAward from "@/components/award/MotionGraphicAward";
 import MotionGraphicPortfolio from "@/components/portfolio/MotionGraphicPortfolio";
 import { Metadata } from "next";
 
@@ -27,7 +27,7 @@ const page = () => {
             <div className="container">
                 <div className="tp-about-border"></div>
             </div>
-            <DigitalStudioFaqArea />
+            <MotionGraphicAward />
         </main>
     );
 };

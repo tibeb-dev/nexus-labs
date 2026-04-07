@@ -12,12 +12,8 @@ const ShopAgencyTestimonial = () => {
                 <div className="row justify-content-center">
                     <div className="col-xl-10">
                         <div className="text-center mb-60">
-                            <span
-                                className="tp_fade_anim"
-                                data-delay=".1"
-                                style={{ textTransform: "uppercase", letterSpacing: "0.1em", fontSize: "13px", fontWeight: 600, opacity: 0.5, display: "block", marginBottom: "12px" }}
-                            >
-                                Testimonials
+                            <span className="ca-team-subtitle text-uppercase tp_fade_anim d-block mb-15" data-delay=".1">
+                                <span>[ </span>Testimonials<span> ]</span>
                             </span>
                             <h2 className="tp-section-title tp-text-perspective" style={{ fontSize: "clamp(40px, 5vw, 72px)" }}>
                                 What Our Clients Say
