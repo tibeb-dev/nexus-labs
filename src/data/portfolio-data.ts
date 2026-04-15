@@ -352,7 +352,7 @@ const portfolioData: portfolioDT[] = [
     {
         id: 500,
         title: "BlueOceanSP.ai",
-        image: "/assets/img/portfolio/portfolio-col-3/portfolio.jpg",
+        image: "/assets/img/portfolio/portfolio-col-3/Frame36.png",
         tags: ["Web Development", "AI Systems"],
         filterCategory: ["all", "ai"],
         role: "Full-Stack Development, AI Integration",

@@ -14,14 +14,14 @@ const aboutFeatures: AboutFeature[] = [
         title: "Creative-First Approach",
         description:
             "Every design, app, or campaign starts with a bold idea rooted in originality and purpose.",
-        image: "/assets/img/about/thumb-3.jpg",
+        image: "/assets/img/about/firstapproach.jpg",
     },
     {
         id: 2,
         title: "Tailored Digital Solutions",
         description:
             "Every design, app, or campaign starts with a bold idea rooted in originality and purpose.",
-        image: "/assets/img/about/thumb-4.jpg",
+        image: "/assets/img/about/digitalsolution.jpg",
     },
 ];
 
