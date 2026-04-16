@@ -5,31 +5,31 @@ const servicesData: serviceDT[] = [
     {
         id: 1,
         title: "UI/UX Design",
-        image: "/assets/img/service/service.jpg",
+        image: "/assets/img/service/ux design.png",
         description: "Creating a unique brand identity that stands out and connects with your audience.",
     },
     {
         id: 2,
         title: "Web Development",
-        image: "/assets/img/service/service-2.jpg",
+        image: "/assets/img/service/web design.png",
         description: "Designing clear and engaging visual information for easy understanding and impact.",
     },
     {
         id: 3,
         title: "Mobile App Development",
-        image: "/assets/img/service/service-3.jpg",
+        image: "/assets/img/service/mobile app.png",
         description: "Delivering innovative digital solutions to grow your online presence effectively.",
     },
     {
         id: 4,
         title: "AI SaaS Development",
-        image: "/assets/img/service/service-4.jpg",
+        image: "/assets/img/service/ai saas.png",
         description: "Crafting compelling editorial layouts that communicate your story visually.",
     },
     {
         id: 5,
         title: "Business Automation",
-        image: "/assets/img/service/service-4.jpg",
+        image: "/assets/img/service/automation.png",
         description: "Designing immersive spatial experiences that blend aesthetics and functionality.",
     },
     //agency shop service data start

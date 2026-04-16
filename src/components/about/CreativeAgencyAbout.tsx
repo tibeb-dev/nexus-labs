@@ -7,13 +7,13 @@ const features = [
         title: "Creative-First Approach",
         description:
             "Every design, app, or campaign starts with a bold idea rooted in originality and purpose.",
-        image: "/assets/img/about/thumb.jpg",
+        image: "/assets/img/about/digital solution.png",
     },
     {
         title: "Tailored Digital Solutions",
         description:
             "We craft digital experiences uniquely aligned with your brand goals and audience needs.",
-        image: "/assets/img/about/thumb-2.jpg",
+        image: "/assets/img/about/first approach.png",
     },
 
 ];

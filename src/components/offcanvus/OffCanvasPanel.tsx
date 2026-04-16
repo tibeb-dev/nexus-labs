@@ -60,7 +60,7 @@ const OffCanvasPanel = () => {
                     <div className="tp-offcanvas-contact">
                         <h3 className="tp-offcanvas-title sm">Information</h3>
                         <ul>
-                            <li><Link href="tel:+251909740768">+251 909 740 768</Link></li>
+                            <li><Link href="tel:+251974819263">+251 974 81 92 63</Link></li>
                             <li><Link href="mailto:info@nexustechnologyet.com">info@nexustechnologyet.com</Link></li>
                             <li><Link href="/contact-us">Nexus Technology, Addis Ababa, Ethiopia</Link></li>
                         </ul>

@@ -12,7 +12,7 @@ const CreativeAgencyService = () => {
     const imageRefs = useRef<HTMLDivElement[]>([]);
     const [activeIndex, setActiveIndex] = useState(0);
 
-    const displayServiceData = servicesData.slice(0, 6);
+    const displayServiceData = servicesData.slice(0, 5);
 
     // initial + hover animation
     useEffect(() => {

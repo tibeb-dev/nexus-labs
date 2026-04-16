@@ -11,7 +11,7 @@ const ContactUsFormArea = () => {
                         <div className="col-lg-4 col-md-6">
                             <div className="tp-contact-info mb-30">
                                 <div className="mb-20">
-                                    <Link className="tp-contact-tel" href="tel:+251909740768">Call Us: +251 909 740 768</Link>
+                                    <Link className="tp-contact-tel" href="tel:+251974819263">Call Us: +251 974 819 263</Link>
                                     <br />
                                     <Link className="tp-contact-tel" href="https://wa.me/251909740768" target="_blank" style={{ fontSize: '18px', display: 'inline-block', marginTop: '10px' }}>WhatsApp: +251 909 740 768</Link>
                                 </div>

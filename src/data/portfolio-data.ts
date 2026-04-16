@@ -367,7 +367,7 @@ const portfolioData: portfolioDT[] = [
     {
         id: 501,
         title: "Facts.ly",
-        image: "/assets/img/portfolio/portfolio-col-3/portfolio-2.jpg",
+        image: "/assets/img/portfolio/portfolio-col-3/Frame37.png",
         tags: ["Web Development", "LLM Integration"],
         filterCategory: ["all", "ai"],
         role: "Full-Stack & AI Development",
@@ -382,7 +382,7 @@ const portfolioData: portfolioDT[] = [
     {
         id: 502,
         title: "AiDocBuilder.com",
-        image: "/assets/img/portfolio/portfolio-col-3/portfolio-3.jpg",
+        image: "/assets/img/portfolio/portfolio-col-3/Frame38.png",
         tags: ["Web Development", "AI Systems"],
         filterCategory: ["all", "ai"],
         role: "Full-Stack Development, AI Integration",
@@ -397,7 +397,7 @@ const portfolioData: portfolioDT[] = [
     {
         id: 503,
         title: "CodeGen.com",
-        image: "/assets/img/portfolio/portfolio-col-3/portfolio-4.jpg",
+        image: "/assets/img/portfolio/portfolio-col-3/Frame39.png",
         tags: ["Web Platform", "AI Systems"],
         filterCategory: ["all", "ai"],
         role: "Full-Stack & AI Development",
@@ -412,7 +412,7 @@ const portfolioData: portfolioDT[] = [
     {
         id: 504,
         title: "Komo.ai",
-        image: "/assets/img/portfolio/portfolio-col-3/portfolio-5.jpg",
+        image: "/assets/img/portfolio/portfolio-col-3/Frame40.png",
         tags: ["Web Development", "Automation"],
         filterCategory: ["all", "ai"],
         role: "Full-Stack Development, AI Integration",
@@ -427,7 +427,7 @@ const portfolioData: portfolioDT[] = [
     {
         id: 505,
         title: "Mangrove.technology",
-        image: "/assets/img/portfolio/portfolio-col-3/portfolio-6.jpg",
+        image: "/assets/img/portfolio/portfolio-col-3/Frame42.png",
         tags: ["Web Platform", "API Integration"],
         filterCategory: ["all", "fintech"],
         role: "Full-Stack Development",
@@ -442,7 +442,7 @@ const portfolioData: portfolioDT[] = [
     {
         id: 506,
         title: "OwnBossSupplyCo.com",
-        image: "/assets/img/portfolio/portfolio-col-3/portfolio-7.jpg",
+        image: "/assets/img/portfolio/portfolio-col-3/Frame43.png",
         tags: ["Store Setup", "Custom Theme"],
         filterCategory: ["all", "ecommerce"],
         role: "Shopify Development",
@@ -457,7 +457,7 @@ const portfolioData: portfolioDT[] = [
     {
         id: 507,
         title: "GlassFactory.info",
-        image: "/assets/img/portfolio/portfolio-col-3/portfolio-8.jpg",
+        image: "/assets/img/portfolio/portfolio-col-3/Frame45.png",
         tags: ["Web Development", "UI/UX"],
         filterCategory: ["all", "ecommerce"],
         role: "Full-Stack Development",
@@ -472,7 +472,7 @@ const portfolioData: portfolioDT[] = [
     {
         id: 508,
         title: "BroadwaySmiles.ca",
-        image: "/assets/img/portfolio/portfolio-col-3/portfolio.jpg",
+        image: "/assets/img/portfolio/portfolio-col-3/Frame46.png",
         tags: ["Web Development", "UI/UX"],
         filterCategory: ["all", "company"],
         role: "Full-Stack Development",
@@ -487,7 +487,7 @@ const portfolioData: portfolioDT[] = [
     {
         id: 509,
         title: "JJPConstructionInc.com",
-        image: "/assets/img/portfolio/portfolio-col-3/portfolio-2.jpg",
+        image: "/assets/img/portfolio/portfolio-col-3/Frame47.png",
         tags: ["Web Development", "UX/UI"],
         filterCategory: ["all", "company"],
         role: "Full-Stack Development",
@@ -502,7 +502,7 @@ const portfolioData: portfolioDT[] = [
     {
         id: 510,
         title: "Wpprovider.nl",
-        image: "/assets/img/portfolio/portfolio-col-3/portfolio-3.jpg",
+        image: "/assets/img/portfolio/portfolio-col-3/Frame44.png",
         tags: ["Web Platform", "Hosting"],
         filterCategory: ["all", "other"],
         role: "Full-Stack Development",
@@ -517,7 +517,7 @@ const portfolioData: portfolioDT[] = [
     {
         id: 511,
         title: "MaximumAccountability.net",
-        image: "/assets/img/portfolio/portfolio-col-3/portfolio-4.jpg",
+        image: "/assets/img/portfolio/portfolio-col-3/Frame41.png",
         tags: ["Corporate Platform", "Client Engagement"],
         filterCategory: ["all", "other"],
         role: "Web Development",
@@ -532,7 +532,7 @@ const portfolioData: portfolioDT[] = [
     {
         id: 512,
         title: "GiftXD.com",
-        image: "/assets/img/portfolio/portfolio-col-3/portfolio-5.jpg",
+        image: "/assets/img/portfolio/portfolio-col-3/Frame48.png",
         tags: ["AI", "E-commerce"],
         filterCategory: ["all", "other", "ecommerce", "ai"],
         role: "Full-Stack & AI Development",
