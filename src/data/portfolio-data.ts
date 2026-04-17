@@ -352,7 +352,7 @@ const portfolioData: portfolioDT[] = [
     {
         id: 500,
         title: "BlueOceanSP.ai",
-        image: "/assets/img/portfolio/portfolio-col-3/Frame36.png",
+        image: "/assets/img/portfolio/portfolio-col-3/Frame31.png",
         tags: ["Web Development", "AI Systems"],
         filterCategory: ["all", "ai"],
         role: "Full-Stack Development, AI Integration",
@@ -502,7 +502,7 @@ const portfolioData: portfolioDT[] = [
     {
         id: 510,
         title: "Wpprovider.nl",
-        image: "/assets/img/portfolio/portfolio-col-3/Frame44.png",
+        image: "/assets/img/portfolio/portfolio-col-3/Frame30.png",
         tags: ["Web Platform", "Hosting"],
         filterCategory: ["all", "other"],
         role: "Full-Stack Development",
@@ -532,7 +532,7 @@ const portfolioData: portfolioDT[] = [
     {
         id: 512,
         title: "GiftXD.com",
-        image: "/assets/img/portfolio/portfolio-col-3/Frame48.png",
+        image: "/assets/img/portfolio/portfolio-col-3/Frame32.png",
         tags: ["AI", "E-commerce"],
         filterCategory: ["all", "other", "ecommerce", "ai"],
         role: "Full-Stack & AI Development",
