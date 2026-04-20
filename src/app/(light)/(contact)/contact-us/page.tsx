@@ -1,6 +1,6 @@
 import ContactUsTopIntro from "@/components/contact/ContactUsTopIntro";
-import ContactUsFormArea from "@/components/contact/ContactUsFormArea";
 import ContactInnerMap from "@/components/contact/ContactInnerMap";
+import CalendlyBooking from "@/components/contact/CalendlyBooking";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -11,8 +11,8 @@ const page = () => {
     return (
         <main>
             <ContactUsTopIntro />
+            <CalendlyBooking />
             <ContactInnerMap />
-            <ContactUsFormArea />
         </main>
     );
 };

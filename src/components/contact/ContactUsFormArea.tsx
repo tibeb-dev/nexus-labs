@@ -1,4 +1,3 @@
-import ContactUsForm from "../form/ContactUsForm";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -22,11 +21,6 @@ const ContactUsFormArea = () => {
                                     <h4>Address</h4>
                                     <Link href="https://www.google.com/maps/search/Nexus+Technology+Addis+Ababa" className="common-underline" target="_blank">Yerer Bole,<br /> Addis Ababa, Ethiopia</Link>
                                 </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-8">
-                            <div className="tp-contact-form-wrap ml-95 mb-30">
-                                <ContactUsForm />
                             </div>
                         </div>
                     </div>

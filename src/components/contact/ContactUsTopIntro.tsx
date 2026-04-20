@@ -8,10 +8,10 @@ const ContactUsTopIntro = () => {
                     <div className="row">
                         <div className="col-12">
                             <div className="tp-pd-2-top pb-50 text-center">
-                                <div className="tp-pd-2-categories mb-10 tp_fade_anim" data-delay=".3">
+                                {/* <div className="tp-pd-2-categories mb-10 tp_fade_anim" data-delay=".3">
                                     <span><Link href="/">Website</Link></span>
                                     <span>Contact</span>
-                                </div>
+                                </div> */}
                                 <h3 className="tp-section-title fs-92 tp-ff-sequel-semi-bold tp_fade_anim" data-delay=".5">Get In Touch</h3>
                             </div>
                         </div>
