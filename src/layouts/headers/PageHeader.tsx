@@ -56,16 +56,19 @@ const PageHeader = ({ hideMainMenu = false, sideColumnClass = "col-xl-3 col-6", 
                             {/* Actions */}
                             <div className={sideColumnClass}>
                                 <div className="tp-header-right d-flex justify-content-end align-items-center">
-                                    <SmartLink className="tp-btn" href="/contact-us">
-                                        <span>
-                                            <span className="text-1">Book Appointment</span>
-                                            <span className="text-2">Book Appointment</span>
-                                        </span>
-                                        <i>
-                                            <ButtonArrowIcon />
-                                            <ButtonArrowIcon />
-                                        </i>
-                                    </SmartLink>
+                                    <span className="tp-header-version" style={{
+                                        fontFamily: 'monospace',
+                                        fontSize: '14px',
+                                        color: 'var(--tp-theme-primary)',
+                                        fontWeight: '500',
+                                        letterSpacing: '0.05em',
+                                        padding: '8px 16px',
+                                        border: '1px solid var(--tp-border-1)',
+                                        borderRadius: '4px',
+                                        backgroundColor: 'transparent'
+                                    }}>
+                                        v2.0.1
+                                    </span>
                                 </div>
                             </div>
                         </div>
