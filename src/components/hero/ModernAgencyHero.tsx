@@ -10,18 +10,18 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import Link from "next/link";
 
 const brandLogos = [
-    { img: "/assets/img/brand/agd-wordmark.jpg", width: 94, height: 50 },
-    { img: "/assets/img/brand/factsly_logo.avif", width: 94, height: 50 },
-    { img: "/assets/img/brand/GFLogo.webp", width: 94, height: 50 },
-    { img: "/assets/img/brand/logo-BVI99s2x.svg", width: 94, height: 50 },
-    { img: "/assets/img/brand/logo.svg", width: 94, height: 50 },
-    { img: "/assets/img/brand/SHARE THE TRUTH (1).svg", width: 94, height: 50 },
-    { img: "/assets/img/brand/agd-wordmark.jpg", width: 94, height: 50 },
-    { img: "/assets/img/brand/factsly_logo.avif", width: 94, height: 50 },
-    { img: "/assets/img/brand/GFLogo.webp", width: 94, height: 50 },
-    { img: "/assets/img/brand/logo-BVI99s2x.svg", width: 94, height: 50 },
-    { img: "/assets/img/brand/logo.svg", width: 94, height: 50 },
-    { img: "/assets/img/brand/SHARE THE TRUTH (1).svg", width: 94, height: 50 },
+    { img: "/assets/img/brand/agd-wordmark.jpg", width: 114, height: 80 },
+    { img: "/assets/img/brand/factsly.png", width: 94, height: 50 },
+    { img: "/assets/img/brand/GFLogo.webp", width: 134, height: 50 },
+    { img: "/assets/img/brand/ma.svg", width: 94, height: 40 },
+    { img: "/assets/img/brand/codegen.svg", width: 114, height: 90 },
+    { img: "/assets/img/brand/SHARE THE TRUTH (1).svg", width: 134, height: 90 },
+    { img: "/assets/img/brand/agd-wordmark.jpg", width: 110, height: 80 },
+    { img: "/assets/img/brand/factsly.png", width: 94, height: 50 },
+    { img: "/assets/img/brand/GFLogo.webp", width: 134, height: 50 },
+    { img: "/assets/img/brand/ma.svg", width: 94, height: 40 },
+    { img: "/assets/img/brand/codegne.svg", width: 94, height: 50 },
+    { img: "/assets/img/brand/SHARE THE TRUTH (1).svg", width: 134, height: 90 },
 ];
 const repeatedLogos = [...brandLogos, ...brandLogos, ...brandLogos];
 
@@ -75,28 +75,6 @@ const ModernAgencyHero = () => {
                 </div>
             </div>
 
-            <div className="ca-brand-area mt-60 mb-60" style={{ overflow: "hidden" }}>
-                <div className="ca-brand-slider-active tp-slider-transtion">
-                    <Swiper
-                        modules={[Autoplay, FreeMode]}
-                        {...brand_slider_params}
-                    >
-                        {repeatedLogos.map((brand, index) => (
-                            <SwiperSlide key={index}>
-                                <div className="ca-brand-logo">
-                                    <Image
-                                        src={brand.img}
-                                        width={brand.width}
-                                        height={brand.height}
-                                        alt="Brand Logo"
-                                    />
-                                </div>
-                            </SwiperSlide>
-                        ))}
-                    </Swiper>
-                </div>
-            </div>
-
             <div className="container">
                 {/* Big Title */}
                 <div className="row">
@@ -112,6 +90,54 @@ const ModernAgencyHero = () => {
                             </h2>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <div className="ca-brand-area mt-80 mb-20" style={{ overflow: "hidden" }}>
+                <div className="text-center mb-40">
+                    <h3 className="tp-section-subtitle tp-ff-sequel-roman" style={{ 
+                        fontSize: "16px", 
+                        letterSpacing: "0.1em", 
+                        textTransform: "uppercase",
+                        color: "var(--tp-grey-1)",
+                        fontWeight: 400
+                    }}>
+                        Trusted by
+                    </h3>
+                </div>
+                <div className="ca-brand-slider-active tp-slider-transtion">
+                    <Swiper
+                        modules={[Autoplay, FreeMode]}
+                        {...brand_slider_params}
+                    >
+                        {repeatedLogos.map((brand, index) => (
+                            <SwiperSlide key={index}>
+                                <div className="ca-brand-logo" style={{
+                                    width: "160px",
+                                    height: "80px",
+                                    display: "flex",
+                                    alignItems: "center",
+                                    justifyContent: "center",
+                                    padding: "15px",
+                                }}>
+                                    <Image
+                                        src={brand.img}
+                                        width={brand.width}
+                                        height={brand.height}
+                                        alt="Brand Logo"
+                                        style={{
+                                            maxWidth: "100%",
+                                            maxHeight: "100%",
+                                            objectFit: "contain",
+                                            filter: "contrast(1.1)",
+                                        }}
+                                        priority={index < 6}
+                                        quality={85}
+                                    />
+                                </div>
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
                 </div>
             </div>
         </div>
