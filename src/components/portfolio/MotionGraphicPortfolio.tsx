@@ -20,14 +20,11 @@ const MotionGraphicPortfolio = ({ theme }: { theme?: "dark" | "light" }) => {
                             </h2>
 
                             <div className="tp_fade_anim" data-delay=".3">
-                                <p className={`mg-portfolio-dec mb-50 ${theme === "dark" ? "text-white" : ""}`}>
-                                    Welcome to Cunnet — where design innovation converges with
+                                {/* <p className={`mg-portfolio-dec mb-50 ${theme === "dark" ? "text-white" : ""}`}>
+                                    Where intelligent innovation meets cutting-edge technology
                                     <br />
-                                    cutting-edge technology to bring your brand&apos;s essence to life
-                                    online.
-                                    <br />
-                                    We are driven by a passion driven for creativity.
-                                </p>
+                                    to transform your digital presence and accelerate growth.
+                                </p> */}
                             </div>
 
                             <div

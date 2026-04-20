@@ -10,12 +10,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import Link from "next/link";
 
 const brandLogos = [
-    { img: "/assets/img/brand/logo.png", width: 128, height: 30 },
-    { img: "/assets/img/brand/logo-2.png", width: 75, height: 40 },
-    { img: "/assets/img/brand/logo-3.png", width: 94, height: 50 },
-    { img: "/assets/img/brand/logo-4.png", width: 128, height: 38 },
-    { img: "/assets/img/brand/logo-5.png", width: 84, height: 38 },
-    { img: "/assets/img/brand/logo-6.png", width: 125, height: 46 },
+    { img: "/assets/img/brand/agd-wordmark.jpg", width: 94, height: 50 },
+    { img: "/assets/img/brand/factsly_logo.avif", width: 94, height: 50 },
+    { img: "/assets/img/brand/GFLogo.webp", width: 94, height: 50 },
+    { img: "/assets/img/brand/logo-BVI99s2x.svg", width: 94, height: 50 },
+    { img: "/assets/img/brand/logo.svg", width: 94, height: 50 },
+    { img: "/assets/img/brand/SHARE THE TRUTH (1).svg", width: 94, height: 50 },
     { img: "/assets/img/brand/agd-wordmark.jpg", width: 94, height: 50 },
     { img: "/assets/img/brand/factsly_logo.avif", width: 94, height: 50 },
     { img: "/assets/img/brand/GFLogo.webp", width: 94, height: 50 },
@@ -57,22 +57,10 @@ const ModernAgencyHero = () => {
                             {/* Hero Buttons */}
                             <div className="mp-hero-btn d-flex flex-wrap gap-2 mb-50">
                                 <div className="tp_fade_anim" data-delay=".4" data-fade-from="bottom" data-ease="bounce">
-                                    <SmartLink className="tp-btn mb-10" href="/portfolio">
+                                    <SmartLink className="tp-btn mb-10" href="/contact-us">
                                         <span>
-                                            <span className="text-1">Explore All Work</span>
-                                            <span className="text-2">Explore All Work</span>
-                                        </span>
-                                        <i>
-                                            <ButtonArrowIcon />
-                                            <ButtonArrowIcon />
-                                        </i>
-                                    </SmartLink>
-                                </div>
-                                <div className="tp_fade_anim" data-delay=".6" data-fade-from="bottom" data-ease="bounce">
-                                    <SmartLink className="tp-btn mb-10" href="/about-me">
-                                        <span>
-                                            <span className="text-1">Contact Us</span>
-                                            <span className="text-2">Contact Us</span>
+                                            <span className="text-1">Get in touch</span>
+                                            <span className="text-2">Get in touch</span>
                                         </span>
                                         <i>
                                             <ButtonArrowIcon />
@@ -87,7 +75,7 @@ const ModernAgencyHero = () => {
                 </div>
             </div>
 
-            <div className="ca-brand-area mt-30 mb-30" style={{ overflow: "hidden" }}>
+            <div className="ca-brand-area mt-60 mb-60" style={{ overflow: "hidden" }}>
                 <div className="ca-brand-slider-active tp-slider-transtion">
                     <Swiper
                         modules={[Autoplay, FreeMode]}
