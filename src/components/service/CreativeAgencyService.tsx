@@ -68,9 +68,8 @@ const CreativeAgencyService = () => {
                 <div className="row">
                     {/* LEFT IMAGE */}
                     <div className="col-12">
-                        <div className="tp-service-subtitle-wrap tp-about-border pt-25 d-flex justify-content-between gap-3 mb-50">
+                        <div className="tp-service-subtitle-wrap tp-about-border pt-25 justify-content-start mb-50">
                             <span className="tp-section-subtitle tp-ff-sequel-roman">Our latest Services</span>
-                            <span className="tp-section-subtitle tp-ff-sequel-roman">( 24 )</span>
                         </div>
                     </div>
                     <div className="col-lg-4 mb-40">
@@ -124,10 +123,10 @@ const CreativeAgencyService = () => {
                             ))}
 
                             <div className="tp-service-btn pt-30">
-                                <SmartLink className="tp-btn" href="/service">
+                                <SmartLink className="tp-btn" href="/contact-us">
                                     <span>
-                                        <span className="text-1">More Services</span>
-                                        <span className="text-2">More Services</span>
+                                        <span className="text-1">Get in touch</span>
+                                        <span className="text-2">Get in touch</span>
                                     </span>
                                     <i>
                                         <ButtonArrowIcon />

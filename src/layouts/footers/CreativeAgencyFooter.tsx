@@ -17,7 +17,7 @@ const CreativeAgencyFooter = () => {
                             <div className="tp-footer-title-wrap mb-55">
                                 <h2 className="tp-section-title tp-text-perspective">Let&apos;s build something powerful together{" "}
                                     <span className="tp-about-btn-transform d-inline-block">
-                                        <SmartLink className="tp-btn tp-btn-border tp-ff-inter" href="/contact-us">
+                                        <SmartLink className="tp-btn tp-btn-border tp-ff-inter" href="/contact-us#schedule-consultation">
                                             <span>
                                                 <span className="text-1">Get In Touch</span>
                                                 <span className="text-2">Get In Touch</span>
