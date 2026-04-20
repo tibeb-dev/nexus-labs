@@ -32,14 +32,14 @@ const MotionGraphicAward = () => {
                 <div className="row align-items-end">
                     <div className="col-lg-3">
                         <div className="mg-awards-subtitle-wrap mb-80 tp_fade_anim" data-delay=".3">
-                            <span className="ca-team-subtitle text-uppercase d-block mb-15">
-                                <span>[ </span>Process<span> ]</span>
-                            </span>
+                            <div className="tp-service-subtitle-wrap tp-about-border pt-25 justify-content-start mb-50">
+                                <span className="tp-section-subtitle tp-ff-sequel-roman">Process</span>
+                            </div>
                         </div>
                     </div>
                     <div className="col-lg-6">
                         <div className="mg-awards-title-wrap ml-20 mb-20">
-                            <h2 className="mg-awards-title tp-ff-sequel-bold-head lh-1 reveal-text">How We Work</h2>
+                            <h2 className="mg-awards-title tp-ff-sequel-bold-head lh-1 reveal-text fs-100" style={{ fontSize: "110px" }}>How We Work</h2>
                         </div>
                     </div>
                     <div className="col-lg-3">
@@ -54,7 +54,7 @@ const MotionGraphicAward = () => {
                                     <ArrowIconFive />
                                 </SmartLink>
                                 <SmartLink className="tp-btn z-index-1" style={{ backgroundColor: "transparent", color: "var(--tp-common-black)", borderTop: "1px solid var(--tp-border-1)", borderBottom: "1px solid var(--tp-border-1)", padding: "0 20px" }} href="/contact-us">
-                                    Discover now
+                                    Get in touch
                                 </SmartLink>
                                 <SmartLink className="tp-btn-circle" style={{ backgroundColor: "transparent", color: "var(--tp-common-black)", border: "1px solid var(--tp-border-1)" }} href="/contact-us">
                                     <ArrowIconFive />
@@ -69,7 +69,7 @@ const MotionGraphicAward = () => {
                     <div className="col-xxl-9 offset-xxl-3">
                         <div className="mg-awards-item-wrap ml-20 mp-awards-item-wrap pt-30 cs-awards-item-wrap fix">
                             {processData.map((step, index) => (
-                                <div key={index} className="right-item-animetion">
+                                <div key={index} className="right-item-animetion tp_fade_anim" data-delay={`.${index + 7}`} data-fade-from="bottom">
                                     <div className="mp-awards-item">
                                         <div className="row w-100 align-items-center m-0">
                                             <div className="col-12 col-md-5 col-lg-5 p-0">

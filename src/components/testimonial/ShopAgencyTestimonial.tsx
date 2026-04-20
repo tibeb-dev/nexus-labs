@@ -12,10 +12,10 @@ const ShopAgencyTestimonial = () => {
                 <div className="row justify-content-center">
                     <div className="col-xl-10">
                         <div className="text-center mb-60">
-                            <span className="ca-team-subtitle text-uppercase tp_fade_anim d-block mb-15" data-delay=".1">
-                                <span>[ </span>Testimonials<span> ]</span>
-                            </span>
-                            <h2 className="tp-section-title tp-text-perspective" style={{ fontSize: "clamp(40px, 5vw, 72px)" }}>
+                            <div className="tp-service-subtitle-wrap pt-25 justify-content-start mb-50">
+                            <span className="tp-section-subtitle tp-ff-sequel-roman">Testimonials</span>
+                        </div>
+                            <h2 className="tp-section-title tp-text-perspective fs-100">
                                 What Our Clients Say
                             </h2>
                         </div>
