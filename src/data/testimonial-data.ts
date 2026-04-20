@@ -64,6 +64,24 @@ export const shopAgencyTestimonialsData = [
         role: "CEO, ICARDIO.AI",
         initials: "RS",
     },
+    {
+        id: 4,
+        comment: "I'm very happy with work I got from Kidus and Nexus Technology. There was always prompt and clear communication lines and ready to do extra when projects call for it.",
+        name: "Anwar Lemu",
+        brand: "Agencydev",
+        role: "Agencydev",
+        initials: "AL",
+        img: "/assets/img/testimonial/anwar-lemu.jpg",
+    },
+    {
+        id: 5,
+        comment: "Kidus is a manager at Nexus Technology Agency based in Ethiopia, and based on my experience, he and his team can handle projects effectively. I'd recommend working with them.",
+        name: "Marvin Baker",
+        brand: "Sharethetruth.app",
+        role: "Sharethetruth.app",
+        initials: "MB",
+        img: "/assets/img/testimonial/marvin-baker.jpg",
+    },
 ];
 // about me testimonial data
 export const aboutMeTestimonials: ShopTestimonialItem[] = [
