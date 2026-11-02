@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import Script from "next/script";
 import Link from "next/link";
 
-const measurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+const measurementId = process.env.NEXT_GA_MEASUREMENT_ID;
 const configured = /^G-[A-Z0-9]+$/.test(measurementId || "");
 const preferenceKey = "nexus-analytics-consent";
 type AnalyticsWindow = Window & { dataLayer?: unknown[]; gtag?: (...args: unknown[]) => void };
