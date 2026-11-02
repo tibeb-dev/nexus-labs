@@ -43,32 +43,62 @@ const PageHeader = ({ hideMainMenu = false, sideColumnClass = "col-xl-3 col-6", 
                                     )}
                                 </div>
                             </div>
-                            <div
-                                className={`col-xl-6 ${hideMainMenu ? "d-none" : "d-none d-xl-block"
-                                    }`}
-                            >
-                                <div className="tp-main-menu d-flex justify-content-center">
-                                    <nav className="tp-mobile-menu-active">
-                                        <HeaderMenu />
-                                    </nav>
+                            {/* Main menu - visible on desktop (xl+), hidden on mobile */}
+                            {!hideMainMenu && (
+                                <div className="col-xl-6 d-none d-xl-block">
+                                    <div className="tp-main-menu d-flex justify-content-center">
+                                        <nav className="tp-mobile-menu-active">
+                                            <HeaderMenu />
+                                        </nav>
+                                    </div>
                                 </div>
-                            </div>
+                            )}
                             {/* Actions */}
                             <div className={sideColumnClass}>
                                 <div className="tp-header-right d-flex justify-content-end align-items-center">
-                                    <span className="tp-header-version" style={{
-                                        fontFamily: 'monospace',
-                                        fontSize: '14px',
-                                        color: 'var(--tp-theme-primary)',
-                                        fontWeight: '500',
-                                        letterSpacing: '0.05em',
-                                        padding: '8px 16px',
-                                        border: '1px solid var(--tp-border-1)',
-                                        borderRadius: '4px',
-                                        backgroundColor: 'transparent'
-                                    }}>
-                                        v2.0.1
-                                    </span>
+                                    {/* Hamburger menu button - visible only on mobile (below xl) */}
+                                    <button
+                                        onClick={handleMenuToggle}
+                                        className="tp-hamburger-btn d-xl-none"
+                                        aria-label="Open menu"
+                                        style={{
+                                            display: 'flex',
+                                            flexDirection: 'column',
+                                            justifyContent: 'center',
+                                            alignItems: 'center',
+                                            gap: '5px',
+                                            background: 'none',
+                                            border: 'none',
+                                            cursor: 'pointer',
+                                            padding: '8px',
+                                            zIndex: 10,
+                                        }}
+                                    >
+                                        <span style={{
+                                            display: 'block',
+                                            width: '24px',
+                                            height: '2px',
+                                            backgroundColor: 'var(--tp-theme-primary)',
+                                            borderRadius: '2px',
+                                            transition: 'all 0.3s ease',
+                                        }} />
+                                        <span style={{
+                                            display: 'block',
+                                            width: '24px',
+                                            height: '2px',
+                                            backgroundColor: 'var(--tp-theme-primary)',
+                                            borderRadius: '2px',
+                                            transition: 'all 0.3s ease',
+                                        }} />
+                                        <span style={{
+                                            display: 'block',
+                                            width: '24px',
+                                            height: '2px',
+                                            backgroundColor: 'var(--tp-theme-primary)',
+                                            borderRadius: '2px',
+                                            transition: 'all 0.3s ease',
+                                        }} />
+                                    </button>
                                 </div>
                             </div>
                         </div>

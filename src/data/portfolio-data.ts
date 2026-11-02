@@ -360,9 +360,13 @@ const portfolioData: portfolioDT[] = [
         services: "Web Development, AI Systems, UI/UX Design, API Integration",
         timeline: "6–8 Weeks",
         team: "Nexus Labs",
-        liveSite: "#",
+        liveSite: "https://BlueOceanSP.ai",
         brandOverview: "BlueOceanSP.ai is an AI-driven platform designed to help businesses analyze market and environmental data for smarter decision-making. It leverages predictive models and automation to deliver actionable insights efficiently.",
         keyFeatures: ["Predictive analytics engine", "Custom dashboards", "AI-driven recommendations", "Scalable cloud infrastructure"],
+        banner: "/assets/img/portfolio/project-details/BlueOcean_first.svg",
+        small1: "/assets/img/portfolio/project-details/BlueOcean_Second.svg",
+        small2: "/assets/img/portfolio/project-details/blueOcean_third.svg",
+        small3: "/assets/img/portfolio/project-details/BlueOcean_fourth.svg"
     },
     {
         id: 501,
@@ -375,9 +379,13 @@ const portfolioData: portfolioDT[] = [
         services: "Web Development, LLM Integration, UI/UX",
         timeline: "5–7 Weeks",
         team: "Nexus Labs",
-        liveSite: "#",
+        liveSite: "https://facts.ly",
         brandOverview: "Facts.ly is an AI-powered platform that aggregates and verifies information, helping users access accurate knowledge quickly through intelligent automation.",
         keyFeatures: ["AI content verification", "Personalized content delivery", "Admin dashboard", "Scalable backend"],
+        banner: "/assets/img/portfolio/project-details/factsly-one.svg",
+        small1: "/assets/img/portfolio/project-details/factly_Second.svg",
+        small2: "/assets/img/portfolio/project-details/factly_third.svg",
+        small3: "/assets/img/portfolio/project-details/factly_fourth.svg"
     },
     {
         id: 502,
@@ -390,9 +398,13 @@ const portfolioData: portfolioDT[] = [
         services: "Web Development, AI Systems, UX Design",
         timeline: "4–6 Weeks",
         team: "Nexus Labs",
-        liveSite: "#",
+        liveSite: "https://aidocbuilder.com",
         brandOverview: "AiDocBuilder enables businesses to automate document creation and workflows using AI, reducing manual work and improving accuracy.",
         keyFeatures: ["Automated document generation", "Workflow management", "AI-powered suggestions", "Secure storage"],
+        banner: "/assets/img/portfolio/project-details/Aidoc_first.svg",
+        small1: "/assets/img/portfolio/project-details/Aidoc_Second.svg",
+        small2: "/assets/img/portfolio/project-details/Aidoc_third.svg",
+        small3: "/assets/img/portfolio/project-details/Aidoc_fourth.svg"
     },
     {
         id: 503,
@@ -405,9 +417,13 @@ const portfolioData: portfolioDT[] = [
         services: "Web Platform, AI Systems, API Integration",
         timeline: "6–8 Weeks",
         team: "Nexus Labs",
-        liveSite: "#",
+        liveSite: "https://codegen.com",
         brandOverview: "CodeGen is an AI-powered platform that assists developers by generating code, automating repetitive tasks, and improving productivity.",
         keyFeatures: ["AI code generation", "Multi-language support", "Real-time suggestions", "Scalable backend"],
+        banner: "/assets/img/portfolio/project-details/codegen-one.svg",
+        small1: "/assets/img/portfolio/project-details/codeGen_Second.svg",
+        small2: "/assets/img/portfolio/project-details/codeGen_third.svg",
+        small3: "/assets/img/portfolio/project-details/codeGen_fourth.svg"
     },
     {
         id: 504,
@@ -420,9 +436,13 @@ const portfolioData: portfolioDT[] = [
         services: "Web Development, Automation, UI/UX",
         timeline: "5–7 Weeks",
         team: "Nexus Labs",
-        liveSite: "#",
+        liveSite: "https://komo.ai",
         brandOverview: "Komo.ai provides AI-powered productivity tools that automate workflows and improve efficiency across teams.",
         keyFeatures: ["Task automation", "AI insights", "Real-time collaboration", "Secure system design"],
+        banner: "/assets/img/portfolio/project-details/komoAI_first.svg",
+        small1: "/assets/img/portfolio/project-details/komoAI_Second.svg",
+        small2: "/assets/img/portfolio/project-details/komoAI_third.svg",
+        small3: "/assets/img/portfolio/project-details/komoAI_fourth.svg"
     },
     {
         id: 505,
@@ -438,6 +458,10 @@ const portfolioData: portfolioDT[] = [
         liveSite: "#",
         brandOverview: "Mangrove is a fintech platform designed to streamline financial services, combining payments, analytics, and user management into one system.",
         keyFeatures: ["Payment integration", "Financial dashboards", "Secure transactions", "Analytics tools"],
+        banner: "/assets/img/portfolio/project-details/Mangrove_first.svg",
+        small1: "/assets/img/portfolio/project-details/Mangrove_Second.svg",
+        small2: "/assets/img/portfolio/project-details/Mangrove_third.svg",
+        small3: "/assets/img/portfolio/project-details/Mangrove_fourth.svg"
     },
     {
         id: 506,
@@ -453,6 +477,10 @@ const portfolioData: portfolioDT[] = [
         liveSite: "#",
         brandOverview: "An e-commerce store focused on delivering a seamless shopping experience with optimized product browsing and checkout.",
         keyFeatures: ["Custom Shopify theme", "Optimized checkout", "Payment integration", "Responsive design"],
+        banner: "/assets/img/portfolio/project-details/ownboss-one.svg",
+        small1: "/assets/img/portfolio/project-details/ownboss_Second.svg",
+        small2: "/assets/img/portfolio/project-details/ownboss_third.svg",
+        small3: "/assets/img/portfolio/project-details/ownboss_fourth.svg"
     },
     {
         id: 507,
@@ -468,6 +496,10 @@ const portfolioData: portfolioDT[] = [
         liveSite: "#",
         brandOverview: "GlassFactory is an online platform for showcasing and selling glass products with a focus on usability and performance.",
         keyFeatures: ["Product catalog", "Search & filtering", "Checkout system", "Admin dashboard"],
+        banner: "/assets/img/portfolio/project-details/glassfact_first.svg",
+        small1: "/assets/img/portfolio/project-details/glassfact_Second.svg",
+        small2: "/assets/img/portfolio/project-details/glassfact_third.svg",
+        small3: "/assets/img/portfolio/project-details/glassfact_fourth.svg"
     },
     {
         id: 508,
@@ -483,6 +515,10 @@ const portfolioData: portfolioDT[] = [
         liveSite: "#",
         brandOverview: "A professional website for a dental clinic focused on trust, accessibility, and patient engagement.",
         keyFeatures: ["Appointment booking", "Service pages", "CMS integration", "SEO optimization"],
+        banner: "/assets/img/portfolio/project-details/broadway_first.svg",
+        small1: "/assets/img/portfolio/project-details/broadway_Second.svg",
+        small2: "/assets/img/portfolio/project-details/broadway_third.svg",
+        small3: "/assets/img/portfolio/project-details/broadway_fourth.svg"
     },
     {
         id: 509,
@@ -498,6 +534,10 @@ const portfolioData: portfolioDT[] = [
         liveSite: "#",
         brandOverview: "A construction company website designed to showcase services and completed projects while building credibility.",
         keyFeatures: ["Project showcase", "Service pages", "Contact forms", "CMS system"],
+        banner: "/assets/img/portfolio/project-details/jjConstruction_first.svg",
+        small1: "/assets/img/portfolio/project-details/jjConstruction_Second.svg",
+        small2: "/assets/img/portfolio/project-details/jjConstruction_third.svg",
+        small3: "/assets/img/portfolio/project-details/jjConstruction_fourth.svg"
     },
     {
         id: 510,
@@ -513,6 +553,10 @@ const portfolioData: portfolioDT[] = [
         liveSite: "#",
         brandOverview: "Web platform focused on hosting and WordPress services with optimized performance and scalability.",
         keyFeatures: ["Service presentation", "Client area", "Performance dashboards", "Automated billing"],
+        banner: "/assets/img/portfolio/project-details/wpprovider-one.svg",
+        small1: "/assets/img/portfolio/project-details/wpprovider_Second.svg",
+        small2: "/assets/img/portfolio/project-details/wpprovider_third.svg",
+        small3: "/assets/img/portfolio/project-details/wpprovider_fourth.svg"
     },
     {
         id: 511,
@@ -528,6 +572,10 @@ const portfolioData: portfolioDT[] = [
         liveSite: "#",
         brandOverview: "Corporate platform designed to present services, build credibility, and improve client engagement.",
         keyFeatures: ["User engagement tools", "Corporate branding", "CMS integration", "Responsive layout"],
+        banner: "/assets/img/portfolio/project-details/maximum_first.svg",
+        small1: "/assets/img/portfolio/project-details/maximum_Second.svg",
+        small2: "/assets/img/portfolio/project-details/maximum_third.svg",
+        small3: "/assets/img/portfolio/project-details/maximum_fourth.svg"
     },
     {
         id: 512,
@@ -543,6 +591,10 @@ const portfolioData: portfolioDT[] = [
         liveSite: "#",
         brandOverview: "AI-powered e-commerce platform focused on personalized product recommendations and automation-driven user experience.",
         keyFeatures: ["Personalized recommendations", "Automated workflows", "Gift curation AI", "Advanced search"],
+        banner: "/assets/img/portfolio/project-details/giftxd_first.svg",
+        small1: "/assets/img/portfolio/project-details/giftxd_Second.svg",
+        small2: "/assets/img/portfolio/project-details/giftxd_third.svg",
+        small3: "/assets/img/portfolio/project-details/giftxd_fourth.svg"
     },
     //portfolio page two main portfolo data end
     //portfolio page three main portfolo data start

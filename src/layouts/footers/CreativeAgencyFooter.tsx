@@ -17,7 +17,7 @@ const CreativeAgencyFooter = () => {
                             <div className="tp-footer-title-wrap mb-55">
                                 <h2 className="tp-section-title tp-text-perspective">Let&apos;s build something powerful together{" "}
                                     <span className="tp-about-btn-transform d-inline-block">
-                                        <SmartLink className="tp-btn tp-btn-border tp-ff-inter" href="/contact-us#schedule-consultation">
+                                        <SmartLink className="tp-btn tp-btn-border tp-ff-inter" href="/contact-us">
                                             <span>
                                                 <span className="text-1">Get In Touch</span>
                                                 <span className="text-2">Get In Touch</span>
@@ -47,14 +47,14 @@ const CreativeAgencyFooter = () => {
                             <div className="col-xxl-4 col-xl-5 offset-xxl-4 offset-xl-2 col-lg-6">
                                 <div className="tp-footer-widget ml-32 mb-30 tp_fade_anim" data-delay=".5">
                                     <span className="tp-footer-dec">Searching for exceptional talents?</span>
-                                    <h4 className="tp-footer-email tp-ff-sequel-roman"><Link href="mailto:info@nexustechnologyet.com">info@nexustechnologyet.com</Link></h4>
+                                    <h4 className="tp-footer-email tp-ff-sequel-roman" style={{ wordBreak: "break-word", overflowWrap: "break-word", fontSize: "clamp(18px, 2.5vw, 28px)" }}><Link href="mailto:info@nexustechnologyet.com">info@nexustechnologyet.com</Link></h4>
                                 </div>
                             </div>
                         </div>
                         <div className="row align-items-end mt-35">
                             <div className="col-lg-4">
                                 <div className="tp-header-logo tp-footer-logo mb-30 tp_fade_anim" data-delay=".6">
-                                    <BrandLogo logo1Width={229} logo1Height={68} logo2Width={229} logo2Height={56} />
+                                    <BrandLogo logo1Width={200} logo1Height={105} logo2Width={200} logo2Height={105} />
                                 </div>
                             </div>
                             <div className="col-lg-8">
@@ -75,9 +75,9 @@ const CreativeAgencyFooter = () => {
                             </div>
                             <div className="col-xl-6 col-lg-7">
                                 <div className="tp-footer-copyright-social mb-20">
-                                    {SOCIAL_LINKS.slice(0, 4).map((social) => (
-                                        <Link key={social} href="#" className="flex items-center gap-1">
-                                            {social} <ArrowIconTwo />
+                                    {SOCIAL_LINKS.map((social) => (
+                                        <Link key={social.name} href={social.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1">
+                                            {social.name} <ArrowIconTwo />
                                         </Link>
                                     ))}
                                 </div>

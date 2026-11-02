@@ -70,7 +70,7 @@ const DigitalStudioFooter = () => {
                             <div className="tp-footer-widget ca-footer-social-item-wrap d-flex justify-content-between ml-45 mr-40 mb-30">
                                 <FooterList
                                     title="Social"
-                                    items={SOCIAL_LINKS}
+                                    items={SOCIAL_LINKS.map((s) => s.name)}
                                     delay=".5"
                                 />
                                 <FooterList

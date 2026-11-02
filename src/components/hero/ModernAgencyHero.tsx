@@ -2,7 +2,6 @@
 import SmartLink from "../common/SmartLink";
 import { ButtonArrowIcon } from "@/svg";
 import { HeroStarIcon } from "@/svg/StarIcons";
-import { color } from "framer-motion";
 import Image from "next/image";
 import { brand_slider_params } from "@/constant/swiper";
 import { Autoplay, FreeMode } from "swiper/modules";
@@ -49,9 +48,9 @@ const ModernAgencyHero = () => {
                     <div className="col-xl-9">
                         <div className="mp-hero-content ml-75">
                             <h2 className="mp-hero-title tp-ff-inter mb-40 tp-char-animation">
-                                Scalable software and AI powered systems for
+                                Scalable software & AI systems
                                 <br />
-                                <span style={{ color: "var(--tp-theme-primary)" }}> modern businesses. </span>
+                                <span style={{ color: "var(--tp-theme-primary)" }}> for modern businesses. </span>
                             </h2>
 
                             {/* Hero Buttons */}

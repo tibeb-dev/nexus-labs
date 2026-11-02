@@ -1,48 +1,46 @@
 import { ToastContainer } from "react-toastify";
-import { Inter, Jost, Montserrat } from "next/font/google";
+import localFont from "next/font/local";
+import Analytics from "@/components/nexus/Analytics";
+import StructuredData from "@/components/nexus/StructuredData";
+import { SITE_URL } from "@/lib/site";
+import { SOCIAL_LINKS } from "@/data/footer-data";
 import type { Metadata } from "next";
 import "swiper/css/bundle";
 import "./globals.scss";
 
-// Inter font
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-  preload: false
-});
-
-// Jost font
-const jost = Jost({
-  subsets: ["latin"],
-  variable: "--font-jost",
-  display: "swap",
-  preload: false
-});
-
-// Montserrat font
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800", "900"],
-  variable: "--font-montserrat",
-  display: "swap",
-  preload: false
+const siteFont = localFont({
+  src: [
+    { path: "../../public/assets/fonts/SequelSans-RomanHead.woff2", weight: "400", style: "normal" },
+    { path: "../../public/assets/fonts/SequelSans-MediumHead.woff2", weight: "500", style: "normal" },
+    { path: "../../public/assets/fonts/SequelSans-SemiBoldHead.woff2", weight: "600", style: "normal" },
+    { path: "../../public/assets/fonts/SequelSans-BoldHead.woff2", weight: "700", style: "normal" },
+  ],
+  variable: "--font-inter", display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Cunnet - Creative Portfolio Agency Nextjs Template",
-  description: "A modern creative portfolio and agency Next.js template.",
+  metadataBase: new URL(SITE_URL),
+  title: { default: "Nexus Technology — Software & AI Development in Ethiopia", template: "%s | Nexus Technology" },
+  description: "Nexus Technology builds websites, mobile apps, and AI-powered systems in Addis Ababa, Ethiopia.",
+  // Unfinished template routes are not search landing pages. Real pages opt in.
+  robots: { index: false, follow: true },
+  icons: { icon: "/icon.svg", apple: "/apple-icon" },
+  verification: { google: process.env.GOOGLE_SITE_VERIFICATION },
 };
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
-}) {
-  return (
+}) {    return (
     <html lang="en">
-      <body className={`${inter.variable} ${jost.variable} ${montserrat.variable}`}>
+      <body className={siteFont.variable}>
+        <StructuredData data={{ "@context": "https://schema.org", "@graph": [
+          { "@type": "Organization", "@id": `${SITE_URL}/#organization`, name: "Nexus Technology", url: SITE_URL, logo: `${SITE_URL}/icon.svg`, email: "info@nexustechnologyet.com", telephone: "+251974819263", address: { "@type": "PostalAddress", streetAddress: "Yerer Bole", addressLocality: "Addis Ababa", addressCountry: "ET" }, sameAs: SOCIAL_LINKS.map(link => link.url) },
+          { "@type": "WebSite", "@id": `${SITE_URL}/#website`, name: "Nexus Technology", url: SITE_URL, publisher: { "@id": `${SITE_URL}/#organization` } },
+        ] }} />
         {children}
+        <Analytics />
         <ToastContainer />
       </body>
     </html>

@@ -11,11 +11,10 @@ export const QUICK_LINKS = [
 ];
 
 export const SOCIAL_LINKS = [
-    "Facebook",
-    "Twitter",
-    "Linkedin",
-    "Instagram",
-    "YouTube",
+    { name: "Facebook", url: "https://web.facebook.com/profile.php?id=61593705504286" },
+    { name: "LinkedIn", url: "https://www.linkedin.com/company/nexus-ethiopia-tech" },
+    { name: "Instagram", url: "https://www.instagram.com/nexustechnologyet/" },
+    { name: "TikTok", url: "https://www.tiktok.com/@nexus_technology0" },
 ];
 
 export const OFFICE_LOCATIONS = [

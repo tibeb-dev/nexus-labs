@@ -5,7 +5,7 @@ import SmartLink from "../common/SmartLink";
 
 const MotionGraphicPortfolio = ({ theme }: { theme?: "dark" | "light" }) => {
     //display portfolio item
-    const featuredIds = [510, 500, 512];
+    const featuredIds = [500, 501, 502, 510, 511, 512]; // BlueOceanSP, Facts.ly, AiDocBuilder, Wpprovider, MaximumAccountability, GiftXD
     const displayPortfolio = featuredIds.map(id => portfolioData.find(item => item.id === id)).filter((item): item is NonNullable<typeof item> => Boolean(item));
 
     return (

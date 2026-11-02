@@ -1,20 +1,18 @@
-import ContactUsTopIntro from "@/components/contact/ContactUsTopIntro";
-import ContactInnerMap from "@/components/contact/ContactInnerMap";
-import CalendlyBooking from "@/components/contact/CalendlyBooking";
-import { Metadata } from "next";
+import StructuredData from "@/components/nexus/StructuredData";
+import { absoluteUrl, pageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = {
-    title: "Contact Us - Creative Portfolio Agency Nextjs Template",
-};
-
-const page = () => {
-    return (
-        <main>
-            <ContactUsTopIntro />
-            <CalendlyBooking />
-            <ContactInnerMap />
-        </main>
-    );
-};
-
-export default page;
+export const metadata = pageMetadata("Contact Our Software Team in Addis Ababa", "Discuss your website, mobile app, or AI automation project with Nexus Technology. Email, call, or reach our Addis Ababa team on WhatsApp.", "/contact-us");
+const channels = [
+    { label: "Email us", value: "info@nexustechnologyet.com", href: "mailto:info@nexustechnologyet.com", hint: "A good place to start with your idea.", method: "email" },
+    { label: "Call us", value: "+251 974 819 263", href: "tel:+251974819263", hint: "Let’s talk through what you have in mind.", method: "phone" },
+    { label: "WhatsApp", value: "+251 909 740 768", href: "https://wa.me/251909740768", hint: "Start a conversation with our team.", method: "whatsapp" },
+];
+export default function ContactPage() {
+    return <main id="main-content" className="nx-container">
+        <StructuredData data={{ "@context": "https://schema.org", "@type": "ContactPage", name: "Contact Nexus Technology", url: absoluteUrl("/contact-us"), about: { "@id": `${absoluteUrl("/")}#organization` } }} />
+        <section className="nx-page-intro nx-contact-intro"><div><span className="nx-eyebrow">LET’S MAKE IT HAPPEN</span><h1>Every good project<br />starts with <em>hello.</em></h1><p>Have an idea, a challenge, or a product ready for its next chapter? Tell us about it. We’ll work out the next step together.</p></div><div className="nx-contact-note"><span className="nx-eyebrow">A LITTLE CONTEXT HELPS</span><p>Tell us what you’re building, who it’s for, and what you’d like to achieve. If you have a timeline or budget in mind, include that too.</p><span>No perfect brief required.</span></div></section>
+        <section className="nx-contact-channels" aria-label="Ways to contact Nexus">{channels.map((channel, index) => <a key={channel.method} href={channel.href} data-contact-method={channel.method} target={channel.method === "whatsapp" ? "_blank" : undefined} rel={channel.method === "whatsapp" ? "noopener noreferrer" : undefined}><div className="nx-contact-label"><span>0{index + 1} / {channel.label}</span><span aria-hidden="true">↗</span></div><h2>{channel.value}</h2><p>{channel.hint}</p>{channel.method === "whatsapp" && <span className="nx-sr-only">Opens in a new tab</span>}</a>)}</section>
+        <section className="nx-location nx-section"><div><span className="nx-eyebrow">ROOTED HERE. BUILDING EVERYWHERE.</span><h2>Addis Ababa, Ethiopia.</h2><p>Yerer Bole, Addis Ababa, Ethiopia</p><a href="https://www.google.com/maps/search/Nexus+Technology+Addis+Ababa" target="_blank" rel="noopener noreferrer" className="nx-text-link">Find us on Google Maps <span aria-hidden="true">↗</span><span className="nx-sr-only"> (opens in a new tab)</span></a></div><div className="nx-location-art" aria-hidden="true"><span>ADDIS ABABA</span><svg viewBox="0 0 400 180" fill="none"><path d="M0 140H400M0 80H400M80 0V180M200 0V180M320 0V180M0 180L400 0M0 0L400 180" stroke="currentColor"/><circle cx="200" cy="90" r="24" fill="#383f8f"/><circle cx="200" cy="90" r="6" fill="#e2edcf"/></svg><span>ET / CONNECTED TO THE WORLD</span></div></section>
+        <section className="nx-faq nx-section"><span className="nx-eyebrow">BEFORE WE GET STARTED</span><h2>A few useful answers.</h2><details><summary>What can Nexus Technology help us build?</summary><p>We design and develop websites, mobile applications, AI-powered SaaS products, and business automation systems. We can also help shape the user experience and product direction.</p></details><details><summary>Can we work together remotely?</summary><p>Yes. Our team is based in Addis Ababa and works with businesses remotely. Start by sharing your project and we can agree on how to collaborate.</p></details><details><summary>How much will my project cost?</summary><p>Cost depends on the scope, integrations, design needs, and timeline. Share your requirements so we can discuss an estimate for your project.</p></details></section>
+    </main>;
+}

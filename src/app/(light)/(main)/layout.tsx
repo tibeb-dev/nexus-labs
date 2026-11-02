@@ -1,41 +1,5 @@
-import CursorAndBackgroundProvider from "@/provider/CustomCursorProvider";
-import ScrollSmoothProvider from "@/provider/ScrollSmoothProvider";
-import AnimationWrapper from "@/components/shared/animation/AnimationWrapper";
-import CreativeAgencyFooter from "@/layouts/footers/CreativeAgencyFooter";
-import HeaderSearch from "@/layouts/headers/subComponents/HeaderSearch";
-import BackToTop from "@/components/shared/BackToTop/BackToTop";
-import PageHeader from "@/layouts/headers/PageHeader";
-import AppProvider from "@/provider/AppProvider";
-import BootstrapLoader from "@/layouts/BootstrapLoader";
+import NexusShell from "@/components/nexus/NexusShell";
 
-export default function CreativeLayout({
-    children,
-}: {
-    children: React.ReactNode;
-}) {
-    return (
-        <CursorAndBackgroundProvider>
-            <ScrollSmoothProvider>
-                <AnimationWrapper>
-                    <BootstrapLoader>
-                        <AppProvider>
-                            {/* -- global component -- */}
-                            <div id="magic-cursor" className="cursor-black-bg">
-                                <div id="ball"></div>
-                            </div>
-                            <BackToTop />
-                            <HeaderSearch />
-                            <PageHeader />
-                            <div id="smooth-wrapper">
-                                <div id="smooth-content">
-                                    {children}
-                                    <CreativeAgencyFooter />
-                                </div>
-                            </div>
-                        </AppProvider>
-                    </BootstrapLoader>
-                </AnimationWrapper>
-            </ScrollSmoothProvider >
-        </CursorAndBackgroundProvider >
-    );
+export default function Layout({ children }: { children: React.ReactNode }) {
+    return <NexusShell>{children}</NexusShell>;
 }

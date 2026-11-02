@@ -1,5 +1,6 @@
 import { IdProps } from '@/types/custom-dt';
 import SmartLink from '../common/SmartLink';
+import Link from "next/link";
 import { ButtonArrowIcon } from '@/svg';
 import portfolioData from '@/data/portfolio-data';
 
@@ -12,7 +13,7 @@ const PortfolioDetailsIntro = ({ id }: IdProps) => {
                 <div className="row">
                     <div className="col-12">
                         <div className="tp-pd-2-top pb-45 jump-anim text-center">
-                            <h3 className="tp-pd-3-title tp-ff-sequel-bold-head text-uppercase lh-1 tp_fade_anim" data-delay=".5">{portfolio?.title || "Olivia Rivers"}</h3>
+                            <h3 className="tp-pd-3-title tp-ff-sequel-bold-head text-uppercase lh-1 tp_fade_anim" style={{ fontSize: portfolio?.title && portfolio.title.length > 20 ? "clamp(2rem, 5vw, 4rem)" : undefined, wordBreak: "break-word", overflowWrap: "break-word" }} data-delay=".5">{portfolio?.title || "Olivia Rivers"}</h3>
                         </div>
                     </div>
                     <div className="col-xl-10">
@@ -43,9 +44,10 @@ const PortfolioDetailsIntro = ({ id }: IdProps) => {
                             </div>
                         </div>
                     </div>
+                    {portfolio?.liveSite && portfolio.liveSite !== "#" && (
                     <div className="col-xl-2">
                         <div className="text-xl-end">
-                            <SmartLink className="tp-btn tp-btn-border" href={portfolio?.liveSite || "#"}>
+                            <Link className="tp-btn tp-btn-border" target='_blank' href={portfolio.liveSite}>
                                 <span>
                                     <span className="text-1">Visit Site</span>
                                     <span className="text-2">Visit Site</span>
@@ -54,9 +56,10 @@ const PortfolioDetailsIntro = ({ id }: IdProps) => {
                                     <ButtonArrowIcon />
                                     <ButtonArrowIcon />
                                 </i>
-                            </SmartLink>
+                            </Link>
                         </div>
                     </div>
+                    )}
                 </div>
             </div>
         </div>

@@ -34,6 +34,8 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+# Only public, non-secret production configuration is committed.
+!.env.production
 
 # vercel
 .vercel

@@ -40,6 +40,27 @@
     object-fit: contain;
 }
 
+/* Reduce hero spacing on mobile */
+@media (max-width: 768px) {
+    .mp-hero-spacing {
+        padding-top: 80px !important;
+        padding-bottom: 30px !important;
+    }
+    .ca-brand-area {
+        margin-top: 30px !important;
+    }
+}
+
+/* Fix logo carousel overflow */
+.ca-brand-area {
+    overflow: hidden;
+}
+
+/* Reduce section spacing */
+.tp-about-area.pt-85 {
+    padding-top: 40px !important;
+}
+
 .z-index-high {
     z-index: 99 !important;
 }
@@ -114,3 +135,49 @@
         width: auto;
     }
 }
+
+/* Hide the custom mouse follower cursor */
+#magic-cursor,
+.tp-cursor,
+.tp-cursor-effect,
+body.tp-magic-cursor #magic-cursor,
+body.tp-magic-cursor .tp-cursor {
+    display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    width: 0 !important;
+    height: 0 !important;
+    opacity: 0 !important;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+#ball {
+    display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    opacity: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    width: 0 !important;
+    height: 0 !important;
+    position: fixed !important;
+    top: -9999px !important;
+    left: -9999px !important;
+}
+
+.cursor-black-bg {
+    display: none !important;
+}
+
+/* Also hide the back-to-top if it overlaps */
+@media (max-width: 768px) {
+    .back-to-top-wrapper {
+        bottom: 20px !important;
+        right: 15px !important;
+    }
+}
+/* Legacy template typography shares the locally hosted site font. */
+body { --font-jost: var(--font-inter); --font-montserrat: var(--font-inter); }

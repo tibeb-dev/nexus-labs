@@ -15,7 +15,7 @@ const PortfolioDetailsOverviewTwo = ({ id }: IdProps) => {
                     </div>
                     <div className="col-xl-5 col-lg-6">
                         <div className="tp-pd-2-overview-wrap mr-100">
-                            <p>{portfolio?.brandOverview || "Brand overview and description goes here. It provides a quick summary of the service."}</p>
+                            <p>{portfolio?.brandOverview || "Brand overview. It provides a quick summary of the service."}</p>
                             
                             {portfolio?.keyFeatures && portfolio.keyFeatures.length > 0 && (
                                 <ul className="mt-30">

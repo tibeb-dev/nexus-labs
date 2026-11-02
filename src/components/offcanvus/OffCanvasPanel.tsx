@@ -1,20 +1,9 @@
 "use client";
 import { BehanceIcon, CroseIcon, DribbleIcon, InstragramIcon, YoutubeIcon } from '@/svg';
-import PhotoProviderWrapper from '@/provider/PhotoProviderWrapper';
 import BrandLogo from '@/components/common/BrandLogo';
 import useGlobalContext from '@/hooks/useContext';
 import MobileMenus from '../layout/MobileMenus';
-import { PhotoView } from 'react-photo-view';
-import { ImageDT } from '@/types/custom-dt';
-import Image from 'next/image';
 import Link from 'next/link';
-
-const galleryImages: ImageDT[] = [
-    { id: 1, imgSrc: "/assets/img/offcanvas/offcanvas-1.jpg" },
-    { id: 2, imgSrc: "/assets/img/offcanvas/offcanvas-2.jpg" },
-    { id: 3, imgSrc: "/assets/img/offcanvas/offcanvas-3.jpg" },
-    { id: 4, imgSrc: "/assets/img/offcanvas/offcanvas-4.jpg" }
-];
 
 const OffCanvasPanel = () => {
     const { isPrimaryOffcanvasOpen, togglePrimaryOffcanvas } = useGlobalContext();
@@ -33,29 +22,14 @@ const OffCanvasPanel = () => {
                             </button>
                         </div>
                     </div>
-                    <div className="tp-offcanvas-content d-none d-xl-block">
-                        <h3 className="tp-offcanvas-title">Hello There!</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
+                    <div className="tp-offcanvas-content">
+                        <h3 className="tp-offcanvas-title">Welcome to Nexus Technology</h3>
+                        <p>Scalable software & AI systems for modern businesses.</p>
                     </div>
-                    <div className="tp-offcanvas-menu d-xl-none">
+                    <div className="tp-offcanvas-menu">
                         <nav>
                             <MobileMenus />
                         </nav>
-                    </div>
-                    <div className="tp-offcanvas-gallery d-none d-xl-block">
-                        <div className="row gx-2">
-                            <PhotoProviderWrapper>
-                                {galleryImages.map((image: ImageDT) => (
-                                    <div className="col-md-3 col-3" key={image.id}>
-                                        <div className="tp-offcanvas-gallery-img fix">
-                                            <PhotoView src={image.imgSrc}>
-                                                <Image style={{ width: "auto", height: "auto" }} width={82} height={82} src={image.imgSrc} alt={`gallery image${image.id}`} />
-                                            </PhotoView>
-                                        </div>
-                                    </div>
-                                ))}
-                            </PhotoProviderWrapper>
-                        </div>
                     </div>
                     <div className="tp-offcanvas-contact">
                         <h3 className="tp-offcanvas-title sm">Information</h3>
@@ -69,16 +43,16 @@ const OffCanvasPanel = () => {
                         <h3 className="tp-offcanvas-title sm">Follow Us</h3>
                         <ul>
                             <li>
-                                <Link href="#"><InstragramIcon /></Link>
+                                <Link href="https://web.facebook.com/profile.php?id=61593705504286" target="_blank" rel="noopener noreferrer"><InstragramIcon /></Link>
                             </li>
                             <li>
-                                <Link href="#"><DribbleIcon /></Link>
+                                <Link href="https://www.linkedin.com/company/nexus-ethiopia-tech" target="_blank" rel="noopener noreferrer"><DribbleIcon /></Link>
                             </li>
                             <li>
-                                <Link href="#"><BehanceIcon /></Link>
+                                <Link href="https://www.instagram.com/nexustechnologyet/" target="_blank" rel="noopener noreferrer"><BehanceIcon /></Link>
                             </li>
                             <li>
-                                <Link href="#"><YoutubeIcon /></Link>
+                                <Link href="https://www.tiktok.com/@nexus_technology0" target="_blank" rel="noopener noreferrer"><YoutubeIcon /></Link>
                             </li>
                         </ul>
                     </div>

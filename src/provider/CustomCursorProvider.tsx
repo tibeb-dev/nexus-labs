@@ -1,5 +1,4 @@
 "use client";
-import { useCursorAndBackground } from "@/hooks/useCursorAndBackground";
 import { ReactNode } from "react";
 
 type CustomCursorProviderProps = {
@@ -7,7 +6,6 @@ type CustomCursorProviderProps = {
   bgColor?: string;
 };
 
-export default function CursorAndBackgroundProvider({ children, bgColor }: CustomCursorProviderProps) {
-  useCursorAndBackground({ bgColor });
+export default function CursorAndBackgroundProvider({ children }: CustomCursorProviderProps) {
   return <>{children}</>;
 }

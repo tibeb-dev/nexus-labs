@@ -7,7 +7,8 @@ import AboutUsArea from "@/components/about/AboutUsArea";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "About US - Creative Portfolio Agency Nextjs Template",
+    title: "About Us",
+    description: "Learn about Nexus Technology - a team of developers and designers building intelligent digital solutions that transform businesses.",
 };
 
 const page = () => {

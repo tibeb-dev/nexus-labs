@@ -19,4 +19,8 @@ export interface portfolioDT {
     liveSite?: string;
     brandOverview?: string;
     keyFeatures?: string[];
+    banner?: string,
+    small1?: string,
+    small2?: string,
+    small3?: string
 }

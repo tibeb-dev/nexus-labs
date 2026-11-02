@@ -46,9 +46,9 @@ const BrandingStudioFooter = () => {
                             </div>
                             <div className="col-xl-6 col-lg-7">
                                 <div className="tp-footer-copyright-social mb-20 tp_fade_anim" data-delay=".5">
-                                    {SOCIAL_LINKS.slice(0, 4).map((social) => (
-                                        <Link key={social} href="#" className="flex items-center gap-1">
-                                            {social} <ArrowIconTwo />
+                                    {SOCIAL_LINKS.map((social) => (
+                                        <Link key={social.name} href={social.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1">
+                                            {social.name} <ArrowIconTwo />
                                         </Link>
                                     ))}
                                 </div>
