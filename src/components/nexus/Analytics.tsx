@@ -5,8 +5,7 @@ import { usePathname } from "next/navigation";
 import Script from "next/script";
 import Link from "next/link";
 
-// This client component needs a NEXT_PUBLIC_ variable so Next.js includes the
-// public measurement ID in the browser bundle at build time.
+// next.config.ts explicitly exposes this public measurement ID at build time.
 const measurementId = process.env.NEXT_GA_MEASUREMENT_ID;
 const configured = /^G-[A-Z0-9]+$/.test(measurementId || "");
 const preferenceKey = "nexus-analytics-consent";

@@ -42,7 +42,7 @@ The supplied measurement ID is already configured in `.env.production`. Complete
 2. Copy its Measurement ID, starting with `G-`, into your deployment environment:
 
    ```env
-   NEXT_PUBLIC_GA_MEASUREMENT_ID=G-7V661TP5TL
+   NEXT_GA_MEASUREMENT_ID=G-7V661TP5TL
    ```
 
    The measurement ID is public configuration. Never put service-account credentials or an API secret in a `NEXT_PUBLIC_` variable. Leave the ID unset on local and staging deployments unless using a separate test property. Rebuild/redeploy after changing it.
